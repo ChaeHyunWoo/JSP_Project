@@ -58,7 +58,8 @@
 			}
 		}
 		</script>
-
+		
+		
 
 		<!-- WIDERPLANET  SCRIPT START 2021.12.1 -->
 		</head><body><div id="wp_tg_cts" style="display:none;"></div>
@@ -458,9 +459,10 @@ return false;
 	      		<!-- top menu -->
 	      		<div id="dvTopmeu" class="t_util">
 			      <ul>
-			        
-			        	<li><a href="javascript:gLogin();">로그인</a></li>
-			        	<li><a href="http://members.parkland.co.kr/my_parkland/join.asp" target="_blank">회원가입<img src="<%=cp %>/shoppingmall/login/login_files/icon_newwin.png" alt=""></a></li>
+			        	<li><a href="<%=cp%>/shop/join.do">회원가입<img src="<%=cp %>/shoppingmall/login/login_files/icon_newwin.png" alt=""></a></li>
+			        	
+			        	
+			        	
 			        	<li><a href="https://eshop.parkland.co.kr:444/nhome/member/nomember_login.asp">비회원주문조회</a></li>
 			       	
 			        <li><a href="https://eshop.parkland.co.kr:444/nhome/mypage/mypage.asp">MY 파크랜드</a></li>
@@ -488,25 +490,25 @@ return false;
 <!-- 현우 로그인  -->
 <script type="text/javascript">
 
-	function check() {
+	function login() {
 		
 		var f = document.mLoginForm;
 		
-		if(!f.Id.value) {
+		if(!f.id.value) {
 			
-			alert("아이디를 입력하세요.");
-			f.userId.focus();
+			alert("아이디를 입력하세용.");
+			f.id.focus();
 			return;
 		}
 		
-		if(!f.value) {
+		if(!f.pwd.value) {
 			
-			alert("패스워드를 입력하세요.");
-			f.userPwd.focus();
+			alert("패스워드를 입력하세용.");
+			f.pwd.focus();
 			return;
 		}
 		
-		f.action = "<%=cp%>/join/login_ok.do";
+		f.action = "<%=cp%>/shop/login_ok.do";
 		f.submit();
 	}
 
@@ -557,24 +559,28 @@ if (mobile) {
 								<div class="leftText">
 									<p>
 										<span>아이디</span>
-										<input id="c_userid" name="c_userid" type="text" value="">
+										<!-- <input id="c_userid" name="c_userid" type="text" value=""> -->
+										<input id="c_userid" name="id" type="text" value="">
 									</p>
 									<p>
 										<span>비밀번호</span>
-										<input name="c_pwd" type="password" onkeypress="if(window.event.keyCode==13) Login2();">
+										<!-- <input name="c_pwd" type="password" onkeypress="if(window.event.keyCode==13) Login2();"> -->
+										<input name="pwd" type="password" onkeypress="if(window.event.keyCode==13) Login2();">
 									</p>
 								</div>
 								<div class="btnLogin">
 								
 									<!-- 로그인 버튼(현우) -->
-									<a href="javascript:check();" id="login_btn">Login</a>
-									
-									<!--  <a href="javascript:void(0);" onclick="Login2()" id="login_btn">Login</a> -->
+									<!-- <a href="javascript:void(0);" onclick="Login2()" id="login_btn">Login</a> -->
+									<a href="javascript:void(0);" onclick="login()" id="login_btn">Login</a>
 								</div>
 							</div>
 							<div class="id_check">
 								 <input type="checkbox" name="id_chk" id="chk1" value="1"><label for="chk1">아이디 저장 </label>
 							</div>
+							
+								<font color="red"><b>${message }</b></font>
+							
 						</div>
 					</form>
 				</div>
@@ -599,7 +605,7 @@ if (mobile) {
 							<div>
 								<p>▶  아이디가 없으시면 회원가입을 해주세요.</p>
 								<p class="btn_type_id">
-									<a href="'<%=cp%>/shop/join.do';">회원가입</a>
+									<a href="<%=cp%>/shop/join.do">회원가입</a>
 									<%-- <a href="'<%=cp%>/shop/join.do';" target="_blank">회원가입</a> --%>
 									<%-- <input type="button" value=" 회원가입 " class="btm2" 
 									onclick="javascript:location.href='<%=cp%>/shop/join.do';" > --%>

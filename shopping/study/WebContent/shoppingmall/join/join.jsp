@@ -376,11 +376,14 @@ return false;
 	      		<!-- top menu -->
 	      		<div id="dvTopmeu" class="t_util">
 			      <ul>
-			        
-			        	<li class="mem"><i class="fa fa-user mr5" style="font-size:14px; color:#21286d;"></i><span class="maincolor fbold">${name }</span> 환영합니다.</li>
-			        	<li><a href="https://eshop.parkland.co.kr:444/nhome/member/member_logout.asp">로그아웃</a></li>
+			        	<li><a href="<%=cp%>/shop/join.do">회원가입<img src="<%=cp %>/shoppingmall/login/login_files/icon_newwin.png" alt=""></a></li>
+			        	<%-- <li class="mem"><i class="fa fa-user mr5" style="font-size:14px; color:#21286d;"></i><span class="maincolor fbold">${name }</span> 환영합니다.</li> --%>
+			        	
+			        	
+			        	<li><a href="<%=cp%>/shop/login.do">로그인</a></li>
+			        	<!-- <li><a href="https://eshop.parkland.co.kr:444/nhome/member/member_logout.asp">로그아웃</a></li> -->
+			        	
 			        	<li><a href="https://eshop.parkland.co.kr:444/nhome/user/modifyuserinfo.asp">내정보수정</a></li>
-			        
 			        <li><a href="https://eshop.parkland.co.kr:444/nhome/mypage/mypage.asp">MY 파크랜드</a></li>
 			        <li><a href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp">장바구니(<span class="fbold maincolor" id="gTopCartCount">0</span>)</a></li>
 			        <li><a href="https://eshop.parkland.co.kr:444/nhome/customer/faq.asp">고객센터</a></li>
