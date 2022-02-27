@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+	font-size: 20pt;
+}
+
+.c01 {
+	color: blue;
+}
+
+.c02 {
+	color: red;
+}
+
+
+input.box {
+	border: 1px solid; #c8c8c8; width: 84px; height: 19px;
+}
+
+table {
+	font-size: 10pt; font-family: 돋움;
+}
+
+
+

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+/**
+ * custom css 입니다. 추가적인 css 는 여기에 작성을 해주세요.
+ */
+
+ .w860{width:860px;margin-left:auto;margin-right:auto;}
+
+					   
+.cs_menu_box {text-align:center;padding-bottom:80px;}		   
+.cs_menu_box h2{padding-bottom:40px;font-size:38px;font-weight:500;}
+.cs_menu_box .sub_menu{display:flex; justify-content: center; }		 
+.cs_menu_box .sub_menu li{padding:0 50px;font-size:20px;}
+.cs_menu_box .sub_menu li a{display:inline-block;position:relative;color:#888888;line-height:40px;}	 
+.cs_menu_box .sub_menu li .active{color:#222;border-bottom:2px solid #222222;} 
+.cs_menu_box .sub_menu li .active:after{position:absolute;top:4px;right:-8px;content:'';display:inline-block;width:6px; height:6px;background: #ff8300; border-radius:50%;}
+
+
+
+/* 배송지역가능조회 레이어 팝업 */
+.ly_delivery_possible{ position: fixed; top: 0px; left: 0; width: 100%; height: 100%; padding: 0 0 0px 0;
+z-index: 1000; }
+.ly_delivery_possible .ly_bg{ width: 100%; height: 100%; background: rgba(0,0,0,0.5);}
+.ly_delivery_possible .ly_content{background: #fff; position: absolute; left:50%; top:50%; width:600px; margin-left:-300px; -webkit-transform:translateY(-50%);transform:translateY(-50%); padding: 40px 45px 80px 45px; box-sizing:border-box; }
+.ly_delivery_possible .ly_content .close{position:absolute;top:50px;right:45px;border:0;width:25px;height:25px;background:url('../img/common/layer/btn_layer_close.png') no-repeat 50%; font-size:0;}
+.ly_delivery_possible .ly_content h1{padding-bottom:35px;margin-bottom:40px;border-bottom:2px solid #222;font-size:28px;font-weight:500;}
+.ly_delivery_possible .search_area{background: #f8f8f8;padding:50px ;text-align:center;} 
+.ly_delivery_possible .search_area a{display:block;width:220px; margin:0 auto;line-height:60px;background: #222222;color:#fff;border-radius:999px;}
+.ly_delivery_possible .search_area a:before{content:'';display:inline-block;vertical-align:middle;width:18px;height:18px;margin-right:8px;background:url('../img/new/icn_ly_delivery_possible.png') no-repeat 0 0;}
+.ly_delivery_possible .search_area p{margin-top:25px;font-size:16px;color:#666666;} 
+.ly_delivery_possible .btn_area{display: -webkit-box; display: flex; justify-content: center;  }	 
+.ly_delivery_possible .btn_area a{width:200px;margin:0 5px;box-sizing:border-box;border:1px solid #cccccc;text-align:center;line-height:58px;font-size:16px;font-weight:500;}
+.ly_delivery_possible .btn_area .btn_org{border-color:#fd8204;}
+
+
+.relation_goods	{padding:50px 0;text-align:left;}  
+.relation_goods h4{padding-bottom:20px;font-weight:500; font-size:20px;}
+.relation_goods	.goods_product_list{display:flex; justify-content: space-between;flex-wrap: wrap;}							  
+.relation_goods	.goods_product_list > li{width:280px; padding-bottom:30px;}
+.relation_goods	.goods_prd_img img{border-radius: 20px;}
+.relation_goods	.goods_info_list{padding-top:16px;}			  
+.relation_goods	.prd_name{font-size: 16px;}
+.relation_goods	.price_box .c_price{font-size: 18px; font-weight:700;}

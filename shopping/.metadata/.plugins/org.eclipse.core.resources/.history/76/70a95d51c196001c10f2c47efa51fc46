@@ -1,0 +1,19 @@
+package com.shoppingmall.join;
+
+public class JoinDTO {
+	
+	private String id;
+	private String name;
+	private String pwd;
+	private String email1;
+	private String email2;
+	private String addr;
+	private String hp1;
+	private String hp2;
+	private String hp3;
+	private String birth_year;
+	private String birth_month;
+	private String birth_day;
+	
+
+}

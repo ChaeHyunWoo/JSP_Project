@@ -1,0 +1,21 @@
+package com.shoppingmall.join;
+
+import java.sql.Connection;
+
+public class JoinDAO {
+	
+	private Connection conn;
+	
+	
+	public JoinDAO(Connection conn) {
+		this.conn = conn;
+	}
+	
+	
+	//ют╥б
+	public int insertData(JoinDTO dto) {
+		
+		
+	}
+
+}

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>study</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>helloServlet</servlet-name>
+  	<servlet-class>com.svt.Test1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>helloServlet</servlet-name>
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 1. ServletConfig 인터페이스 -->
+  <!-- 해당 Servlet에서만 사용가능 -->
+  <servlet>
+  	<servlet-name>test2Servlet</servlet-name>
+  	<servlet-class>com.svt.Test2</servlet-class>
+  		<init-param>
+  			<param-name>name</param-name>
+  			<param-value>배수지</param-value>
+  		</init-param>
+  		<init-param>
+  			<param-name>age</param-name>
+  			<param-value>27</param-value>
+  		</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>test2Servlet</servlet-name>
+  	<url-pattern>/itwill</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 2. ServletContext인터페이스 -->
+  <!-- 동일 웹 프로그램안에 모든 서블릿 또는 JSP에서 사용가능함-->
+  <context-param>
+  	<param-name>gender</param-name>
+  	<param-value>여자</param-value>
+  </context-param>
+  
+  
+  <servlet>
+  	<servlet-name>test3Servlet</servlet-name>
+  	<servlet-class>com.svt.Test3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>test3Servlet</servlet-name>
+  	<url-pattern>/ss1</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>boardServlet</servlet-name>
+  	<servlet-class>com.board.BoardServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>boardServlet</servlet-name>
+  	<url-pattern>/sboard/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>scoreServlet</servlet-name>
+  	<servlet-class>com.score.ScoreServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>scoreServlet</servlet-name>
+  	<url-pattern>/jumsu/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>memberServlet</servlet-name>
+  	<servlet-class>com.join.MemberServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>memberServlet</servlet-name>
+  	<url-pattern>/join/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 서블릿 파일 업로드 -->
+  <servlet>
+  	<servlet-name>fileTestServlet</servlet-name>
+  	<servlet-class>com.fileTest.FileTestServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>fileTestServlet</servlet-name>
+  	<url-pattern>/file/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 타이머 필터 -->
+  <filter>
+  	<filter-name>timerFilter</filter-name>
+  	<filter-class>com.filter.TimerFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>timerFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+  <!-- 인코딩 필터 -->
+  <filter>
+  	<filter-name>encodingFilter</filter-name>
+  	<filter-class>com.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>encodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+  <!-- 리스너 -->
+  <listener>
+  	<listener-class>com.event.CountManager</listener-class>
+  </listener>
+  
+  <listener>
+  	<listener-class>com.event.ContextListenerTest</listener-class>
+  </listener>
+  
+  
+  
+  <!-- 이미지 게시판 -->
+   <servlet>
+ 	<servlet-name>imageServlet</servlet-name>
+  	<servlet-class>com.imageTest.ImageTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>imageServlet</servlet-name>
+  	<url-pattern>/image/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 쇼핑몰 프로젝트(회원가입) -->
+  <servlet>
+  	<servlet-name>shoppingServlet</servlet-name>
+  	<servlet-class>com.shoppingmall.ShoppingServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>fileTestServlet</servlet-name>
+  	<url-pattern>/file/*</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
+
+
