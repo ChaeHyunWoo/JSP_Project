@@ -8,7 +8,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import com.join.CustomInfo;
 import com.util.DBConn;
 
 public class ShoppingServlet extends HttpServlet{
@@ -99,15 +101,61 @@ public class ShoppingServlet extends HttpServlet{
 		
 			JoinDTO dto = dao.getReadData(id);
 			
+			System.out.println(id);
+			System.out.println(pwd);
 			System.out.println(dto);
-			url = "/shoppingmall/join/join.jsp";
-				
-			forward(req, resp, url);
-				
-				
-			}
 			
-		}
+			//dto==null 일 경우 아이디가 없음
+			//세션에 있는  pwd가  DB의 pwd와 일치하지 않는 경우
+			if(dto==null || (!dto.getPwd().equals(pwd))) {
+				
+				req.setAttribute("message", "아이디 또는 패스워드를 정확히 입력하세요!");
+				url = "/shoppingmall/login/login.jsp";
+				
+				forward(req, resp, url);
+				
+				return;//로그인 실패 시 더이상의 소스코드가 실행되지 않도록 return작성
+			}
+				
+			//서블릿에서 세션만드는 방법
+			HttpSession session = req.getSession();
+			
+			//customInfo에 담을 것이니 객체 생성
+			CustomInfo info = new CustomInfo();
+			
+			info.setUserId(dto.getId());
+			info.setUserName(dto.getName());
+			
+			//세션에 로그인 정보 저장
+			session.setAttribute("customInfo", info);
+
+			//저장했으니 메인화면으로 가기
+			url = cp + "/shop/main.do";
+			//세션을 변경시키면 리다이렉트 해야 한다,
+			resp.sendRedirect(url);
+				
+		}else if(uri.indexOf("main.do")!= -1) {
+			
+			//로그인 시 포워드 페이지
+			
+			url = "/shoppingmall/main/main.jsp";
+			forward(req, resp, url);
+			
+			
+		}else if(uri.indexOf("logout.do")!= -1) {
+			
+			HttpSession session = req.getSession();
+			
+			session.removeAttribute("customInfo"); //세션에 있는 변수명 삭제
+			session.invalidate();//세션에 있는 데이터 삭제
+			
+			url = cp + "/shop/main.do";
+			resp.sendRedirect(url);
 		
 		}
+		
+	}
+			
+}
+		
 	
