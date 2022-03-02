@@ -192,7 +192,7 @@ return false;
   	<div id="container">
 		<!-- navi -->
 	    <div class="navi">
-			<div class="mlogo"><a href="https://eshop.parkland.co.kr:444/nhome/"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/logo.png" alt="parkland"></a></div>
+			<div class="mlogo"><a href="<%=cp%>/shop/main.do"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/logo.png" alt="parkland"></a></div>
 			<div class="search">
 		        <ul>
 		          <li>
@@ -376,11 +376,11 @@ return false;
 	      		<!-- top menu -->
 	      		<div id="dvTopmeu" class="t_util">
 			      <ul>
-			        	<li><a href="<%=cp%>/shop/join.do">회원가입<img src="<%=cp %>/shoppingmall/login/login_files/icon_newwin.png" alt=""></a></li>
+			        	<li><a href="<%=cp%>/shop/join/join.do">회원가입<img src="<%=cp %>/shoppingmall/login/login_files/icon_newwin.png" alt=""></a></li>
 			        	<%-- <li class="mem"><i class="fa fa-user mr5" style="font-size:14px; color:#21286d;"></i><span class="maincolor fbold">${name }</span> 환영합니다.</li> --%>
 			        	
 			        	
-			        	<li><a href="<%=cp%>/shop/login.do">로그인</a></li>
+			        	<li><a href="<%=cp%>/shop/join/login.do">로그인</a></li>
 			        	<!-- <li><a href="https://eshop.parkland.co.kr:444/nhome/member/member_logout.asp">로그아웃</a></li> -->
 			        	
 			        	<li><a href="https://eshop.parkland.co.kr:444/nhome/user/modifyuserinfo.asp">내정보수정</a></li>
@@ -403,6 +403,34 @@ return false;
 
 	      		<!--  content_area -->
 	      		<div class="content_area">
+	      		
+<!-- 아이디 검증 함수 -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>	      		
+<script type="text/javascript">
+
+	function registerCheckFunction() {
+		
+		var id = $('id').val();
+		$.ajax({
+			type : 'POST',
+			url : './UserRegisterCheckServlet',
+			data : {id : id},
+			sucess: function(result) {
+				if(result == 1) {
+					$('#checkMessage').html('사용할 수 있는 아이디입니다.');
+					$('#checkType').attr('class', 'modal-content pannel-success');
+				}
+				else {
+					$('#checkMessage').html('사용할 수 없는 아이디입니다.');
+					$('#checkType').attr('class', 'modal-content pannel-warning');
+				}
+				$('checkModal').modal("show");
+			}
+		})
+		
+	}
+
+</script> -->
 
 	
 		<!-- 회원가입 -->
@@ -422,6 +450,9 @@ return false;
 						<td>
 						<input type="text" name="id" id="id" class="type01">
 							<font color="red">5~10자 사이로 입력하셔야 합니다.</font>
+							<!-- <button onclick="registerCheckFunction();" type="button">중복체크</button>
+							<input type="button" id="btnIdCheck" onclick="registerCheckFunction();" value="중복확인  " style="background-color: #d5d5d5; color: black;">
+							<a href="javascript:idpwCheck();" class="btn-type btn5 blue mr5">확인</a>  -->
 						</td>	
 					</tr>
 					<tr>
@@ -539,7 +570,7 @@ return false;
 					<tr>
 						<th>생년월일</th>
 						<td class="txt_color">
-							<input type="radio" name="birth_tf" value="양력" checked="" id="bir_check01"><label for="bir_check01">양력</label> 
+							<input type="radio" name="birth_tf" value="양력" id="bir_check01"><label for="bir_check01">양력</label> 
 							<input type="radio" name="birth_tf" value="음력" id="bir_check02"><label for="bir_check02">음력</label>
 							<select name="birth_year" id="birth_year" class="type01">
 							<option value="1922">1922</option><option value="1923">1923</option><option value="1924">1924</option><option value="1925">1925</option><option value="1926">1926</option><option value="1927">1927</option><option value="1928">1928</option><option value="1929">1929</option><option value="1930">1930</option><option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option><option value="1936">1936</option><option value="1937">1937</option><option value="1938">1938</option><option value="1939">1939</option><option value="1940">1940</option><option value="1941">1941</option><option value="1942">1942</option><option value="1943">1943</option><option value="1944">1944</option><option value="1945">1945</option><option value="1946">1946</option><option value="1947">1947</option><option value="1948">1948</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997" selected="">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option>
@@ -580,7 +611,7 @@ return false;
 						<th>메일서비스</th>
 						<td>
 							<input type="radio" name="service_email" value="수신" id="mail_check"> <label for="mail_check">수신</label>  
-							<input type="radio" name="service_email" value="거부" id="mail_check02" checked=""> <label for="mail_check02">거부</label> 
+							<input type="radio" name="service_email" value="거부" id="mail_check02"> <label for="mail_check02">거부</label> 
 
 							<span class="sub_txt">(이벤트 행사 및 각종 정보를 이메일로 받아보실 수 있습니다.)</span>
 						</td>
@@ -589,7 +620,7 @@ return false;
 						<th>SMS서비스</th>
 						<td>
 							<input type="radio" name="service_sms" value="수신" id="sms_check"> <label for="sms_check">수신</label>  
-							<input type="radio" name="service_sms" value="거부" id="sms_check02" checked=""> <label for="sms_check02">거부</label> 
+							<input type="radio" name="service_sms" value="거부" id="sms_check02"> <label for="sms_check02">거부</label> 
 							<span class="sub_txt">(이벤트 행사 및 각종 정보를 SMS로 안내해 드립니다.)</span>
 						</td>
 					</tr>
@@ -605,7 +636,7 @@ return false;
 						<th>TM서비스</th>
 						<td>
 							<input type="radio" name="service_tm" value="수신" id="tm_check"> <label for="tm_check">수신</label>  
-							<input type="radio" name="service_tm" value="거부" id="tm_check02" checked=""> <label for="tm_check02">거부</label> 
+							<input type="radio" name="service_tm" value="거부" id="tm_check02"> <label for="tm_check02">거부</label> 
 							<span class="sub_txt"></span>
 						</td>
 					</tr>
@@ -1112,7 +1143,7 @@ return false;
 		
 		alert("회원가입 성공!!!!!")
 		
-		f.action="<%=cp%>/shop/join_ok.do";
+		f.action="<%=cp%>/shop/join/join_ok.do";
 		f.submit();
 		
 	}
