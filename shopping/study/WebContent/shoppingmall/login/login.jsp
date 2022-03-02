@@ -1,7 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
+	
+
 %>
 <!DOCTYPE html>
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=EUC-KR"><script type="text/javascript" async="" src="<%=cp %>/shoppingmall/login/login_files/analytics.js.다운로드"></script><script async="" src="<%=cp %>/shoppingmall/login/파크랜드 공식쇼핑몰_login_files/analytics.js.다운로드"></script><script src="<%=cp %>/shoppingmall/login/파크랜드 공식쇼핑몰_login_files/AceCounter_AW.js.다운로드"></script><script type="text/javascript" async="" src="<%=cp %>/shoppingmall/login/파크랜드 공식쇼핑몰_login_files/js"></script><script type="text/javascript" async="" src="<%=cp %>/shoppingmall/login/파크랜드 공식쇼핑몰_login_files/analytics.js.다운로드"></script><script async="" src="<%=cp %>/shoppingmall/login/파크랜드 공식쇼핑몰_login_files/fbevents.js.다운로드"></script><script type="text/javascript">
@@ -275,7 +278,7 @@ return false;
   	<div id="container">
 		<!-- navi -->
 	    <div class="navi">
-			<div class="mlogo"><a href="https://eshop.parkland.co.kr:444/nhome/"><img src="<%=cp %>/shoppingmall/login/login_files/logo.png" alt="parkland"></a></div>
+			<div class="mlogo"><a href="<%=cp%>/shop/main.do"><img src="<%=cp %>/shoppingmall/login/login_files/logo.png" alt="parkland"></a></div>
 			<div class="search">
 		        <ul>
 		          <li>
@@ -459,7 +462,7 @@ return false;
 	      		<!-- top menu -->
 	      		<div id="dvTopmeu" class="t_util">
 			      <ul>
-			        	<li><a href="<%=cp%>/shop/join.do">회원가입<img src="<%=cp %>/shoppingmall/login/login_files/icon_newwin.png" alt=""></a></li>
+			        	<li><a href="<%=cp%>/shop/join/join.do">회원가입<img src="<%=cp %>/shoppingmall/login/login_files/icon_newwin.png" alt=""></a></li>
 			        	
 			        	
 			        	
@@ -508,7 +511,8 @@ return false;
 			return;
 		}
 		
-		f.action = "<%=cp%>/shop/login_ok.do";
+		
+		f.action = "<%=cp%>/shop/join/login_ok.do";
 		f.submit();
 	}
 
@@ -537,7 +541,8 @@ if (mobile) {
 </script>
 <!--// pc : mobile e //-->
 
-		<div class="sub_vis04">
+		<div align="center" class="sub_vis04">
+		<br/><br/><br/><br/><br/><br/>
 			<h1>로그인</h1>
        	</div>
 
@@ -605,7 +610,7 @@ if (mobile) {
 							<div>
 								<p>▶  아이디가 없으시면 회원가입을 해주세요.</p>
 								<p class="btn_type_id">
-									<a href="<%=cp%>/shop/join.do">회원가입</a>
+									<a href="<%=cp%>/shop/join/join.do">회원가입</a>
 									<%-- <a href="'<%=cp%>/shop/join.do';" target="_blank">회원가입</a> --%>
 									<%-- <input type="button" value=" 회원가입 " class="btm2" 
 									onclick="javascript:location.href='<%=cp%>/shop/join.do';" > --%>
