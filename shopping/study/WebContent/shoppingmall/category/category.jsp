@@ -9,7 +9,7 @@
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>마켓컬리</title>
+<title>헬로네이처</title>
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=1300">
@@ -63,9 +63,8 @@
 		<!-- navi -->
 		<div class="navi">
 			<div class="mlogo">
-				<a href="https://eshop.parkland.co.kr:444/nhome/"><img
-					src="<%=cp%>/shoppingmall/category/category_files/logo_x2.png"
-					alt="parkland"></a>
+				<a href="<%=cp%>/shop/main/main.do"><img
+					src="<%=cp%>/shoppingmall/main/main_files/logo2.JPG" alt="parkland"></a>
 			</div>
 			<div class="search">
 				<ul>
@@ -92,6 +91,7 @@
 				<ul>
 					<li class="l_normal"><a href="#"><span>Brands</span></a>
 						<ul class="none">
+							<li><a href="${listUrl}">ALL</a></li>
 							<c:forEach var="dto" items="${brandLists}">
 								<li><a href="${listUrl}?brandNum=${dto.brandNum}">${dto.brandName }</a></li>
 							</c:forEach>
@@ -161,7 +161,7 @@
 			</div>
 			<div class="cscenter">
 				<div class="cstitle">Cs center</div>
-				<h2>1644-0582</h2>
+				<h2>1644-4339</h2>
 				<p>
 					평일 AM 10:00 ~ PM 18:00<br> 토,일요일/공휴일 휴무
 				</p>
@@ -204,55 +204,36 @@
 			<!-- dvTopmeu -->
 			<div id="dvTopmeu" class="t_util">
 				<ul>
-					<%-- <li><a href="javascript:gLogin();">로그인</a></li>
-					<li><a
-						href="http://members.parkland.co.kr/my_parkland/join.asp"
-						target="_blank">회원가입<img
-							src="<%=cp%>/shoppingmall/category/category_files/icon_newwin.png"
-							alt=""></a></li> --%>
-							
-							
-					<!-- 현우 -->
 					<c:choose>
 						<c:when test="${empty sessionScope.customInfo.userId }">
 							<li><a href="<%=cp%>/shop/join/login.do">로그인</a></li>
 						</c:when>
-						
 						<c:otherwise>
-							<li>${sessionScope.customInfo.userName }님 환영합니다</li>
+							<li>${sessionScope.customInfo.userName }님환영합니다</li>
 						</c:otherwise>
 					</c:choose>
-					
 					<c:choose>
 						<c:when test="${empty sessionScope.customInfo.userId }">
 							<li><a href="<%=cp%>/shop/join/join.do">회원가입</a></li>
 						</c:when>
-						
 						<c:otherwise>
-							<li><a href="<%=cp%>/shop/join/logout.do">로그아웃
-								<img src="<%=cp%>/shoppingmall/main/main_files/icon_newwin.png"
-							alt=""></a></li>
+							<li><a href="<%=cp%>/shop/join/logout.do">로그아웃 <img
+									src="<%=cp%>/shoppingmall/main/main_files/icon_newwin.png"
+									alt=""></a></li>
+							<li><a href="<%=cp%>/shop/join/update.do">내정보수정</a></li>
+							<li><a href="<%=cp%>/shop/product/productSave.do">HELLO
+									Nature</a></li>
 						</c:otherwise>
-					</c:choose>				
-							
-							
-							
-							
-					<li><a
-						href="https://eshop.parkland.co.kr:444/nhome/member/nomember_login.asp">비회원주문조회</a></li>
-					<li><a
-						href="https://eshop.parkland.co.kr:444/nhome/mypage/mypage.asp">MY
-							파크랜드</a></li>
+					</c:choose>
 					<li><a
 						href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp">장바구니(<span
-							class="fbold maincolor" id="gTopCartCount">1</span>)
+							class="fbold maincolor" id="gTopCartCount">0</span>)
 					</a></li>
-					<li><a
-						href="https://eshop.parkland.co.kr:444/nhome/customer/faq.asp">고객센터</a></li>
+					<li><a href="<%=cp%>/shop/notice/notice.do">고객센터</a></li>
 					<li><a
 						href="https://eshop.parkland.co.kr:444/nhome/sitemap/sitemap.asp">Sitemap</a></li>
 					<!--li><a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2006335008030200590&pageUnit=10&searchCnd=wrkr_no&searchKrwd=6218105081&pageIndex=1">사업자정보확인</a-->
-					<li>service@parkland.co.kr</li>
+					<li>help@hellonature.co.kr</li>
 					<li class="sns"><a href="https://www.facebook.com/SuitHolic"
 						target="_blank"><img
 							src="<%=cp%>/shoppingmall/category/category_files/t_fbook.png"
@@ -275,38 +256,38 @@
 						<div class="owl-stage-outer">
 							<div class="owl-stage"
 								style="transform: translate3d(-2000px, 0px, 0px); transition: all 0s ease 0s; width: 5000px;">
-								<div class="owl-item cloned" style="width: 1000px;">
+								<div class="owl-item active" style="width: 1000px;">
 									<div class="item">
 										<img
-											src="<%=cp%>/shoppingmall/category/category_files/intro_main2.jpg"
+											src="<%=cp%>/shoppingmall/category/category_files/20200722160111239.jpg"
 											alt="">
 									</div>
 								</div>
 								<div class="owl-item cloned" style="width: 1000px;">
 									<div class="item">
 										<img
-											src="<%=cp%>/shoppingmall/category/category_files/intro_main2.jpg"
+											src="<%=cp%>/shoppingmall/category/category_files/safa.jpg"
 											alt="">
 									</div>
 								</div>
 								<div class="owl-item active" style="width: 1000px;">
 									<div class="item">
 										<img
-											src="<%=cp%>/shoppingmall/category/category_files/intro_main2.jpg"
+											src="<%=cp%>/shoppingmall/category/category_files/safa.jpg"
 											alt="">
 									</div>
 								</div>
 								<div class="owl-item cloned" style="width: 1000px;">
 									<div class="item">
 										<img
-											src="<%=cp%>/shoppingmall/category/category_files/intro_main2.jpg"
+											src="<%=cp%>/shoppingmall/category/category_files/safa.jpg"
 											alt="">
 									</div>
 								</div>
 								<div class="owl-item cloned" style="width: 1000px;">
 									<div class="item">
 										<img
-											src="<%=cp%>/shoppingmall/category/category_files/intro_main2.jpg"
+											src="<%=cp%>/shoppingmall/category/category_files/safa.jpg"
 											alt="">
 									</div>
 								</div>
@@ -326,16 +307,31 @@
 				<!-- // brandtop -->
 				<!-- s_location -->
 				<div class="s_location">
-					<a href="https://eshop.parkland.co.kr:444/"><img
+					<a href="<%=cp%>/shop/main/main.do"><img
 						src="<%=cp%>/shoppingmall/category/category_files/icon_home_g.png"
 						border="0"></a><img
 						src="<%=cp%>/shoppingmall/category/category_files/icon_larr.png"
-						border="0">${lists[0].brandName }
+						border="0">
+					<c:if test="${null eq ALL}">
+						<a
+							href="<%=cp%>/shop/category/category.do?brandNum=${lists[0].brandNum}">${lists[0].brandName}</a>
+					</c:if>
+					<c:if test="${null ne ALL}">
+						<a href="<%=cp%>/shop/category/category.do">ALL</a>
+					</c:if>
 				</div>
 				<!-- // s_location -->
 				<!-- brand_tit -->
 				<div class="brand_tit">
-					<p>${lists[0].brandName }&nbsp;<span>${listsSize} items</span>
+					<p>
+						<c:if test="${null eq ALL}">
+							<a
+								href="<%=cp%>/shop/category/category.do?brandNum=${lists[0].brandNum}">${lists[0].brandName}</a>
+						</c:if>
+						<c:if test="${null ne ALL}">
+							<a href="<%=cp%>/shop/category/category.do">ALL</a>
+						</c:if>
+						<span>${dataCount} items</span>
 					</p>
 				</div>
 				<!-- // brand_tit -->
@@ -346,7 +342,14 @@
 						<c:forEach var="l" items="${lists}">
 							<c:if test="${flag==false}">
 								<c:if test="${tl.typeName==l.typeName}">
-									<li><a>${tl.typeName }</a></li>
+									<c:if test="${null eq ALL}">
+										<li><a
+											href="<%=cp%>/shop/category/category.do?brandNum=${l.brandNum}&typeNum=${l.typeNum}">${l.typeName }</a></li>
+									</c:if>
+									<c:if test="${null ne ALL}">
+										<li><a
+											href="<%=cp%>/shop/category/category.do?typeNum=${l.typeNum}">${l.typeName }</a></li>
+									</c:if>
 									<c:set var="flag" value="true" />
 								</c:if>
 							</c:if>
@@ -398,7 +401,7 @@
 						class="owl-carousel owl-theme owl-loaded owl-drag">
 						<c:forEach var="dto" items="${lists}">
 							<div class="item" style="line-height: 100%;">
-								<a href="${detailUrl}?num=${dto.num}&pageNum=${pageNum}"> <img
+								<a href="${imagePath}/${dto.saveFileName}"> <img
 									src="${imagePath}/${dto.saveFileName}" class="imgListToggle"
 									style="vertical-align: middle;">
 								</a>
@@ -608,7 +611,7 @@
 							href="https://eshop.parkland.co.kr:444/nhome/customer/faq.asp">FAQ</a></li>
 						<li><a
 							href="https://eshop.parkland.co.kr:444/nhome/sitemap/sitemap.asp">Sitemap</a></li>
-						<li>service@parkland.co.kr</li>
+						<li>help@hellonature.co.kr</li>
 						<li><a
 							href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2006335008030200590&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=6218105081&amp;pageIndex=1">사업자정보확인</a></li>
 					</div>
@@ -617,13 +620,23 @@
 				<!-- footer -->
 				<div class="footer">
 					<div class="f_left">
-						<address>
-							파크랜드공식인터넷쇼핑몰(주)파크랜드/대표이사:곽국민,박명규/부산광역시 금정구 서2동 219-2번지(우609-722)<br>
-							사업자등록번호:621-81-05081/통신판매업신고번호:2006-00590 <br> CS CENTER
-							1644-0582 /FAX:051-527-5521
-						</address>
-						<p>Copyright(c) 2006-2022 파크랜드 온라인공식쇼핑몰 (주)파크랜드 All Rights
-							Reserved.</p>
+						<ul>
+							<li>대표이사 : 오정후</li>
+							<li>법인명(단체명): (주) 헬로네이처</li>
+							<li>사업자 등록번호 : <a
+								href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1058766628&amp;apv_perm_no="
+								target="_self">105-87-66628</a></li>
+							<li>통신판매 신고번호 : 제2012 서울강남 02931호</li>
+							<li>개인정보 보호책임자 : 박종화</li>
+							<li>입점문의 : <a
+								href="https://partner.hellonature.co.kr/partner/ui/inquiry.html"
+								target="_blank" rel="noopener">입점문의하기</a></li>
+							<li>제휴문의 : mkt@hellonature.co.kr</li>
+							<li>채용문의 : recruit@hellonature.co.kr</li>
+							<li>기타문의 : help@hellonature.co.kr</li>
+							<li>고객센터 : 1644-4339</li>
+							<li>주소 : 서울특별시 강남구 봉은사로 16길 33(역삼동) 우 06127</li>
+						</ul>
 					</div>
 					<div class="f_right">
 						<ul>
@@ -632,7 +645,7 @@
 								alt=""></li>
 							<li>
 								<p>
-									파크랜드몰은(주)이니시스의<br> 구매안전 에스크로서비스를 제공합니다.
+									헬로네이처는 (주)이니시스의<br> 구매안전 에스크로서비스를 제공합니다.
 								</p>
 								<p>
 									<a
