@@ -1,4 +1,4 @@
-package com.shoppingmall;
+package com.shoppingmall.join;
 
 public class JoinDTO {
 	
@@ -7,7 +7,7 @@ public class JoinDTO {
 	private String pwd;
 	private String email1;
 	private String email2;
-	private String addr;
+	private String roadFullAddr;
 	private String hp1;
 	private String hp2;
 	private String hp3;
@@ -52,11 +52,11 @@ public class JoinDTO {
 	public void setEmail2(String email2) {
 		this.email2 = email2;
 	}
-	public String getAddr() {
-		return addr;
+	public String getRoadFullAddr() {
+		return roadFullAddr;
 	}
-	public void setAddr(String addr) {
-		this.addr = addr;
+	public void setRoadFullAddr(String roadFullAddr) {
+		this.roadFullAddr = roadFullAddr;
 	}
 	public String getHp1() {
 		return hp1;
@@ -124,6 +124,10 @@ public class JoinDTO {
 	public void setService_tm(String service_tm) {
 		this.service_tm = service_tm;
 	}
+	
+	
+	
+	
 	
 	
 	
