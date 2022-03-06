@@ -7,7 +7,7 @@ String cp = request.getContextPath(); //cp는 ContextPath의 약자
 %>
 <!DOCTYPE html>
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-	<title>황태랜드 회원가입</title>
+	<title>헬로네이처</title>
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=1300">
@@ -191,185 +191,145 @@ return false;
   	<!-- container -->
   	<div id="container">
 		<!-- navi -->
-	    <div class="navi">
-			<div class="mlogo"><a href="<%=cp%>/shop/main.do"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/logo.png" alt="parkland"></a></div>
-			<div class="search">
-		        <ul>
-		          <li>
-		         	<form id="frmGSearch" name="frmGSearch" method="post" onsubmit="return m_fnGSearchGood_submit();" action="https://eshop.parkland.co.kr:444/nhome/shop/search_result.asp">
-		            <input id="gKeyword" name="gKeyword" type="text" title="통합검색" class="input01" accesskey="S" onclick="m_fnEnterKey(this, fnGSearchGood);" placeholder="검색어를 입력해주세요">
-		            <input type="image" class="input_btn" src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/btn_search.png" alt="Search">
-					<!-- 해당시스템의 인코딩타입이 EUC-KR일경우에만 추가 START-->
-					<input type="hidden" id="encodingType" name="encodingType" value="EUC-KR">
-					<!-- 해당시스템의 인코딩타입이 EUC-KR일경우에만 추가 END-->
-		            </form>
-		           </li>
-		        </ul>
-	      	</div>
-			<script language="javascript">
-				function fnToggle(menu)		{
-		      		var obj = document.getElementById(menu);
-		      		if(obj.getAttribute("class") == obj.getAttribute("class_normal")) {
-		      			obj.setAttribute("class", obj.getAttribute("class_active"));
-		      			$("#" + menu + "_img").attr("src", "/nhome/img/icon_minus.png");
-		      		}
-		      		else	{
-		      			obj.setAttribute("class", obj.getAttribute("class_normal"));
-		      			$("#" + menu + "_img").attr("src", "/nhome/img/icon_plus.png");
-		      		}
-		      }
-	      	</script>
-
-	      	<div id="leftside-navigation">
-		      
-		        <ul>
-		          <li id="menu1" class="sub-menu" class_normal="sub-menu" class_active="sub-menu active"> <a href="javascript:fnToggle(&#39;menu1&#39;);"><span>Men <img id="menu1_img" src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/icon_plus.png" alt=""></span></a>
-		            <ul>
-		            
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=2&amp;gtype=2">ALL</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=12&amp;gtype=2">정장/수트</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=13&amp;gtype=2">자켓</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=14&amp;gtype=2">점퍼</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=15&amp;gtype=2">코트</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=16&amp;gtype=2">드레스셔츠</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=17&amp;gtype=2">캐주얼셔츠/남방셔츠</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=18&amp;gtype=2">티셔츠</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=19&amp;gtype=2">니트</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=28&amp;gtype=2">베스트</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=20&amp;gtype=2">정장바지</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=21&amp;gtype=2">일반바지</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=22&amp;gtype=2">액세서리</a> </li>
-		            	
-		            </ul>
-		          </li>
-		          <li id="menu2" class="sub-menu" class_normal="sub-menu" class_active="sub-menu active"> <a href="javascript:fnToggle(&#39;menu2&#39;);"><span>WoMen <img id="menu2_img" src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/icon_plus.png" alt=""></span></a>
-		            <ul>
-		              
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=1&amp;gtype=1">ALL</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=3&amp;gtype=1">셔츠/블라우스</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=4&amp;gtype=1">티셔츠</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=5&amp;gtype=1">니트</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=29&amp;gtype=1">베스트</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=6&amp;gtype=1">원피스/스커트</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=7&amp;gtype=1">자켓</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=8&amp;gtype=1">코트</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=9&amp;gtype=1">점퍼</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=10&amp;gtype=1">바지</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=23&amp;gtype=1">액세서리</a> </li>
-		            	
-		            </ul>
-		          </li>
-		          <li class="l_normal"> <a href="https://eshop.parkland.co.kr:444/nhome/user/modifyuserinfo.asp#"><span>Brands</span></a>
-		            <ul class="none">
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1219">Parkland</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1204">J.Hass</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1229">Cabrini</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1203">Prelin</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1220">PL Sports</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1230">mp.code</a></li>
-			          <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1231">FITZ</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1234">PARKON</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1235">COMODO</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1210">Peri Jenson</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1228">Chester Barrie</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1232">VICOMTE A</a></li>
-  		              <!--<li><a href="/nhome/shop/brandmain.asp?src=image&kw=000124&brandId=1233">NU PARCC</a></li>-->
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1222">N.DIFF</a></li>
-
-
-		              <!--li><a href="http://eshop.austinreed.co.kr/main/main.asp" target="_blank">Austin Reed<img src="/nhome/img/icon_newwin.png" alt="" /></a></li>
-		              <li><a href="http://www.vostro.kr" target="_blank">Vostro<img src="/nhome/img/icon_newwin.png" alt="" /></a></li-->
-
-		            </ul>
-		          </li>
-		          <li class="l_normal"> <a href="https://eshop.parkland.co.kr:444/nhome/user/modifyuserinfo.asp#"><span>Special</span></a>
-		            <ul class="none">
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/eventlist.asp">기획전 &amp; 이벤트</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/typemain.asp?nSort=1">NEW ITEMS</a></li>
-
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=82">BIG SIZE</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId2=401">OUTLET</a></li>
-		            </ul>
-		          </li>
-				<!--li><a href="/nhome/shop/eventmain.asp?eventId=58">MD's PICK</a></li-->
-			  <!--li><a href="/nhome/shop/eventmain2.asp?eventId2=175">Best of Best</a></li-->
-                 <!--li><a href="/nhome/shop/brandmain.asp?brandId=1222">N.Diff</a></li-->
-			     <!--li class="l_normal"> <a href="#"><span>WEB ZINE</span></a>
-		            <ul class="none">
-		              <li><a href="/nhome/webzine/webzine_list.asp">STYLE TELLER</a></li>
-		            </ul>
-		          </li-->
-
-
-
-		        </ul>
-
+		<div class="navi">
+			<div class="mlogo">
+				<a href="<%=cp%>/shop/main/main.do"><img
+					src="<%=cp%>/shoppingmall/main/main_files/logo2.JPG"
+					alt="parkland"></a>
 			</div>
-			<!-- //left side navigation -->
-		      <!-- leftmenu
-				<script>
-				$("#leftside-navigation .sub-menu > a").click(function(e) {
-				  $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
-				  e.stopPropagation()
-				})
-				</script> -->
-		    <!-- 20171011 add -->
-              <div class="service_b">
-                <ul>
-                  <li><p><a href="https://members.parkland.co.kr/my_parkland/join.asp" target="_blank"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/sr_icon_1.png" alt=""></a></p></li>
-                  <li><p><a href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/sr_icon_2.png" alt=""></a></p></li>
-                </ul>
-                <ul>
-                  <!--<li><p><a href="/nhome/styling/event_1011.asp"><img src="/nhome/img/sr_icon03.png" alt="" /></a></p></li>-->
-                  <li><p><a href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/sr_icon_3.png" alt=""></a></p></li>
-                  <li><p><a href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=50"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/sr_icon_4.png" alt=""></a></p></li>
-                </ul>
-                <!--<ul>
-                  <li><p><a href="/nhome/styling/event_1011.asp"><img src="/nhome/img/sr_icon05.png" alt="" /></a></p></li>
-                </ul>-->
-                <ul>
-                  <li><p><a href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp#p01"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/sr_icon_5.png" alt=""></a></p></li>
-                  <li><p><a href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp#p01"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/sr_icon_6.png" alt=""></a></p></li>
-                </ul>
-              </div>
-<!-- // 20171011 add -->
-		      <!-- cscenter -->
-		      <div class="cscenter">
-		        <div class="cstitle">Cs center</div>
-		        <h2>1644-0582</h2>
-		        <p>평일 AM 10:00 ~ PM 18:00<br> 토,일요일/공휴일 휴무</p>
-		      </div>
-		      <div class="cs_icon">
-		        <li><a href="https://eshop.parkland.co.kr:444/nhome/customer/notice.asp" class="roll"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/cs_icon01.png" alt=""><img class="over" src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/cs_icon01-1.png" alt=""></a></li>
-		        <li><a href="https://eshop.parkland.co.kr:444/nhome/customer/formnew.asp" class="roll"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/cs_icon02.png" alt=""><img class="over" src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/cs_icon02-1.png" alt=""></a></li>
-		        <li><a href="https://eshop.parkland.co.kr:444/nhome/mypage/mypage.asp" class="roll"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/cs_icon03.png" alt=""><img class="over" src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/cs_icon03-1.png" alt=""></a></li>
-		        <li><a href="https://eshop.parkland.co.kr:444/nhome/mypage/myorder.asp" class="roll"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/cs_icon04.png" alt=""><img class="over" src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/cs_icon04-1.png" alt=""></a></li>
-		      </div>
-		      <!-- // cscenter -->
-		    </div>
-		    <!-- // navi -->
+			<div class="search">
+				<ul>
+					<li>
+						<form id="frmGSearch" name="frmGSearch" method="post"
+							onsubmit="return m_fnGSearchGood_submit();"
+							action="https://eshop.parkland.co.kr:444/nhome/shop/search_result.asp">
+							<input id="gKeyword" name="gKeyword" type="text" title="통합검색"
+								class="input01" accesskey="S"
+								onclick="m_fnEnterKey(this, fnGSearchGood);"
+								placeholder="검색어를 입력해주세요"> <input type="image"
+								class="input_btn"
+								src="<%=cp%>/shoppingmall/category/category_files/btn_search.png"
+								alt="Search">
+							<!-- 해당시스템의 인코딩타입이 EUC-KR일경우에만 추가 START-->
+							<input type="hidden" id="encodingType" name="encodingType"
+								value="EUC-KR">
+							<!-- 해당시스템의 인코딩타입이 EUC-KR일경우에만 추가 END-->
+						</form>
+					</li>
+				</ul>
+			</div>
+			<div id="leftside-navigation">
+				<ul>
+					<li class="l_normal"><a href="#"><span>Brands</span></a>
+						<ul class="none">
+							<li><a href="${listUrl}">ALL</a></li>
+							<c:forEach var="dto" items="${brandLists}">
+								<li><a href="${listUrl}?brandNum=${dto.brandNum}">${dto.brandName }</a></li>
+							</c:forEach>
+						</ul></li>
+					<li class="l_normal"><a
+						href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1219#"><span>Special</span></a>
+						<ul class="none">
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventlist.asp">기획전
+									&amp; 이벤트</a></li>
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/typemain.asp?nSort=1">NEW
+									ITEMS</a></li>
+
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=82">BIG
+									SIZE</a></li>
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId2=401">OUTLET</a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<div class="service_b">
+				<ul>
+					<li><p>
+							<a href="https://members.parkland.co.kr/my_parkland/join.asp"
+								target="_blank"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_1.png"
+								alt=""></a>
+						</p></li>
+					<li><p>
+							<a
+								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_2.png"
+								alt=""></a>
+						</p></li>
+				</ul>
+				<ul>
+					<!--<li><p><a href="/nhome/styling/event_1011.asp"><img src="/nhome/img/sr_icon03.png" alt="" /></a></p></li>-->
+					<li><p>
+							<a
+								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_3.png"
+								alt=""></a>
+						</p></li>
+					<li><p>
+							<a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=50"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_4.png"
+								alt=""></a>
+						</p></li>
+				</ul>
+				<ul>
+					<li><p>
+							<a
+								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp#p01"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_5.png"
+								alt=""></a>
+						</p></li>
+					<li><p>
+							<a
+								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp#p01"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_6.png"
+								alt=""></a>
+						</p></li>
+				</ul>
+			</div>
+			<div class="cscenter">
+				<div class="cstitle">Cs center</div>
+				<h2>1644-0582</h2>
+				<p>
+					평일 AM 10:00 ~ PM 18:00<br> 토,일요일/공휴일 휴무
+				</p>
+			</div>
+			<div class="cs_icon">
+				<li><a
+					href="https://eshop.parkland.co.kr:444/nhome/customer/notice.asp"
+					class="roll"><img
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon01.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon01-1.png"
+						alt=""></a></li>
+				<li><a
+					href="https://eshop.parkland.co.kr:444/nhome/customer/formnew.asp"
+					class="roll"><img
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon02.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon02-1.png"
+						alt=""></a></li>
+				<li><a
+					href="https://eshop.parkland.co.kr:444/nhome/mypage/mypage.asp"
+					class="roll"><img
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon03.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon03-1.png"
+						alt=""></a></li>
+				<li><a
+					href="https://eshop.parkland.co.kr:444/nhome/mypage/myorder.asp"
+					class="roll"><img
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon04.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon04-1.png"
+						alt=""></a></li>
+			</div>
+			<!-- // cscenter -->
+		</div>
+		<!-- // navi -->
 
 			<!-- contents -->
 	    	<div class="contents">
@@ -383,10 +343,9 @@ return false;
 			        	<li><a href="<%=cp%>/shop/join/login.do">로그인</a></li>
 			        	<!-- <li><a href="https://eshop.parkland.co.kr:444/nhome/member/member_logout.asp">로그아웃</a></li> -->
 			        	
-			        	<li><a href="https://eshop.parkland.co.kr:444/nhome/user/modifyuserinfo.asp">내정보수정</a></li>
-			        <li><a href="https://eshop.parkland.co.kr:444/nhome/mypage/mypage.asp">MY 파크랜드</a></li>
+			        <li><a href="<%=cp%>/shop/product/productSave.do">HELLO Nature</a></li>
 			        <li><a href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp">장바구니(<span class="fbold maincolor" id="gTopCartCount">0</span>)</a></li>
-			        <li><a href="https://eshop.parkland.co.kr:444/nhome/customer/faq.asp">고객센터</a></li>
+			        <li><a href="<%=cp%>/shop/notice/notice.do">고객센터</a></li>
 			        <li><a href="https://eshop.parkland.co.kr:444/nhome/sitemap/sitemap.asp">Sitemap</a></li>
 					<!--li><a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2006335008030200590&pageUnit=10&searchCnd=wrkr_no&searchKrwd=6218105081&pageIndex=1">사업자정보확인</a-->
 					<li>service@parkland.co.kr</li>
@@ -431,6 +390,47 @@ return false;
 	}
 
 </script> -->
+<!-- <script type="text/javascript">
+
+	function goPopup() {
+		
+		var pop = window.open("jusoPopup.do", "pop",
+				"width=570, height=420, scrollbars=yes, resizable=yes");
+		/* var pop = window.open("jusoPopup.do", "pop",
+				"width=570,height=420, scrollbars=yes, resizable=yes");  */
+	}
+	
+	function jusoCallBack(roadFullAddr,roadAddrPart1,addrDetail,roadAddrPart2,engAddr, jibunAddr, zipNo, admCd, 
+			rnMgtSn, bdMgtSn , detBdNmList, bdNm, bdKdcd, siNm, sggNm, emdNm, liNm, rn, udrtYn, buldMnnm, 
+			buldSlno, mtYn, lnbrMnnm, lnbrSlno, emdNo){
+			 // 2017년 2월 제공항목이 추가되었습니다. 원하시는 항목을 추가하여 사용하시면 됩니다.
+			 document.form.roadFullAddr.value = roadFullAddr;
+			 document.form.roadAddrPart1.value = roadAddrPart1;
+			 document.form.roadAddrPart2.value = roadAddrPart2;
+			 documentform.addrDetail.value = addrDetail;
+			 document.form.zipNo.value = zipNo;
+			}
+</script> -->
+<script type="text/javascript">
+// opener관련 오류가 발생하는 경우 아래 주석을 해지하고, 사용자의 도메인정보를 입력합니다. 
+// (＂팝업 API 호출 소스"도 동일하게 적용시켜야 합니다.)
+//document.domain = "abc.go.kr";
+function goPopup(){
+//경로는 시스템에 맞게 수정하여 사용
+//호출된 페이지(jusopopup.jsp)에서 실제 주소검색URL(https://www.juso.go.kr/addrlink/addrLinkUrl.do)를
+//호출하게 됩니다.
+var pop = window.open("jusoPopup.do","pop","width=570,height=420, scrollbars=yes, resizable=yes"); 
+//** 2017년 5월 모바일용 팝업 API 기능 추가제공 **/
+// 모바일 웹인 경우, 호출된 페이지(jusopopup.jsp)에서
+// 실제 주소검색 URL(https://www.juso.go.kr/addrlink/addrMobileLinkUrl.do)를 호출하게 됩니다.
+// var pop = window.open("/popup/jusoPopup.jsp","pop","scrollbars=yes, resizable=yes"); 
+}
+function jusoCallBack(roadFullAddr){
+ // 2017년 2월 제공항목이 추가되었습니다. 원하시는 항목을 추가하여 사용하시면 됩니다.
+ document.form.roadFullAddr.value = roadFullAddr;
+
+}
+</script>
 
 	
 		<!-- 회원가입 -->
@@ -438,7 +438,7 @@ return false;
       	<div class="cline"></div>
       	<div class="c_title"><p>회원가입</p></div>
       	<div class="table_join">
-			<form name="frmData" id="frmData" action="https://eshop.parkland.co.kr:444/nhome/user/modifyuserinfo_proc.asp" method="post">
+			<form name="form" id="form" method="post">
 			<table>
 				<colgroup>
 					<col width="170px">
@@ -459,13 +459,14 @@ return false;
 						<th>성명</th>
 						<td>
 						<input type="text" name="name" id="name" class="type01">
+						<font color="red">성명은 최대 4자까지 가능합니다</font>
 						</td>	
 					</tr>
 					<tr>
 						<th>비밀번호</th>
 						<td>
 							<input type="password" name="pwd" id="changepw" class="type01">
-							<font color="red">영문자+숫자조합의 6~12자 사이로 입력하셔야 합니다.</font>
+							<font color="red">비밀번호는 6~12자 사이로 입력가능합니다.</font>
 						</td>
 					</tr>
 					<tr>
@@ -502,17 +503,26 @@ return false;
 							</select> -->
 						</td>
 					</tr>
+					
 					<tr>
 						<th>주소</th>
-						
 						<td>
-						<p><input type="text" name="addr" id="addr" size="70" class="type04"> </p>
+						<!-- <p><input type="text" name="addr" id="addr" size="40" class="type04"> </p> -->
+						<input type="text" id="roadFullAddr" name="roadFullAddr" size="60" />
+						<button type="button" class="btn-type post" onClick="goPopup();">주소검색</button>
 						</td>	
-						<!-- <td class="txt_color">
-							<p><input type="text" name="zipcode" id="zipcode" value="07237" size="8" class="type03" readonly="">										
+					</tr>
+					
+					<!-- 여기부터 -->
+					
+					<!-- <tr>
+						<th>주소</th>
+						<td class="txt_color">
+							<p><input type="text" name="zipcode" id="zipcode" value="" size="8" class="type03" readonly="">										
 							<a href="javascript:findzipcode(&#39;/nhome&#39;, &#39;setAddrsub&#39;);" class="btn-type post">우편번호 검색</a></p>
-							<p><input type="text" name="addr1" id="addr1" value="서울특별시 영등포구 은행로 11(여의도동)" size="70" class="type04" readonly="readonly"> </p>
-							<p><input type="text" name="addr2" id="addr2" value="21323" size="50" class="type04">
+							<button type="button" class="btn-type post" onclick="goPopup();">주소검색</button>
+							<p><input type="text" name="addr1" id="addr1" value="" size="70" class="type04" readonly="readonly"> </p>
+							<p><input type="text" name="addr2" id="addr2" value="" size="50" class="type04">
 							<input type="hidden" name="siNm" id="siNm" value="" size="5" class="type04">
 							<input type="hidden" name="sggNm" id="sggNm" value="" size="5" class="type04">
 							<input type="hidden" name="emdNm" id="emdNm" value="" size="5" class="type04">
@@ -524,8 +534,10 @@ return false;
 							<input type="hidden" name="rnMgtSn" id="rnMgtSn" value="" size="5" class="type04">
 							<input type="hidden" name="bdMgtSn" id="bdMgtSn" value="" size="5" class="type04">
 							<input type="hidden" name="detBdNmList" id="detBdNmList" value="" size="5" class="type04">
-						</p></td> -->
-					</tr>
+						</p></td>	
+						</tr> -->
+						
+					<!-- 여기까지 -->
 					
 					<!-- <tr>
 						<th>전화번호</th>
@@ -857,20 +869,34 @@ return false;
 			    	</div>
 			    	<div class="footer">
 			      		<div class="f_left">
-			        		<address>
-							        파크랜드공식인터넷쇼핑몰(주)파크랜드/대표이사:곽국민,박명규/부산광역시 금정구 서2동 219-2번지(우609-722)<br>
-							        사업자등록번호:621-81-05081/통신판매업신고번호:2006-00590 <br>
-							        CS CENTER 1644-0582 /FAX:051-527-5521
-					        </address>
-			       			<p>Copyright(c) 2006-2022 파크랜드 온라인공식쇼핑몰 (주)파크랜드 All Rights Reserved.</p>
+			        		법인명 (상호) : 주식회사 헬로비너스 <span class="bar">I</span> 사업자등록번호 :
+						261-81-23567 <a
+							href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&amp;apv_perm_no="
+							target="_blank" class="link">사업자정보 확인</a> <br> 통신판매업 : 제
+						2018-서울강남-01646 호 <span class="bar">I</span> 개인정보보호책임자 : 이원준 <br>
+						주소 : 서울특별시 강남 ITWELL <span class="bar">I</span> 대표이사
+						: 이윤재 <br> 입점문의 : <a
+							href="https://docs.google.com/forms/d/e/1FAIpQLScLB7YkGJwNRzpGpp0gbR1i4C1_uvTEFj43SFfJ_XEadTn3gQ/viewform?usp=sf_link"
+							target="_blank" class="link">입점문의하기</a> <span class="bar">I</span>
+						마케팅제휴 : <a href="mailto:business@kurlycorp.com" class="link">business@kurlycorp.com</a>
+						<br> 채용문의 : <a href="mailto:recruit@kurlycorp.com"
+							class="link">recruit@kurlycorp.com</a> <br> 팩스: 070 - 1234 -
+						1234 <span class="bar">I</span> 이메일 : <a
+							href="mailto:help@kurlycorp.com" class="link">help@kurlycorp.com</a>
+						<br> 대량주문 문의 : <a href="mailto:kurlygift@kurlycorp.com"
+							class="link">kurlygift@kurlycorp.com</a> <br>
 			      		</div>
 			      		<div class="f_right">
 			        		<ul>
-								<li class="fimg"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/inipay.png" alt=""></li>
+								<li class="fimg"><img src="<%=cp %>/shoppingmall/login/login_files/inipay.png" alt=""></li>
 					          	<li>
-						            <p>파크랜드몰은(주)이니시스의<br>
-						              구매안전 에스크로서비스를 제공합니다.</p>
-			            			<p><a href="https://mark.inicis.com/mark/escrow_popup.php?no=31366&amp;st=1355291431"><img src="<%=cp %>/shoppingmall/join/modifyUserInfo_files/inipay_btn.png" alt=""></a></p>
+						            <p>헬로네이쳐는 (주)이니시스의 구매안전 에스크로서비스를 제공합니다.</p>
+			            			<p>
+									<a
+										href="<%=cp%>/shop/main/main.do"><img
+										src="<%=cp%>/shoppingmall/category/category_files/inipay_btn.png"
+										alt=""></a>
+								</p>
 			          			</li>
 			        		</ul>
 			      		</div>
@@ -1032,13 +1058,22 @@ return false;
 
 	function idpwCheck() {
 		
-		var f = document.frmData;
+		var f = document.form;
+		
 		
 		//아아디
 		if(!f.id.value) {
 
 			alert("아이디를 입력하세요!");
-			document.frmData.id.focous();
+			document.form.id.focous();
+			return;
+			}
+		
+		//아아디
+		if(f.id.value.length<5 || f.id.value.length>10) {
+
+			alert("아이디를 5~10자 사이로 입력하세요!");
+			document.form.id.focous();
 			return;
 			}
 		
@@ -1046,9 +1081,18 @@ return false;
 		if(!f.name.value) {
 
 			alert("성명을 입력하세요!");
-			document.frmData.id.focous();
+			document.form.id.focous();
 			return;
 			}
+		
+		//성명 4자리까지 체크
+		if(f.name.value.length>4) {
+
+			alert("성명은 최대 4자까지 가능합니다!");
+			document.form.id.focous();
+			return;
+			}
+	
 		
 		//비밀번호
 		if(!f.pwd.value) {
@@ -1058,11 +1102,19 @@ return false;
 			return;
 		}
 		
+		//비밀번호 길이
+		if(f.pwd.value.length<6 || f.pwd.value.length>12) {
+		
+			alert("비밀번호는 6~12자 사이로 입력가능합니다.!");
+			f.pwd.focous();
+			return;
+		}
+		
 		//비밀번호 재확인
 		if(!f.pwd2.value) {
 		
 			alert("비밀번호재확인!");
-			document.frmData.pwd2.focous();
+			document.form.pwd2.focous();
 			return;
 		}
 		
@@ -1070,7 +1122,7 @@ return false;
 		if(f.pwd.value != f.pwd2.value) {
 		
 			alert("비밀번호가 다릅니다!");
-			document.frmData.pwd1.focous();
+			document.form.pwd1.focous();
 			return;
 		}
 		
@@ -1078,22 +1130,22 @@ return false;
 		if(!f.email1.value) {
 			
 			alert("이메일을 입력하세요!");
-			document.frmData.email.focous();
+			document.form.email.focous();
 			return;
 		}
 		//이메일 입력
 		if(!f.email2.value) {
 			
 			alert("이메일을 입력하세요!");
-			document.frmData.email.focous();
+			document.form.email.focous();
 			return;
 		}
 		
 		//주소
-		if(!f.addr.value) {
+		if(!f.roadFullAddr.value) {
 			
 			alert("주소를 입력하세요!");
-			document.frmData.addr.focous();
+			document.form.roadFullAddr.focous();
 			return;
 		}
 		
@@ -1101,42 +1153,76 @@ return false;
 		if(!f.hp1.value) {
 			
 			alert("전화번호 입력!");
-			document.frmData.hp1.focous();
+			document.form.hp1.focous();
 			return;
 		}
 		//휴대전화
 		if(!f.hp2.value) {
 			
 			alert("전화번호 입력!");
-			document.frmData.hp2.focous();
+			document.form.hp2.focous();
 			return;
 		}
 		//휴대전화
 		if(!f.hp3.value) {
 			
 			alert("전화번호 입력!");
-			document.frmData.hp3.focous();
+			document.form.hp3.focous();
 			return;
 		}
-		
+		//양력/음력
+		if(!f.birth_tf.value) {
+			
+			alert("양력/음력 체크!");
+			document.form.birth_tf.focous();
+			return;
+		}
 		//생년월일
 		if(!f.birth_year.value) {
 			
 			alert("년도 입력!");
-			document.frmData.birth_year.focous();
+			document.form.birth_year.focous();
 			return;
 		}
 		
 		if(f.birth_month.value == "월") {
 			
 			alert("월입력!");
-			document.frmData.birth_month.focous();
+			document.form.birth_month.focous();
 			return;
 		}
 		if(!f.birth_day.value) {
 			
 			alert("일 입력!");
-			document.frmData.birth_day.focous();
+			document.form.birth_day.focous();
+			return;
+		}
+		//매일서비스
+		if(!f.service_email .value) {
+			
+			alert("년도 입력!");
+			document.form.service_email .focous();
+			return;
+		}
+		//sms서비스
+		if(!f.service_sms .value) {
+			
+			alert("년도 입력!");
+			document.form.service_sms .focous();
+			return;
+		}
+		//dm서비스
+		if(!f.service_dm .value) {
+			
+			alert("년도 입력!");
+			document.form.service_dm .focous();
+			return;
+		}
+		//tm서비스
+		if(!f.service_tm .value) {
+			
+			alert("년도 입력!");
+			document.form.service_tm .focous();
 			return;
 		}
 		
