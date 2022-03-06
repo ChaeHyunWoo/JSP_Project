@@ -1,4 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+	pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 	request.setCharacterEncoding("UTF-8");
@@ -8,7 +9,7 @@
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>íŒŒí¬ëœë“œ ë©”ì¸í˜ì´ì§€</title>
+<title>Çï·Î³×ÀÌÃ³</title>
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=1300">
@@ -17,180 +18,53 @@
 <meta name="facebook-domain-verification"
 	content="nmgreo7cfvx7q1b1fb03sslnypf0q1">
 <link rel="stylesheet" type="text/css"
-	href="<%=cp%>/shoppingmall/main/main_files/reset.css" media="all">
+	href="<%=cp%>/shoppingmall/category/category_files/reset.css"
+	media="all">
 <link rel="stylesheet" type="text/css"
-	href="<%=cp%>/shoppingmall/main/main_files/style.css" media="all">
+	href="<%=cp%>/shoppingmall/category/category_files/style.css"
+	media="all">
 <link rel="stylesheet" type="text/css"
-	href="<%=cp%>/shoppingmall/main/main_files/owl.carousel.min.css">
-
-<script type="text/javascript" async=""
-	src="<%=cp%>/main_files/analytics.js.ë‹¤ìš´ë¡œë“œ"></script>
-<script type="text/javascript" async=""
-	src="<%=cp%>/shoppingmall/main/main_files/js"></script>
-<script type="text/javascript" async=""
-	src="<%=cp%>/shoppingmall/main/main_files/analytics.js.ë‹¤ìš´ë¡œë“œ"></script>
+	href="<%=cp%>/shoppingmall/category/category_files/owl.carousel.min.css">
 <script async=""
-	src="<%=cp%>/shoppingmall/main/main_files/analytics.js.ë‹¤ìš´ë¡œë“œ"></script>
-<script src="<%=cp%>/shoppingmall/main/main_files/AceCounter_AW.js.ë‹¤ìš´ë¡œë“œ"></script>
-<script src="<%=cp%>/shoppingmall/main/main_files/462724525419327"
-	async=""></script>
-<script async=""
-	src="<%=cp%>/shoppingmall/main/main_files/fbevents.js.ë‹¤ìš´ë¡œë“œ"></script>
+	src="<%=cp%>/shoppingmall/category/category_files/analytics.js"></script>
 <script
-	src="<%=cp%>/shoppingmall/main/main_files/jquery-1.11.3.min.js.ë‹¤ìš´ë¡œë“œ"></script>
+	src="<%=cp%>/shoppingmall/category/category_files/AceCounter_AW.js"></script>
+<script type="text/javascript" async=""
+	src="<%=cp%>/shoppingmall/category/category_files/analytics.js"></script>
+<script type="text/javascript" async=""
+	src="<%=cp%>/shoppingmall/category/category_files/js"></script>
+<script type="text/javascript" async=""
+	src="<%=cp%>/shoppingmall/category/category_files/analytics.js"></script>
+<script async=""
+	src="<%=cp%>/shoppingmall/category/category_files/fbevents.js"></script>
+<script
+	src="<%=cp%>/shoppingmall/category/category_files/jquery-1.11.3.min.js"></script>
 <script type="text/javascript"
-	src="<%=cp%>/shoppingmall/main/main_files/owl.carousel.js.ë‹¤ìš´ë¡œë“œ"></script>
+	src="<%=cp%>/shoppingmall/category/category_files/owl.carousel.js"></script>
 <!-- main slider js -->
-<script src="<%=cp%>/shoppingmall/main/main_files/default.js.ë‹¤ìš´ë¡œë“œ"
+<script src="<%=cp%>/shoppingmall/category/category_files/default.js"
 	type="text/javascript" charset="euc-kr"></script>
-<script src="<%=cp%>/shoppingmall/main/main_files/common.js.ë‹¤ìš´ë¡œë“œ"
+<script src="<%=cp%>/shoppingmall/category/category_files/common.js"
 	type="text/javascript" charset="euc-kr"></script>
 
 <link rel="stylesheet" type="text/css"
-	href="<%=cp%>/shoppingmall/main/main_files/odesign.css">
-<script src="<%=cp%>/shoppingmall/main/main_files/global.js.ë‹¤ìš´ë¡œë“œ"
+	href="<%=cp%>/shoppingmall/category/category_files/odesign.css">
+<script src="<%=cp%>/shoppingmall/category/category_files/global.js"
 	type="text/javascript" charset="euc-kr"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics ipcom 190820 -->
-<script async="" src="<%=cp%>/shoppingmall/main/main_files/js(1)"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-143530513-1');
-
-	gtag('config', 'UA-126736889-1'); //190828
-</script>
-<!-- Facebook Pixel Code -->
-<script>
-	!function(f, b, e, v, n, t, s) {
-		if (f.fbq)
-			return;
-		n = f.fbq = function() {
-			n.callMethod ? n.callMethod.apply(n, arguments) : n.queue
-					.push(arguments)
-		};
-		if (!f._fbq)
-			f._fbq = n;
-		n.push = n;
-		n.loaded = !0;
-		n.version = '2.0';
-		n.queue = [];
-		t = b.createElement(e);
-		t.async = !0;
-		t.src = v;
-		s = b.getElementsByTagName(e)[0];
-		s.parentNode.insertBefore(t, s)
-	}(window, document, 'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '462724525419327');
-	fbq('track', 'PageView');
-</script>
-<noscript>
-	<img height="1" width="1"
-		src="https://www.facebook.com/tr?id=462724525419327&ev=PageView&noscript=1" />
-</noscript>
-<!-- End Facebook Pixel Code -->
-
-<script language="javascript">
-	/*ë ë°°ë„ˆ ê°€ë¦¬ê¸°*/
-	$(window).scroll(function() {
-		var scrollHeight = $(document).height();
-		var scrollPosition = $(window).height() + $(window).scrollTop();
-		if ($(window).scrollTop()) {
-			$(".arthro_banner").css("display", "none");
-		} else {
-			$(".arthro_banner").css("display", "block");
-		}
-	});
-
-
-
-	$(function() {
-		$('.btn_closeimg a').click(function() {
-
-			$(".arthro_banner").slideToggle();
-			$(".banner_close").hide();
-		});
-	});
-
-	function getCookie_tb(strName) {
-		var strArg = new String(strName + "=");
-		var nArgLen, nCookieLen, nEnd;
-		var i = 0, j;
-
-		nArgLen = strArg.length;
-		nCookieLen = document.cookie.length;
-
-		if (nCookieLen > 0) {
-
-			while (i < nCookieLen) {
-				j = i + nArgLen;
-				if (document.cookie.substring(i, j) == strArg) {
-					nEnd = document.cookie.indexOf(";", j);
-					if (nEnd == -1)
-						nEnd = document.cookie.length;
-					return unescape(document.cookie.substring(j, nEnd));
-				}
-				i = document.cookie.indexOf(" ", i) + 1;
-				if (i == 0)
-					break;
-			}
-		}
-
-		return ("");
-	}
-
-	function setCookie_tb(name, value) {
-		var todayDate = new Date();
-		todayDate.setTime(todayDate.getTime() + (1000 * 3600) * 24 * 1); //1ì¼
-		document.cookie = name + "=" + escape(value) + ";path=/;expires="
-				+ todayDate.toGMTString() + ";";
-	}
-
-	$(function() {
-
-		if (getCookie_tb('popUp_tb') != "checked") {
-
-			$("#bannerPop3").css('visibility', 'visible').show();
-			$("#bannerPop3").find(".closePop").click(function(e) {
-				e.preventDefault();
-
-				if ($("#_closePop").is(":checked")) {
-					setCookie_tb("popUp_tb", "checked");
-				}
-
-				$("#bannerPop3").css('visibility', 'hide').slideup('fast');
-			});
-		}
-
-	});
-</script>
-
-<script>
-	$(document).ready(function() {
-		$('a.es').click(function() {
-			$('html, body').animate({
-				scrollTop : $($.attr(this, 'href')).offset().top - 85
-			}, 500);
-			return false;
-		});
-	});
-</script>
+<script async=""
+	src="<%=cp%>/shoppingmall/category/category_files/js(1)"></script>
 
 </head>
 <body>
-
+	<!-- container -->
 	<div id="container">
 		<!-- navi -->
 		<div class="navi">
 			<div class="mlogo">
-					<a href="<%=cp%>/shop/main.do"><img
-					src="<%=cp%>/shoppingmall/category/category_files/logo_x2.png"
-					alt="parkland"></a>
+				<a href="<%=cp%>/shop/main/main.do"><img
+					src="<%=cp%>/shoppingmall/main/main_files/logo2.JPG" alt="parkland"></a>
 			</div>
 			<div class="search">
 				<ul>
@@ -198,66 +72,61 @@
 						<form id="frmGSearch" name="frmGSearch" method="post"
 							onsubmit="return m_fnGSearchGood_submit();"
 							action="https://eshop.parkland.co.kr:444/nhome/shop/search_result.asp">
-							<input id="gKeyword" name="gKeyword" type="text" title="í†µí•©ê²€ìƒ‰"
+							<input id="gKeyword" name="gKeyword" type="text" title="ÅëÇÕ°Ë»ö"
 								class="input01" accesskey="S"
 								onclick="m_fnEnterKey(this, fnGSearchGood);"
-								placeholder="ê²€ìƒ‰ì–´ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”"> <input type="image"
+								placeholder="°Ë»ö¾î¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä"> <input type="image"
 								class="input_btn"
-								src="<%=cp %>/shoppingmall/main/main_files/btn_search.png"
+								src="<%=cp%>/shoppingmall/category/category_files/btn_search.png"
 								alt="Search">
-							<!-- í•´ë‹¹ì‹œìŠ¤í…œì˜ ì¸ì½”ë”©íƒ€ì…ì´ EUC-KRì¼ê²½ìš°ì—ë§Œ ì¶”ê°€ START-->
+							<!-- ÇØ´ç½Ã½ºÅÛÀÇ ÀÎÄÚµùÅ¸ÀÔÀÌ EUC-KRÀÏ°æ¿ì¿¡¸¸ Ãß°¡ START-->
 							<input type="hidden" id="encodingType" name="encodingType"
 								value="EUC-KR">
-							<!-- í•´ë‹¹ì‹œìŠ¤í…œì˜ ì¸ì½”ë”©íƒ€ì…ì´ EUC-KRì¼ê²½ìš°ì—ë§Œ ì¶”ê°€ END-->
+							<!-- ÇØ´ç½Ã½ºÅÛÀÇ ÀÎÄÚµùÅ¸ÀÔÀÌ EUC-KRÀÏ°æ¿ì¿¡¸¸ Ãß°¡ END-->
 						</form>
 					</li>
 				</ul>
 			</div>
-			<script language="javascript">
-				function fnToggle(menu) {
-					var obj = document.getElementById(menu);
-					if (obj.getAttribute("class") == obj
-							.getAttribute("class_normal")) {
-						obj.setAttribute("class", obj
-								.getAttribute("class_active"));
-						$("#" + menu + "_img").attr("src",
-								"/nhome/img/icon_minus.png");
-					} else {
-						obj.setAttribute("class", obj
-								.getAttribute("class_normal"));
-						$("#" + menu + "_img").attr("src",
-								"/nhome/img/icon_plus.png");
-					}
-				}
-			</script>
-
 			<div id="leftside-navigation">
-
 				<ul>
 					<li class="l_normal"><a href="#"><span>Brands</span></a>
 						<ul class="none">
+							<li><a href="${listUrl}">ALL</a></li>
 							<c:forEach var="dto" items="${brandLists}">
 								<li><a href="${listUrl}?brandNum=${dto.brandNum}">${dto.brandName }</a></li>
 							</c:forEach>
 						</ul></li>
+					<li class="l_normal"><a
+						href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1219#"><span>Special</span></a>
+						<ul class="none">
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventlist.asp">±âÈ¹Àü
+									&amp; ÀÌº¥Æ®</a></li>
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/typemain.asp?nSort=1">NEW
+									ITEMS</a></li>
 
-
-
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=82">BIG
+									SIZE</a></li>
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId2=401">OUTLET</a></li>
+						</ul></li>
 				</ul>
-
 			</div>
-
 			<div class="service_b">
 				<ul>
 					<li><p>
 							<a href="https://members.parkland.co.kr/my_parkland/join.asp"
 								target="_blank"><img
-								src="<%=cp%>/shoppingmall/main/main_files/sr_icon_1.png" alt=""></a>
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_1.png"
+								alt=""></a>
 						</p></li>
 					<li><p>
 							<a
 								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp"><img
-								src="<%=cp%>/shoppingmall/main/main_files/sr_icon_2.png" alt=""></a>
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_2.png"
+								alt=""></a>
 						</p></li>
 				</ul>
 				<ul>
@@ -265,200 +134,297 @@
 					<li><p>
 							<a
 								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp"><img
-								src="<%=cp%>/shoppingmall/main/main_files/sr_icon_3.png" alt=""></a>
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_3.png"
+								alt=""></a>
 						</p></li>
 					<li><p>
 							<a
 								href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=50"><img
-								src="<%=cp%>/shoppingmall/main/main_files/sr_icon_4.png" alt=""></a>
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_4.png"
+								alt=""></a>
 						</p></li>
 				</ul>
-
 				<ul>
 					<li><p>
 							<a
 								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp#p01"><img
-								src="<%=cp%>/shoppingmall/main/main_files/sr_icon_5.png" alt=""></a>
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_5.png"
+								alt=""></a>
 						</p></li>
 					<li><p>
 							<a
 								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp#p01"><img
-								src="<%=cp%>/shoppingmall/main/main_files/sr_icon_6.png" alt=""></a>
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_6.png"
+								alt=""></a>
 						</p></li>
 				</ul>
 			</div>
-
 			<div class="cscenter">
 				<div class="cstitle">Cs center</div>
-				<h2>1644-0582</h2>
+				<h2>1644-4339</h2>
 				<p>
-					í‰ì¼ AM 10:00 ~ PM 18:00<br> í† ,ì¼ìš”ì¼/ê³µíœ´ì¼ íœ´ë¬´
+					ÆòÀÏ AM 10:00 ~ PM 18:00<br> Åä,ÀÏ¿äÀÏ/°øÈŞÀÏ ÈŞ¹«
 				</p>
 			</div>
 			<div class="cs_icon">
 				<li><a
 					href="https://eshop.parkland.co.kr:444/nhome/customer/notice.asp"
 					class="roll"><img
-						src="<%=cp%>/shoppingmall/main/main_files/cs_icon01.png" alt=""><img
-						class="over"
-						src="<%=cp%>/shoppingmall/main/main_files/cs_icon01-1.png" alt=""></a></li>
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon01.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon01-1.png"
+						alt=""></a></li>
 				<li><a
 					href="https://eshop.parkland.co.kr:444/nhome/customer/formnew.asp"
 					class="roll"><img
-						src="<%=cp%>/shoppingmall/main/main_files/cs_icon02.png" alt=""><img
-						class="over"
-						src="<%=cp%>/shoppingmall/main/main_files/cs_icon02-1.png" alt=""></a></li>
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon02.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon02-1.png"
+						alt=""></a></li>
 				<li><a
 					href="https://eshop.parkland.co.kr:444/nhome/mypage/mypage.asp"
 					class="roll"><img
-						src="<%=cp%>/shoppingmall/main/main_files/cs_icon03.png" alt=""><img
-						class="over"
-						src="<%=cp%>/shoppingmall/main/main_files/cs_icon03-1.png" alt=""></a></li>
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon03.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon03-1.png"
+						alt=""></a></li>
 				<li><a
 					href="https://eshop.parkland.co.kr:444/nhome/mypage/myorder.asp"
 					class="roll"><img
-						src="<%=cp%>/shoppingmall/main/main_files/cs_icon04.png" alt=""><img
-						class="over"
-						src="<%=cp%>/shoppingmall/main/main_files/cs_icon04-1.png" alt=""></a></li>
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon04.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon04-1.png"
+						alt=""></a></li>
 			</div>
 			<!-- // cscenter -->
 		</div>
 		<!-- // navi -->
-
 		<!-- contents -->
 		<div class="contents">
-			<!-- top menu -->
+			<!-- dvTopmeu -->
 			<div id="dvTopmeu" class="t_util">
 				<ul>
-
-					<!-- <li><a href="javascript:gLogin();">ë¡œê·¸ì¸</a></li> -->
-
-
-
-					<!-- í˜„ìš° -->
 					<c:choose>
 						<c:when test="${empty sessionScope.customInfo.userId }">
-							<li><a href="<%=cp%>/shop/join/login.do">ë¡œê·¸ì¸</a></li>
+							<li><a href="<%=cp%>/shop/join/login.do">·Î±×ÀÎ</a></li>
 						</c:when>
-
 						<c:otherwise>
-							<li>${sessionScope.customInfo.userName }ë‹˜í™˜ì˜í•©ë‹ˆë‹¤</li>
+							<li>${sessionScope.customInfo.userName }´ÔÈ¯¿µÇÕ´Ï´Ù</li>
 						</c:otherwise>
 					</c:choose>
-					<!-- href="http://members.parkland.co.kr/my_parkland/join.asp" -->
-
-
-
-
-
-
 					<c:choose>
 						<c:when test="${empty sessionScope.customInfo.userId }">
-							<li><a href="<%=cp%>/shop/join/join.do">íšŒì›ê°€ì…</a></li>
+							<li><a href="<%=cp%>/shop/join/join.do">È¸¿ø°¡ÀÔ</a></li>
 						</c:when>
-
 						<c:otherwise>
-							<li><a href="<%=cp%>/shop/join/logout.do">ë¡œê·¸ì•„ì›ƒ <img
+							<li><a href="<%=cp%>/shop/join/logout.do">·Î±×¾Æ¿ô <img
 									src="<%=cp%>/shoppingmall/main/main_files/icon_newwin.png"
 									alt=""></a></li>
-							<li><a href="<%=cp%>/shop/join/update.do">ë‚´ì •ë³´ìˆ˜ì •</a></li>
+							<li><a href="<%=cp%>/shop/join/update.do">³»Á¤º¸¼öÁ¤</a></li>
+							<li><a href="<%=cp%>/shop/product/productSave.do">HELLO
+									Nature</a></li>
 						</c:otherwise>
 					</c:choose>
-
-					<li><a href="<%=cp%>/shop/login.do">MY íŒŒí¬ëœë“œ</a></li>
-					<li><a href="<%=cp%>/shop/cart.do">ì¥ë°”êµ¬ë‹ˆ(<span
-							class="fbold maincolor" id="gTopCartCount">1</span>)
+					<li><a
+						href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp">Àå¹Ù±¸´Ï(<span
+							class="fbold maincolor" id="gTopCartCount">0</span>)
 					</a></li>
-					<li><a href="<%=cp%>/shop/notice.do">ê³ ê°ì„¼í„°</a></li>
+					<li><a href="<%=cp%>/shop/notice/notice.do">°í°´¼¾ÅÍ</a></li>
 					<li><a
 						href="https://eshop.parkland.co.kr:444/nhome/sitemap/sitemap.asp">Sitemap</a></li>
-					<li>service@parkland.co.kr</li>
+					<!--li><a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2006335008030200590&pageUnit=10&searchCnd=wrkr_no&searchKrwd=6218105081&pageIndex=1">»ç¾÷ÀÚÁ¤º¸È®ÀÎ</a-->
+					<li>help@hellonature.co.kr</li>
 					<li class="sns"><a href="https://www.facebook.com/SuitHolic"
 						target="_blank"><img
-							src="<%=cp%>/shoppingmall/main/main_files/t_fbook.png" alt="í˜ì´ìŠ¤ë¶"></a>
-						<a href="http://blog.naver.com/parklanding" target="_blank"><img
-							src="<%=cp%>/shoppingmall/main/main_files/t_blog.png" alt="ë¸”ë¡œê·¸"></a>
-						<a href="https://www.instagram.com/parklandholic" target="_blank"><img
-							src="<%=cp%>/shoppingmall/main/main_files/t_insta.png" alt="ë¸”ë¡œê·¸"></a>
-
-					</li>
+							src="<%=cp%>/shoppingmall/category/category_files/t_fbook.png"
+							alt="ÆäÀÌ½ººÏ"></a> <a href="http://blog.naver.com/parklanding"
+						target="_blank"><img
+							src="<%=cp%>/shoppingmall/category/category_files/t_blog.png"
+							alt="ºí·Î±×"></a> <a
+						href="https://www.instagram.com/parklandholic" target="_blank"><img
+							src="<%=cp%>/shoppingmall/category/category_files/t_insta.png"
+							alt="ºí·Î±×"></a></li>
 				</ul>
 			</div>
-
+			<!-- // dvTopmeu -->
+			<!-- content_area -->
 			<div class="content_area">
-
-
-
-
-
-				<script type="text/javascript">
-					var _bAce = [];
-					function ACEL_TRACKING(mode, ename) {
-						var ACEL_img = new Image();
-						var ACED_D = 'gtm1.acecounter.com';
-						var ACED_H = (location.protocol == 'https:') ? 'https://'
-								+ ACED_D + ':5443'
-								: 'http://' + ACED_D + ':5656';
-						ACEL_img.src = ACED_H
-								+ '/EMAM?euid=AS4A41784471665&ename=' + ename
-								+ '&fdv=' + mode + '&RID=' + Math.random()
-								+ '&';
-						if (typeof (Array.prototype.push) != 'undefined') {
-							_bAce.push(ACEL_img);
-						}
-						;
-					};
-				</script>
-
-
-				<div class="rolling_wrap">
-					<div id="owl-carousel01"
-						class="owl-carousel owl-theme owl-loaded owl-drag">
-
-
-
-						<div class="brandtop">
+				<!-- brandtop -->
+				<div class="brandtop">
 					<div id="owl-brand"
 						class="owl-carousel owl-theme topmain owl-loaded owl-drag">
 						<div class="owl-stage-outer">
-							<div class="owl-stage"
-								style="transform: translate3d(-2000px, 0px, 0px); transition: all 0s ease 0s; width: 5000px;">
-								<div class="owl-item cloned" style="width: 1000px;">
-									<div class="item">
-										<img
-											src="<%=cp%>/shoppingmall/category/category_files/intro_main2.jpg"
-											alt="">
-									</div>
-								</div>
-								<div class="owl-item cloned" style="width: 1000px;">
-									<div class="item">
-										<img
-											src="<%=cp%>/shoppingmall/category/category_files/intro_main2.jpg"
-											alt="">
-									</div>
-								</div>
-								<div class="owl-item active" style="width: 1000px;">
-									<div class="item">
-										<img
-											src="<%=cp%>/shoppingmall/category/category_files/intro_main2.jpg"
-											alt="">
-									</div>
-								</div>
-								<div class="owl-item cloned" style="width: 1000px;">
-									<div class="item">
-										<img
-											src="<%=cp%>/shoppingmall/category/category_files/intro_main2.jpg"
-											alt="">
-									</div>
-								</div>
-								<div class="owl-item cloned" style="width: 1000px;">
-									<div class="item">
-										<img
-											src="<%=cp%>/shoppingmall/category/category_files/intro_main2.jpg"
-											alt="">
-									</div>
-								</div>
+
+
+
+
+							<div class="item" align="center">
+								<img src="<%=cp%>/shoppingmall/main/main_files/mainn8.JPG"
+									alt="">
 							</div>
+							</br> </br>
+							<!-- 	¸ŞÀÎÀÌ¹ÌÁö ¿òÁ÷ÀÓ		 -->
+							<div class="rolling_wrap">
+
+
+								<div id="owl-carousel01" class="owl-carousel owl-theme">
+
+
+									<div class="item">
+										<img src="<%=cp%>/shoppingmall/main/main_files/mainn1.JPG"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="<%=cp%>/shoppingmall/main/main_files/mainn2.JPG"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="<%=cp%>/shoppingmall/main/main_files/mainn4.JPG"
+											alt="">
+									</div>
+
+
+								</div>
+
+								<div id="owl-carousel03" class="owl-carousel owl-theme">
+
+
+									<div class="item">
+										<img src="<%=cp%>/shoppingmall/main/main_files/main6.jpg"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="<%=cp%>/shoppingmall/main/main_files/main7.jpg"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="<%=cp%>/shoppingmall/main/main_files/main4.jpg"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="<%=cp%>/shoppingmall/main/main_files/main5.jpg"
+											alt="">
+									</div>
+
+								</div>
+
+
+							</div>
+							<script>
+								$(document)
+										.ready(
+												function() {
+													var owl = $('#owl-carousel01');
+													owl.owlCarousel({
+														items : 1,
+														loop : true,
+														//margin: 10,
+														//nav:true,
+														slideSpeed : 4500,
+														autoplay : true,
+														autoplayTimeout : 4500,
+													// autoplayHoverPause: true,
+													});
+
+													// Go to the next item
+													$('.customNextBtn01')
+															.click(
+																	function() {
+																		owl
+																				.trigger('next.owl.carousel');
+																	})
+													// Go to the previous item
+													$('.customPrevBtn01')
+															.click(
+																	function() {
+																		owl
+																				.trigger(
+																						'prev.owl.carousel',
+																						[ 300 ]);
+																	})
+												})
+							</script>
+
+							<script>
+								$(document)
+										.ready(
+												function() {
+													var owl = $('#owl-carousel03');
+													owl.owlCarousel({
+														items : 2,
+														loop : true,
+														//margin: 10,
+														//nav:true,
+														slideSpeed : 4500,
+														autoplay : true,
+														autoplayTimeout : 4500,
+													// autoplayHoverPause: true,
+													});
+
+													// Go to the next item
+													$('.customNextBtn01')
+															.click(
+																	function() {
+																		owl
+																				.trigger('next.owl.carousel');
+																	})
+													// Go to the previous item
+													$('.customPrevBtn01')
+															.click(
+																	function() {
+																		owl
+																				.trigger(
+																						'prev.owl.carousel',
+																						[ 300 ]);
+																	})
+												})
+							</script>
+
+
+							<script>
+								$(document)
+										.ready(
+												function() {
+													var owl = $('#owl-carousel04');
+													owl.owlCarousel({
+														items : 1,
+														loop : true,
+														//margin: 10,
+														//nav:true,
+														slideSpeed : 4500,
+														autoplay : true,
+														autoplayTimeout : 4500,
+													// autoplayHoverPause: true,
+													});
+
+													// Go to the next item
+													$('.customNextBtn01')
+															.click(
+																	function() {
+																		owl
+																				.trigger('next.owl.carousel');
+																	})
+													// Go to the previous item
+													$('.customPrevBtn01')
+															.click(
+																	function() {
+																		owl
+																				.trigger(
+																						'prev.owl.carousel',
+																						[ 300 ]);
+																	})
+												})
+							</script>
+
+							<!-- 	¸ŞÀÎÀÌ¹ÌÁö ¿òÁ÷ÀÓ		 -->
+
+
+
+
+
+
+
+
 						</div>
 						<div class="owl-nav disabled">
 							<div class="owl-prev">prev</div>
@@ -471,720 +437,602 @@
 						</div>
 					</div>
 				</div>
-						<div class="owl-nav disabled">
-							<div class="owl-prev">prev</div>
-							<div class="owl-next">next</div>
-						</div>
-						<div class="owl-dots">
-							<div class="owl-dot active">
-								<span></span>
-							</div>
-							<div class="owl-dot">
-								<span></span>
-							</div>
-							<div class="owl-dot">
-								<span></span>
-							</div>
-							<div class="owl-dot">
-								<span></span>
-							</div>
-							<div class="owl-dot">
-								<span></span>
-							</div>
-							<div class="owl-dot">
-								<span></span>
-							</div>
-						</div>
-					</div>
-					<div class="customNavigation arr-btn">
-						<a class="btn customNextBtn01">Previous</a> <a
-							class="btn customPrevBtn01">Next</a>
-					</div>
-				</div>
-				<script>
-					$(document).ready(function() {
-						var owl = $('#owl-carousel01');
-						owl.owlCarousel({
-							items : 1,
-							loop : true,
-							//margin: 10,
-							//nav:true,
-							slideSpeed : 4500,
-							autoplay : true,
-							autoplayTimeout : 4500,
-						// autoplayHoverPause: true,
-						});
-
-						// Go to the next item
-						$('.customNextBtn01').click(function() {
-							owl.trigger('next.owl.carousel');
-						})
-						// Go to the previous item
-						$('.customPrevBtn01').click(function() {
-							owl.trigger('prev.owl.carousel', [ 300 ]);
-						})
-					})
-				</script>
-				<!-- // main rolling -->
-
-				<!-- ì¶”ê°€ -->
-				<link rel="stylesheet"
-					href="<%=cp%>/shoppingmall/main/main_files/slick.css">
-				<!--slider css -->
-				<script src="./main_files/slick.js.ë‹¤ìš´ë¡œë“œ" type="text/javascript"></script>
-
-
-				<ul style="padding-bottom: 20px;">
-					<a
-						href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=16&amp;gtype=2"><img
-						src="./main_files/2022ss_dressshirts.jpg" alt=""></a>
-				</ul>
-				<ul style="padding-bottom: 20px;">
-					<a
-						href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=82"><img
-						src="./main_files/bigsize.jpg" alt=""></a>
-				</ul>
-
-				<ul style="padding-bottom: 20px;">
-					<a
-						href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain2.asp?eventId2=478"><img
-						src="./main_files/mensouter.jpg" alt=""></a>
-				</ul>
-				<ul style="padding-bottom: 20px;">
-					<a
-						href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain2.asp?eventId2=401"><img
-						src="./main_files/outlet_banner.jpg" alt=""></a>
-				</ul>
-				<strong></strong>
-				<ul style="padding-bottom: 20px;">
-					<a
-						href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain2.asp?eventId2=416"><img
-						src="./main_files/dressshirts_2021.jpg" alt=""></a>
-				</ul>
-
-
-			</div>
-
-
-
-		</div>
-
-	</div>
-
-	<div id="dvNewWrapper" align="center">
-		<!-- New Items -->
-		<div id="dvNewHeaderWrapper" style="height: 143px;">
-			<div id="dvNewHeader"
-				style="width: 1000px; z-index: 9999; background-color: #ffffff;">
-				<div class="m_tit mt70">
-					<p>New Items</p>
-				</div>
-				<div class="list_choice">
-					<!--<li><a href="#"><img src="/nhome/img/list4_on.png" alt=""></a></li>-->
-					<li><img src="./main_files/list4_on.png" alt=""
-						title="í•œì¤„ì— 3ê°œ í˜¹ì€ 4ê°œìƒí’ˆìœ¼ë¡œ ë³´ê¸°" onsrc="/nhome/img/list4_on.png"
-						offsrc="/nhome/img/list4_off.png" id="new-row" data-count="3"
-						onclick="fnToggleRowtype(1);" style="cursor: pointer;"></li>
-				</div>
-				<!--tab -->
-				<div class="brand_tab">
-					<c:forEach var="dto" items="${lists}">
-						<li><a>${dto.brandName }</a></li>
-					</c:forEach>
-				</div>				<!-- // tab -->
-			</div>
-		</div>
-		<!-- All -->
-
-
-		<div id="tab1" class="tab_contents" brandid="" type="1" 
-			style="display: block;">
-			<div class="item03" align="center">
-			
-				<c:set var="n" value="0" />
-				<c:forEach var="dto" items="${lists}">
-					<c:if test="${n==0}">
-				<ul>
-				</c:if>
-					<c:if test="${n!=0&&n%3==0 }">
-						</ul>
-							<ul>				
+				<!-- // brandtop -->
+				<!-- s_location -->
+				<div class="s_location">
+					<a href="<%=cp%>/shop/main/main.do"><img
+						src="<%=cp%>/shoppingmall/category/category_files/icon_home_g.png"
+						border="0"></a><img
+						src="<%=cp%>/shoppingmall/category/category_files/icon_larr.png"
+						border="0">
+					<c:if test="${null eq ALL}">
+						<a
+							href="<%=cp%>/shop/category/category.do?brandNum=${lists[0].brandNum}">${lists[0].brandName}</a>
 					</c:if>
-					<li>box
-						<div class="listbox">
-							<div class="thumb_box03">
-								<a href="${imagePath}/${dto.saveFileName}"> <img
-											src="${imagePath}/${dto.saveFileName}" class="imgListToggle" />
-										</a>
-							</div>
-							<div class="txt_box">
-								<a
-									href="https://eshop.parkland.co.kr:444/nhome/shop/goodinfo.asp?gdNum=30529&amp;gdCode=JDL22163&amp;brandId=1204">
-									<div class="l_brandname">
-										<p>${dto.brandName }</p>
-									</div>
-									
-									<div class="l_subj">
-										${dto.subject }
-									</div>
-									<div class="l_price">${dto.price }ì›</div>
+					<c:if test="${null ne ALL}">
+						<a href="<%=cp%>/shop/category/category.do">ALL</a>
+					</c:if>
+				</div>
+				<!-- // s_location -->
+				<!-- brand_tit -->
+				<div class="brand_tit">
+					<p>
+						<c:if test="${null eq ALL}">
+							<a
+								href="<%=cp%>/shop/category/category.do?brandNum=${lists[0].brandNum}">${lists[0].brandName}</a>
+						</c:if>
+						<c:if test="${null ne ALL}">
+							<a href="<%=cp%>/shop/category/category.do">ALL</a>
+						</c:if>
+						<span>${dataCount} items</span>
+					</p>
+				</div>
+				<!-- // brand_tit -->
+				<!-- brand_tab -->
+				<div class="brand_tab">
+					<c:forEach var="tl" items="${typeLists}">
+						<c:set var="flag" value="false" />
+						<c:forEach var="l" items="${lists}">
+							<c:if test="${flag==false}">
+								<c:if test="${tl.typeName==l.typeName}">
+									<c:if test="${null eq ALL}">
+										<li><a
+											href="<%=cp%>/shop/category/category.do?brandNum=${l.brandNum}&typeNum=${l.typeNum}">${l.typeName }</a></li>
+									</c:if>
+									<c:if test="${null ne ALL}">
+										<li><a
+											href="<%=cp%>/shop/category/category.do?typeNum=${l.typeNum}">${l.typeName }</a></li>
+									</c:if>
+									<c:set var="flag" value="true" />
+								</c:if>
+							</c:if>
+						</c:forEach>
+					</c:forEach>
+				</div>
+				<!-- brand_tab -->
+				<!-- mdbox -->
+				<div class="mdbox">
+					<div>
+						<script>
+							$(document).ready(function() {
+								var owl = $('#owl-carousel02');
+								owl.owlCarousel({
+									items : 6,
+									loop : true,
+									//margin: 10,
+									nav : true,
+									//center:true,
+									slideSpeed : 700,
+									autoplay : true,
+									autoplayTimeout : 3000,
+									autoplayHoverPause : true,
+								});
+
+								// Go to the next item
+								$('.customNextBtn02').click(function() {
+									owl.trigger('next.owl.carousel');
+									owl.trigger('next.owl.carousel');
+									owl.trigger('next.owl.carousel');
+									owl.trigger('next.owl.carousel');
+									owl.trigger('next.owl.carousel');
+									owl.trigger('next.owl.carousel');
+								})
+								// Go to the previous item
+								$('.customPrevBtn02').click(function() {
+									owl.trigger('prev.owl.carousel', [ 300 ]);
+									owl.trigger('prev.owl.carousel', [ 300 ]);
+									owl.trigger('prev.owl.carousel', [ 300 ]);
+									owl.trigger('prev.owl.carousel', [ 300 ]);
+									owl.trigger('prev.owl.carousel', [ 300 ]);
+									owl.trigger('prev.owl.carousel', [ 300 ]);
+								})
+							})
+						</script>
+					</div>
+					<!-- owl-carousel02 -->
+					<div id="owl-carousel02"
+						class="owl-carousel owl-theme owl-loaded owl-drag">
+						<c:forEach var="dto" items="${lists}">
+							<div class="item" style="line-height: 100%;">
+								<a href="${detailUrl}?num=${dto.num}&pageNum=${pageNum}"> <img
+									src="${imagePath}/${dto.saveFileName}" class="imgListToggle"
+									style="vertical-align: middle;">
 								</a>
 							</div>
-						</div> // box
-					</li>
-
-
-				<c:set var="n" value="${n+1}" />
-				</c:forEach>
-			</div>
-		</div>
-		<!-- // All -->
-
-
-
-		<!-- Parkland -->
-		<div id="tab2" class="tab_contents" brandid="1219" type="1"
-			style="display: none;"></div>
-
-		<div id="tab3" class="tab_contents" brandid="1204" type="1"
-			style="display: none;"></div>
-
-		<div id="tab4" class="tab_contents" brandid="1229" type="1"
-			style="display: none;"></div>
-
-		<div id="tab6" class="tab_contents" brandid="1203" type="1"
-			style="display: none;"></div>
-
-		<div id="tab7" class="tab_contents" brandid="1210" type="1"
-			style="display: none;">
-			<!-- ìœ„ ì†ŒìŠ¤ì™€ ë™ì¼í•´ì„œ ìƒëµí–ˆìŠµë‹ˆë‹¤. -->
-		</div>
-
-		<div id="tab9" class="tab_contents" brandid="1222" type="1"
-			style="display: none;">
-			<!-- ìœ„ ì†ŒìŠ¤ì™€ ë™ì¼í•´ì„œ ìƒëµí–ˆìŠµë‹ˆë‹¤. -->
-		</div>
-
-
-
-
-		<div class="n_more_btn">
-			<a href="https://eshop.parkland.co.kr:444/nhome/#"
-				onclick="fnMoveMore();"><span>+</span>ë”ë³´ê¸°</a>
-		</div>
-
-	</div>
-
-	<br>
-	<br>
-
-
-
-
-
-
-	</div>
-
-	<div class="footer_wrap">
-		<div class="footer_menu">
-			<div class="fmenu">
-				<li><a href="http://company.parkland.kr/" target="_blank">íšŒì‚¬ì†Œê°œ</a></li>
-				<li><a href="https://members.parkland.co.kr/info/agreement.asp"
-					target="_blank">ì´ìš©ì•½ê´€</a></li>
-				<li><a href="https://members.parkland.co.kr/info/personal.asp"
-					target="_blank">ê°œì¸ì •ë³´ì·¨ê¸‰ë°©ì¹¨</a></li>
-				<li><a href="https://members.parkland.co.kr/info/email.asp"
-					target="_blank">ì´ë©”ì¼ë¬´ë‹¨ìˆ˜ì§‘ê±°ë¶€</a></li>
-				<!--<li><a href="/nhome/customer/faq.asp">ê³ ê°ì„¼í„°</a></li>-->
-				<li><a
-					href="https://eshop.parkland.co.kr:444/nhome/customer/faq.asp">FAQ</a></li>
-				<li><a
-					href="https://eshop.parkland.co.kr:444/nhome/sitemap/sitemap.asp">Sitemap</a></li>
-				<li>service@parkland.co.kr</li>
-				<li><a
-					href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2006335008030200590&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=6218105081&amp;pageIndex=1">ì‚¬ì—…ìì •ë³´í™•ì¸</a></li>
-
-			</div>
-
-		</div>
-		<div class="footer">
-			<div class="f_left">
-				<address>
-					íŒŒí¬ëœë“œê³µì‹ì¸í„°ë„·ì‡¼í•‘ëª°(ì£¼)íŒŒí¬ëœë“œ/ëŒ€í‘œì´ì‚¬:ê³½êµ­ë¯¼,ë°•ëª…ê·œ/ë¶€ì‚°ê´‘ì—­ì‹œ ê¸ˆì •êµ¬ ì„œ2ë™ 219-2ë²ˆì§€(ìš°609-722)<br>
-					ì‚¬ì—…ìë“±ë¡ë²ˆí˜¸:621-81-05081/í†µì‹ íŒë§¤ì—…ì‹ ê³ ë²ˆí˜¸:2006-00590 <br> CS CENTER
-					1644-0582 /FAX:051-527-5521
-				</address>
-				<p>Copyright(c) 2006-2022 íŒŒí¬ëœë“œ ì˜¨ë¼ì¸ê³µì‹ì‡¼í•‘ëª° (ì£¼)íŒŒí¬ëœë“œ All Rights
-					Reserved.</p>
-			</div>
-			<div class="f_right">
-				<ul>
-					<li class="fimg"><img
-						src="<%=cp%>/shoppingmall/main/main_files/inipay.png" alt=""></li>
-					<li>
-						<p>
-							íŒŒí¬ëœë“œëª°ì€(ì£¼)ì´ë‹ˆì‹œìŠ¤ì˜<br> êµ¬ë§¤ì•ˆì „ ì—ìŠ¤í¬ë¡œì„œë¹„ìŠ¤ë¥¼ ì œê³µí•©ë‹ˆë‹¤.
-						</p>
-						<p>
-							<a
-								href="https://mark.inicis.com/mark/escrow_popup.php?no=31366&amp;st=1355291431"><img
-								src="<%=cp%>/shoppingmall/main/main_files/inipay_btn.png" alt=""></a>
-						</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- //Footer -->
-	</div>
-	<!-- // contents -->
-
-	<!-- rnavi -->
-	<div class="rnavi">
-		<!-- quick -->
-		<div class="rightquick_area">
-			<div class="rightquick">
-				<div class="q_cart">
-					<a href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp"><img
-						src="<%=cp%>/shoppingmall/main/main_files/cart.png" alt=""></a>
-					<p>
-						(<span id="gRightCartCount">1</span>)
-					</p>
+						</c:forEach>
+					</div>
+					<!-- // owl-carousel02 -->
+					<!-- customNavigation -->
+					<div class="customNavigation arr-btn02">
+						<a class="btn customPrevBtn02"> Previous</a> <a
+							class="btn customNextBtn02"> Next</a>
+					</div>
+					<!-- // customNavigation -->
 				</div>
-				<div class="q_recent">
-					Recent
-					<p>
-						(<span id="gRecentViewCount">0</span>)
-					</p>
-					<!-- ìµœê·¼ë“±ë¡ìƒí’ˆ ë¦¬ìŠ¤íŠ¸ ë¡¤ë§ -->
-					<div class="recent">
+				<!-- // mdbox -->
+				<!-- list_newbox -->
+				<div class="list_nbox">
+					<div>
+						<script language="javascript">
+							$(document).ready(function() {
+								controlListImages();
+							});
 
-						<ul id="gListRecentView"></ul>
+							var nPage, nPagesize, nSort, nRowcount, brandCatId, sizeCode, eventCatId;
+							nPage = "1";
+							nPagesize = "40";
+							nSort = "1";
+							nRowcount = "4";
+							brandCatId = "";
+							sizeCode = "";
+							eventCatId = "";
 
+							function fnMove(nType, sValue, pPage) {
+
+								if (nType == 1) {
+									nPage = sValue;
+								} else if (nType == 2) {
+									nPagesize = sValue;
+								} else if (nType == 3) {
+									nSort = sValue;
+									nPage = pPage;
+								} else if (nType == 4) {
+									nRowcount = sValue;
+								} else if (nType == 5) {
+									brandCatId = sValue;
+									nPage = pPage;
+								} else if (nType == 6) {
+									sizeCode = sValue;
+									nPage = pPage;
+								} else if (nType == 7) {
+									eventCatId = sValue;
+									nPage = pPage;
+								}
+
+								document.location.href = "/nhome/shop/brandmain.asp?brandId=1219&gcId=&evgub=&gType=&brandCatId="
+										+ brandCatId
+										+ "&eventId=&eventId2=&nPagesize="
+										+ nPagesize
+										+ "&nSort="
+										+ nSort
+										+ "&nPage="
+										+ nPage
+										+ "&nRowcount="
+										+ nRowcount
+										+ "&sizeCode="
+										+ sizeCode
+										+ "&eventCatId=" + eventCatId;
+							}
+
+							function fnMovePage(nPage) {
+								//fnMove(nPage, 40, 1, 4, "");
+								fnMove(1, nPage, "");
+							}
+
+							function fnChangeSort(nSort) {
+								//fnMove(1, 40, nSort, 4, "");
+								fnMove(3, nSort, 1);
+							}
+
+							function fnChangePagesize(nPagesize) {
+								//fnMove(1, nPagesize, 1, 4, "");
+								fnMove(2, nPagesize, "");
+							}
+
+							function fnChangeRowcount(nRowcount) {
+								//fnMove(1, 40, 1, nRowcount, "");
+								fnMove(4, nRowcount, "");
+							}
+
+							function fnChangeSortOrder(o) {
+								if (o.value == "4") {
+									//fnMove(1, 80, 1, 4, "");
+									fnMove(2, "80", "");
+								}
+							}
+
+							function fnChangeSubCat(brandCatId) {
+								//fnMove(1, 40, 1,  4,  brandCatId);
+								fnMove(5, brandCatId, 1);
+							}
+
+							function fnChangeSize(sizeCode) {
+								fnMove(6, sizeCode, 1);
+							}
+
+							function fnChangeSubCatevent2(eventCatId) {
+								//fnMove(1, 40, 1,  4,  brandCatId);
+								sizeCode = "";
+								fnMove(7, eventCatId, 1);
+							}
+						</script>
+					</div>
+					<!-- tab_wrap -->
+					<div class="tab_wrap">
+						<div class="tab_type_n">
+							<li class="active"><a
+								href="<%=cp%>/shop/category/category.do?sort=new">½Å»óÇ°¼ø</a></li>
+							<li><a href="">ÀÎ±â»óÇ°¼ø</a></li>
+							<li><a href="<%=cp%>/shop/category/category.do?sort=low">³·Àº°¡°İ¼ø</a></li>
+							<li><a href="<%=cp%>/shop/category/category.do?sort=top">³ôÀº°¡°İ¼ø</a></li>
+						</div>
+					</div>
+					<!-- // tab_wrap -->
+					<!-- select_custom_list -->
+					<div class="select_custom_list">
+						<div class="select_box">
+							<label for="Á¤·Ä¼±ÅÃ">Á¤·Ä¼±ÅÃ</label> <select name="" id="color"
+								title="Á¤·Ä¼±ÅÃ" onchange="fnChangeSortOrder(this);">
+								<option value="4">20ÁÙº¸±â</option>
+							</select>
+						</div>
+					</div>
+					<!-- // select_custom_list -->
+					<!-- select_list -->
+					<div class="select_list">
+						<div class="list_choice">
+							<li><a href="#"><img
+									src="<%=cp%>/shoppingmall/category/category_files/list4_on.png"
+									alt=""></a></li>
+						</div>
+					</div>
+					<!-- // select_list -->
+				</div>
+				<!-- // list_newbox -->
+				<!-- item04 -->
+				<div class="item04">
+					<c:set var="n" value="0" />
+					<c:forEach var="dto" items="${lists}">
+						<c:if test="${n==0}">
+							<ul>
+						</c:if>
+						<c:if test="${n!=0&&n%4==0 }">
+							</ul>
+							<ul>
+						</c:if>
+						<li>
+							<div class="listbox">
+								<a>
+									<div class="thumb_box04">
+										<a href="${detailUrl}?num=${dto.num}&pageNum=${pageNum}">
+											<img src="${imagePath}/${dto.saveFileName}"
+											class="imgListToggle" />
+										</a>
+									</div>
+									<div class="txt_box">
+										<div class="l_brandname">${dto.brandName }</div>
+										<div class="l_brandcode"></div>
+										<div class="l_subj">${dto.subject }</div>
+										<div class="l_price">${dto.price }¿ø</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<c:set var="n" value="${n+1}" />
+					</c:forEach>
+				</div>
+				<!-- // item04 -->
+				<!-- paging -->
+				<div class="paging">
+					<c:if test="${dataCount != 0}">
+						<div align="center" height="30">${pageIndexList}</div>
+					</c:if>
+					<c:if test="${dataCount == 0}">
+						<br />
+						<div align="center" height="30">µî·ÏµÈ ÀÚ·á°¡ ¾ø½À´Ï´Ù.</div>
+					</c:if>
+				</div>
+				<!-- // paging -->
+			</div>
+			<!-- // content_area -->
+			<!-- footer_wrap -->
+			<div class="footer_wrap">
+				<!-- footer_menu -->
+				<div class="footer_menu">
+					<div class="fmenu">
+						<li><a href="http://company.parkland.kr/" target="_blank">È¸»ç¼Ò°³</a></li>
+						<li><a
+							href="https://members.parkland.co.kr/info/agreement.asp"
+							target="_blank">ÀÌ¿ë¾à°ü</a></li>
+						<li><a
+							href="https://members.parkland.co.kr/info/personal.asp"
+							target="_blank">°³ÀÎÁ¤º¸Ãë±Ş¹æÄ§</a></li>
+						<li><a href="https://members.parkland.co.kr/info/email.asp"
+							target="_blank">ÀÌ¸ŞÀÏ¹«´Ü¼öÁı°ÅºÎ</a></li>
+						<!--<li><a href="/nhome/customer/faq.asp">°í°´¼¾ÅÍ</a></li>-->
+						<li><a
+							href="https://eshop.parkland.co.kr:444/nhome/customer/faq.asp">FAQ</a></li>
+						<li><a
+							href="https://eshop.parkland.co.kr:444/nhome/sitemap/sitemap.asp">Sitemap</a></li>
+						<li>help@hellonature.co.kr</li>
+						<li><a
+							href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2006335008030200590&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=6218105081&amp;pageIndex=1">»ç¾÷ÀÚÁ¤º¸È®ÀÎ</a></li>
 					</div>
 				</div>
-				<div class="righttop">
-					<a href="https://eshop.parkland.co.kr:444/nhome/#"><img
-						src="<%=cp%>/shoppingmall/main/main_files/top.png" alt="top"></a>
+				<!-- // footer_menu -->
+				<!-- footer -->
+				<div class="footer">
+					<div class="f_left">
+						<ul>
+							<li>´ëÇ¥ÀÌ»ç : ¿ÀÁ¤ÈÄ</li>
+							<li>¹ıÀÎ¸í(´ÜÃ¼¸í): (ÁÖ) Çï·Î³×ÀÌÃ³</li>
+							<li>»ç¾÷ÀÚ µî·Ï¹øÈ£ : <a
+								href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1058766628&amp;apv_perm_no="
+								target="_self">105-87-66628</a></li>
+							<li>Åë½ÅÆÇ¸Å ½Å°í¹øÈ£ : Á¦2012 ¼­¿ï°­³² 02931È£</li>
+							<li>°³ÀÎÁ¤º¸ º¸È£Ã¥ÀÓÀÚ : ¹ÚÁ¾È­</li>
+							<li>ÀÔÁ¡¹®ÀÇ : <a
+								href="https://partner.hellonature.co.kr/partner/ui/inquiry.html"
+								target="_blank" rel="noopener">ÀÔÁ¡¹®ÀÇÇÏ±â</a></li>
+							<li>Á¦ÈŞ¹®ÀÇ : mkt@hellonature.co.kr</li>
+							<li>Ã¤¿ë¹®ÀÇ : recruit@hellonature.co.kr</li>
+							<li>±âÅ¸¹®ÀÇ : help@hellonature.co.kr</li>
+							<li>°í°´¼¾ÅÍ : 1644-4339</li>
+							<li>ÁÖ¼Ò : ¼­¿ïÆ¯º°½Ã °­³²±¸ ºÀÀº»ç·Î 16±æ 33(¿ª»ïµ¿) ¿ì 06127</li>
+						</ul>
+					</div>
+					<div class="f_right">
+						<ul>
+							<li class="fimg"><img
+								src="<%=cp%>/shoppingmall/category/category_files/inipay.png"
+								alt=""></li>
+							<li>
+								<p>
+									Çï·Î³×ÀÌÃ³´Â (ÁÖ)ÀÌ´Ï½Ã½ºÀÇ<br> ±¸¸Å¾ÈÀü ¿¡½ºÅ©·Î¼­ºñ½º¸¦ Á¦°øÇÕ´Ï´Ù.
+								</p>
+								<p>
+									<a
+										href="https://mark.inicis.com/mark/escrow_popup.php?no=31366&amp;st=1355291431"><img
+										src="<%=cp%>/shoppingmall/category/category_files/inipay_btn.png"
+										alt=""></a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- // footer -->
+			</div>
+			<!-- // footer_wrap -->
+		</div>
+		<!-- // contents -->
+		<!-- rnavi -->
+		<div class="rnavi">
+			<!-- rightquick_area -->
+			<div class="rightquick_area">
+				<div class="rightquick">
+					<div class="q_cart">
+						<a href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp"><img
+							src="<%=cp%>/shoppingmall/category/category_files/cart.png"
+							alt=""></a>
+						<p>
+							(<span id="gRightCartCount">1</span>)
+						</p>
+					</div>
+					<div class="q_recent">
+						Recent
+						<p>
+							(<span id="gRecentViewCount">0</span>)
+						</p>
+						<!-- ÃÖ±Ùµî·Ï»óÇ° ¸®½ºÆ® ·Ñ¸µ -->
+						<div class="recent">
+							<!--<ul class="customNavigation PrevBtn">
+					            <a class="btn customPrevBtn"><img src="/nhome/img/arr_l.png"  alt="ÀÌÀü" /></a>
+					          </ul>-->
+							<ul id="gListRecentView"></ul>
+							<!--<ul class="customNavigation NextBtn">
+					            <a class="btn customNextBtn"><img src="/nhome/img/arr_r.png"  alt="´ÙÀ½" /></a>
+					          </ul>
+					        </div>-->
+							<!-- // ÃÖ±Ùµî·Ï»óÇ° ¸®½ºÆ® ·Ñ¸µ -->
+						</div>
+					</div>
+					<div class="righttop">
+						<a
+							href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1219#"><img
+							src="<%=cp%>/shoppingmall/category/category_files/top.png"
+							alt="top"></a>
+					</div>
 				</div>
 			</div>
-			<!-- // quick -->
+			<!-- // rightquick_area -->
 		</div>
 		<!-- //rnavi -->
 	</div>
+	<!-- // container -->
+	<!-- script -->
+	<div>
+		<!-- WIDERPLANET  SCRIPT START 2021.12.1 -->
+		<div id="wp_tg_cts" style="display: none;">
+			<script id="wp_tag_script_1645841314342"
+				src="<%=cp%>/shoppingmall/category/category_files/wpc.php"></script>
+		</div>
+		<script type="text/javascript">
+			var wptg_tagscript_vars = wptg_tagscript_vars || [];
+			wptg_tagscript_vars.push((function() {
+				return {
+					wp_hcuid : "", /*°í°´³Ñ¹ö µî Unique ID (ex. ·Î±×ÀÎ  ID, °í°´³Ñ¹ö µî )¸¦ ¾ÏÈ£È­ÇÏ¿© ´ëÀÔ.
+					 *ÁÖÀÇ : ·Î±×ÀÎ ÇÏÁö ¾ÊÀº »ç¿ëÀÚ´Â ¾î¶°ÇÑ °ªµµ ´ëÀÔÇÏÁö ¾Ê½À´Ï´Ù.*/
+					ti : "53076", /*±¤°íÁÖ ÄÚµå */
+					ty : "Home", /*Æ®·¡Å·ÅÂ±× Å¸ÀÔ */
+					device : "web" /*µğ¹ÙÀÌ½º Á¾·ù  (web ¶Ç´Â  mobile)*/
 
-	<div id="wp_tg_cts" style="display: none;">
-		<script id="wp_tag_script_1645774219113"
-			src="<%=cp%>/shoppingmall/main/main_files/wpc.php"></script>
+				};
+			}));
+		</script>
+		<script type="text/javascript" async=""
+			src="<%=cp%>/shoppingmall/category/category_files/wp_astg_4.0.js"></script>
+		<!-- // WIDERPLANET  SCRIPT END 2021.12.1 -->
+		<script type="text/javascript">
+			function new_window(theURL, winName, features) { //v3.0
+				window.open(theURL, winName, features);
+			}
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				getCartCount();
+				listRecentView();
+
+				//resizeLeftNav();
+			});
+
+			//$( window ).resize(function() {
+			//  resizeLeftNav();
+			//	});
+
+			//function resizeLeftNav()	{
+			//	$("#leftside-navigation").height(($(window).height() - 450) + "px");
+			//	}
+
+			function getCartCount() {
+				getCartInfo("cmd=GETCARTCOUNT", getCartCount_proc, "/nhome");
+			}
+
+			function getCartCount_proc(ret) {
+				eval("var adata = " + ret);
+				if (parseInt(adata.retCode) != 0) {
+					alert(adata.Message);
+					return false;
+				}
+
+				$("#gTopCartCount").html(adata.data);
+				$("#gRightCartCount").html(adata.data);
+			}
+
+			function listRecentView() {
+				getGoodsInfo("cmd=LISTRECENTVIEWED", listRecentView_proc,
+						"/nhome");
+			}
+
+			function listRecentView_proc(ret) {
+				eval("var adata = " + ret);
+				if (parseInt(adata.retCode) != 0) {
+					alert(adata.Message);
+					return false;
+				}
+
+				$("#gRecentViewCount").html(adata.count);
+				$("#gListRecentView").html(adata.data);
+			}
+
+			function addFavorite() {
+				var bookmarkURL = window.location.href;
+				var bookmarkTitle = document.title;
+				var triggerDefault = false;
+
+				if (window.sidebar && window.sidebar.addPanel) {
+					// Firefox version < 23
+					window.sidebar.addPanel(bookmarkTitle, bookmarkURL, '');
+				} else if ((window.sidebar && (navigator.userAgent
+						.toLowerCase().indexOf('firefox') > -1))
+						|| (window.opera && window.print)) {
+					// Firefox version >= 23 and Opera Hotlist
+					var $this = $(this);
+					$this.attr('href', bookmarkURL);
+					$this.attr('title', bookmarkTitle);
+					$this.attr('rel', 'sidebar');
+				} else if (window.external
+						&& ('AddFavorite' in window.external)) {
+					// IE Favorite
+					window.external.AddFavorite(bookmarkURL, bookmarkTitle);
+				} else {
+					// WebKit - Safari/Chrome
+					alert((navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd'
+							: 'Ctrl')
+							+ '+D Å°¸¦ ´­·¯ Áñ°ÜÃ£±â¿¡ µî·ÏÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.');
+				}
+			}
+
+			function gLogin() {
+				var loc = "https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1219";
+				location.href = "https://eshop.parkland.co.kr:444/nhome/member/member_login.asp?retURL="
+						+ encodeURIComponent(loc);
+			}
+		</script>
+		<!-- AceCounter Log Gathering Script V.8.0.AMZ2019080601 -->
+		<script language="javascript">
+			var _AceGID = (function() {
+				var Inf = [ 'gtc6.acecounter.com', '8080', 'AS4A41784471665',
+						'AW', '0', 'NaPm,Ncisy', 'ALL', '0' ];
+				var _CI = (!_AceGID) ? [] : _AceGID.val;
+				var _N = 0;
+				var _T = new Image(0, 0);
+				if (_CI.join('.').indexOf(Inf[3]) < 0) {
+					_T.src = "https://" + Inf[0] + '/?cookie';
+					_CI.push(Inf);
+					_N = _CI.length;
+				}
+				return {
+					o : _N,
+					val : _CI
+				};
+			})();
+			var _AceCounter = (function() {
+				var G = _AceGID;
+				var _sc = document.createElement('script');
+				var _sm = document.getElementsByTagName('script')[0];
+				if (G.o != 0) {
+					var _A = G.val[G.o - 1];
+					var _G = (_A[0]).substr(0, _A[0].indexOf('.'));
+					var _C = (_A[7] != '0') ? (_A[2]) : _A[3];
+					var _U = (_A[5]).replace(/\,/g, '_');
+					_sc.src = 'https:' + '//cr.acecounter.com/Web/AceCounter_'
+							+ _C + '.js?gc=' + _A[2] + '&py=' + _A[4] + '&gd='
+							+ _G + '&gp=' + _A[1] + '&up=' + _U + '&rd='
+							+ (new Date().getTime());
+					_sm.parentNode.insertBefore(_sc, _sm);
+					return _sc.src;
+				}
+			})();
+		</script>
+		<!-- AceCounter Log Gathering Script End -->
+		<script type="text/javascript"
+			src="<%=cp%>/shoppingmall/category/category_files/wcslog.js"></script>
+		<script type="text/javascript">
+			if (!wcs_add)
+				var wcs_add = {};
+			wcs_add["wa"] = "d2a0aa740ab8d";
+			wcs_do();
+		</script>
+		<script type="text/javascript">
+			if (!wcs_add)
+				var wcs_add = {};
+			wcs_add["wa"] = "s_5a296bbc5570";
+			wcs.inflow("parkland.co.kr");
+			wcs_do();
+		</script>
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script',
+					'https://www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-96357523-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script type="text/javascript">
+			var _bAce = [];
+			function ACEL_TRACKING(mode, ename) {
+				var ACEL_img = new Image();
+				var ACED_D = 'gtm1.acecounter.com';
+				var ACED_H = (location.protocol == 'https:') ? 'https://'
+						+ ACED_D + ':5443' : 'http://' + ACED_D + ':5757';
+				ACEL_img.src = ACED_H + '/EMAM?euid=AS4A41784471665&ename='
+						+ ename + '&fdv=' + mode + '&RID=' + Math.random()
+						+ '&';
+				if (typeof (Array.prototype.push) != 'undefined') {
+					_bAce.push(ACEL_img);
+				}
+				;
+			};
+		</script>
 	</div>
-	<script type="text/javascript">
-		var wptg_tagscript_vars = wptg_tagscript_vars || [];
-		wptg_tagscript_vars.push((function() {
-			return {
-				wp_hcuid : "", /*ê³ ê°ë„˜ë²„ ë“± Unique ID (ex. ë¡œê·¸ì¸  ID, ê³ ê°ë„˜ë²„ ë“± )ë¥¼ ì•”í˜¸í™”í•˜ì—¬ ëŒ€ì….
-				 *ì£¼ì˜ : ë¡œê·¸ì¸ í•˜ì§€ ì•Šì€ ì‚¬ìš©ìëŠ” ì–´ë– í•œ ê°’ë„ ëŒ€ì…í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.*/
-				ti : "53076", /*ê´‘ê³ ì£¼ ì½”ë“œ */
-				ty : "Home", /*íŠ¸ë˜í‚¹íƒœê·¸ íƒ€ì… */
-				device : "web" /*ë””ë°”ì´ìŠ¤ ì¢…ë¥˜  (web ë˜ëŠ”  mobile)*/
-
-			};
-		}));
-	</script>
-	<script type="text/javascript" async=""
-		src="<%=cp%>/shoppingmall/main/main_files/wp_astg_4.0.js.ë‹¤ìš´ë¡œë“œ"></script>
-
-
-	<script type="text/javascript">
-		function new_window(theURL, winName, features) { //v3.0
-			window.open(theURL, winName, features);
-		}
-	</script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			getCartCount();
-			listRecentView();
-
-	
-		});
-
-
-
-		function getCartCount() {
-			getCartInfo("cmd=GETCARTCOUNT", getCartCount_proc, "/nhome");
-		}
-
-		function getCartCount_proc(ret) {
-			eval("var adata = " + ret);
-			if (parseInt(adata.retCode) != 0) {
-				alert(adata.Message);
-				return false;
-			}
-
-			$("#gTopCartCount").html(adata.data);
-			$("#gRightCartCount").html(adata.data);
-		}
-
-		function listRecentView() {
-			getGoodsInfo("cmd=LISTRECENTVIEWED", listRecentView_proc, "/nhome");
-		}
-
-		function listRecentView_proc(ret) {
-			eval("var adata = " + ret);
-			if (parseInt(adata.retCode) != 0) {
-				alert(adata.Message);
-				return false;
-			}
-
-			$("#gRecentViewCount").html(adata.count);
-			$("#gListRecentView").html(adata.data);
-		}
-
-		function addFavorite() {
-			var bookmarkURL = window.location.href;
-			var bookmarkTitle = document.title;
-			var triggerDefault = false;
-
-			if (window.sidebar && window.sidebar.addPanel) {
-				// Firefox version < 23
-				window.sidebar.addPanel(bookmarkTitle, bookmarkURL, '');
-			} else if ((window.sidebar && (navigator.userAgent.toLowerCase()
-					.indexOf('firefox') > -1))
-					|| (window.opera && window.print)) {
-				// Firefox version >= 23 and Opera Hotlist
-				var $this = $(this);
-				$this.attr('href', bookmarkURL);
-				$this.attr('title', bookmarkTitle);
-				$this.attr('rel', 'sidebar');
-			} else if (window.external && ('AddFavorite' in window.external)) {
-				// IE Favorite
-				window.external.AddFavorite(bookmarkURL, bookmarkTitle);
-			} else {
-				// WebKit - Safari/Chrome
-				alert((navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd'
-						: 'Ctrl')
-						+ '+D í‚¤ë¥¼ ëˆŒëŸ¬ ì¦ê²¨ì°¾ê¸°ì— ë“±ë¡í•˜ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤.');
-			}
-		}
-
-		function gLogin() {
-			var loc = "https://eshop.parkland.co.kr:444/nhome/index.asp?";
-			location.href = "https://eshop.parkland.co.kr:444/nhome/member/member_login.asp?retURL="
-					+ encodeURIComponent(loc);
-		}
-	</script>
-
-	<!-- AceCounter Log Gathering Script V.8.0.AMZ2019080601 -->
-	<script language="javascript">
-		var _AceGID = (function() {
-			var Inf = [ 'gtc6.acecounter.com', '8080', 'AS4A41784471665', 'AW',
-					'0', 'NaPm,Ncisy', 'ALL', '0' ];
-			var _CI = (!_AceGID) ? [] : _AceGID.val;
-			var _N = 0;
-			var _T = new Image(0, 0);
-			if (_CI.join('.').indexOf(Inf[3]) < 0) {
-				_T.src = "https://" + Inf[0] + '/?cookie';
-				_CI.push(Inf);
-				_N = _CI.length;
-			}
-			return {
-				o : _N,
-				val : _CI
-			};
-		})();
-		var _AceCounter = (function() {
-			var G = _AceGID;
-			var _sc = document.createElement('script');
-			var _sm = document.getElementsByTagName('script')[0];
-			if (G.o != 0) {
-				var _A = G.val[G.o - 1];
-				var _G = (_A[0]).substr(0, _A[0].indexOf('.'));
-				var _C = (_A[7] != '0') ? (_A[2]) : _A[3];
-				var _U = (_A[5]).replace(/\,/g, '_');
-				_sc.src = 'https:' + '//cr.acecounter.com/Web/AceCounter_' + _C
-						+ '.js?gc=' + _A[2] + '&py=' + _A[4] + '&gd=' + _G
-						+ '&gp=' + _A[1] + '&up=' + _U + '&rd='
-						+ (new Date().getTime());
-				_sm.parentNode.insertBefore(_sc, _sm);
-				return _sc.src;
-			}
-		})();
-	</script>
-	<!-- AceCounter Log Gathering Script End -->
-
-
-	<script type="text/javascript" src="./main_files/wcslog.js.ë‹¤ìš´ë¡œë“œ"></script>
-	<script type="text/javascript">
-		if (!wcs_add)
-			var wcs_add = {};
-		wcs_add["wa"] = "d2a0aa740ab8d";
-		wcs_do();
-	</script>
-	<script type="text/javascript">
-		if (!wcs_add)
-			var wcs_add = {};
-		wcs_add["wa"] = "s_5a296bbc5570";
-		wcs.inflow("parkland.co.kr");
-		wcs_do();
-	</script>
-	<script>
-		(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function() {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script',
-				'https://www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-96357523-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-
-	<!--// 20171214 min //-->
-	<script type="text/javascript">
-		var _bAce = [];
-		function ACEL_TRACKING(mode, ename) {
-			var ACEL_img = new Image();
-			var ACED_D = 'gtm1.acecounter.com';
-			var ACED_H = (location.protocol == 'https:') ? 'https://' + ACED_D
-					+ ':5443' : 'http://' + ACED_D + ':5757';
-			ACEL_img.src = ACED_H + '/EMAM?euid=AS4A41784471665&ename=' + ename
-					+ '&fdv=' + mode + '&RID=' + Math.random() + '&';
-			if (typeof (Array.prototype.push) != 'undefined') {
-				_bAce.push(ACEL_img);
-			}
-			;
-		};
-	</script>
-
-
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-
-			loadList("#tab1");
-			/*loadList("#tab11");
-			loadList("#tab167");
-			loadList("#tab168");*/
-			controlTabs();
-			//controlListImages();
-		});
-
-		$(window).scroll(function() {
-			fnFixHeader();
-		});
-
-		function fnFixHeader() {
-			var scrollTop = $(window).scrollTop();
-			var topmargin = $("#dvTopmeu").height();
-
-			var dvNewTop = $("#dvNewWrapper").offset().top;
-			var dvNewHeight = $("#dvNewWrapper").height();
-
-			var dvBestTop = $("#dvBestWrapper").offset().top;
-			var dvBestHeight = $("#dvBestWrapper").height();
-
-			$("#dvNewHeader").css("position", "");
-			$("#dvBestHeader").css("position", "");
-			console.log("scrollTop", scrollTop);
-			console.log("dvNewTop-topmargin-50", (dvNewTop - topmargin - 50));
-			console.log("(dvNewTop + dvNewHeight-topmargin-500)", (dvNewTop
-					+ dvNewHeight - topmargin - 500));
-			console.log("dvNewTop", dvNewTop);
-			console.log("dvNewHeight", dvNewHeight);
-			console.log("topmargin", topmargin);
-			if (scrollTop >= (dvNewTop - topmargin - 50)
-					&& scrollTop < (dvNewTop + dvNewHeight - topmargin - 500)) {
-				console.log("dvnew fixed");
-				$("#dvNewHeader").css("position", "fixed");
-				$("#dvNewHeader").css("top", "85px");
-			} else if (scrollTop >= (dvBestTop - topmargin - 50)
-					&& scrollTop < (dvBestTop + dvBestHeight - topmargin)) {
-				console.log("dvbest fixed");
-				$("#dvNewHeader").css("position", "");
-				$("#dvBestHeader").css("position", "fixed");
-				$("#dvBestHeader").css("top", "85px");
-
-			} else {
-				$("#dvNewHeader").css("position", "");
-				$("#dvBestHeader").css("position", "");
-			}
-
-		}
-
-		function fnToggleRowtype(ntype) {
-			var o;
-			if (ntype == 1) {
-				o = $("#new-row");
-			} else if (ntype == 3) {
-				o = $("#best-row2");
-			} else if (ntype == 4) {
-				o = $("#Qbest-row2");
-			} else {
-				o = $("#best-row");
-			}
-
-			if (o.attr("src") == o.attr("onsrc")) {
-				o.attr("data-count", "3");
-				o.attr("src", o.attr("offsrc"));
-			} else {
-				o.attr("data-count", "4");
-				o.attr("src", o.attr("onsrc"));
-			}
-
-			if (ntype == 1) {
-				loadList($("#dvNew").attr("cur-tab"));
-			} else if (ntype == 3) {
-				loadList($("#dvBest2").attr("cur-tab"));
-			} else if (ntype == 4) {
-				loadList($("#QdvBest2").attr("cur-tab"));
-			} else {
-				loadList($("#dvBest").attr("cur-tab"));
-			}
-		}
-
-		function fnMouseover(o) {
-			controlListImages();
-		}
-
-		function loadList(tabid) {
-			if (parseInt($(tabid).attr("type")) == 1) {
-				loadNewList(tabid);
-			} else if (parseInt($(tabid).attr("type")) == 3) {
-				loadBestList3(tabid);
-			} else if (parseInt($(tabid).attr("type")) == 4) {
-				QloadBestList3(tabid);
-			} else {
-				loadBestList(tabid);
-			}
-
-		}
-
-		function showList(o, ret) {
-			eval("var adata = " + ret);
-			o.html(adata.data);
-		}
-
-		function loadNewList(tabid) {
-			$("#dvNew").attr("cur-tab", tabid);
-			var o = $(tabid);
-			var count = $("#new-row").attr("data-count");
-
-			loaddata("cmd=GETNEWLIST&nCount=" + count + "&brandId="
-					+ o.attr("brandId"), "/nhome/if/ifgoods.asp",
-					function(data) {
-						showList(o, data);
-					});
-		}
-
-		function loadBestList(tabid) {
-			$("#dvBest").attr("cur-tab", tabid);
-			var o = $(tabid);
-			var count = $("#best-row").attr("data-count");
-			loaddata("cmd=GETBESTLIST&nCount=" + count + "&brandId="
-					+ o.attr("brandId"), "/nhome/if/ifgoods.asp",
-					function(data) {
-						showList(o, data);
-					});
-		}
-		function loadBestList3(tabid) {
-			$("#dvBest2").attr("cur-tab", tabid);
-			var o = $(tabid);
-			var count = $("#best-row2").attr("data-count");
-			loaddata("cmd=GETBESTLIST&nCount=" + count + "&brandId="
-					+ o.attr("brandId"), "/nhome/if/ifgoods.asp",
-					function(data) {
-						showList(o, data);
-					});
-		}
-		function QloadBestList3(tabid) {
-			$("#QdvBest2").attr("cur-tab", tabid);
-			var o = $(tabid);
-			var count = $("#Qbest-row2").attr("data-count");
-			loaddata("cmd=GETBESTLIST&nCount=" + count + "&brandId="
-					+ o.attr("brandId"), "/nhome/if/ifgoods.asp",
-					function(data) {
-						showList(o, data);
-					});
-		}
-		function loadBestList_neo(tabid, cnt) {
-			$("#dvBest").attr("cur-tab", tabid);
-			var o = $(tabid);
-			var count = $("#best-row").attr("data-count");
-			loaddata("cmd=GETBESTLIST&nCount=" + count + "&brandId="
-					+ o.attr("brandId") + "&nCount2=" + cnt,
-					"/nhome/if/ifgoods.asp", function(data) {
-						showList(o, data);
-					});
-		}
-		function loadBestList_neo2(tabid, cnt) {
-			$("#dvBest2").attr("cur-tab", tabid);
-			var o = $(tabid);
-			var count = $("#best-row2").attr("data-count");
-			loaddata("cmd=GETBESTLIST&nCount=" + count + "&brandId="
-					+ o.attr("brandId") + "&nCount2=" + cnt,
-					"/nhome/if/ifgoods.asp", function(data) {
-						showList(o, data);
-					});
-		}
-		function QloadBestList_neo2(tabid, cnt) {
-			$("#QdvBest2").attr("cur-tab", tabid);
-			var o = $(tabid);
-			var count = $("#Qbest-row2").attr("data-count");
-			loaddata("cmd=GETBESTLIST&nCount=" + count + "&brandId="
-					+ o.attr("brandId") + "&nCount2=" + cnt,
-					"/nhome/if/ifgoods.asp", function(data) {
-						showList(o, data);
-					});
-		}
-		function controlTabs() {
-			//Default Action
-			$(".tab_contents").hide(); //Hide all content
-			$(".main_tab li:first").addClass("active").show(); //Activate first tab
-			$(".tab_contents:first").show(); //Show first tab content
-
-			//On Click Event
-			$(".main_tab li").click(function() {
-				$(".main_tab li").removeClass("active"); //Remove any "active" class
-				$(this).addClass("active"); //Add "active" class to selected tab
-				$(".tab_contents").hide(); //Hide all tab content
-				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
-				$(activeTab).fadeIn(); //Fade in the active content
-				loadList(activeTab);
-				return false;
-			});
-
-			//Default Action
-			$(".tab_contents01").hide(); //Hide all content
-			$(".main_tab06 li:first").addClass("active").show(); //Activate first tab
-			$(".tab_contents01:first").show(); //Show first tab content
-
-			//On Click Event
-			$(".main_tab06 li").click(function() {
-				$(".main_tab06 li").removeClass("active"); //Remove any "active" class
-				$(this).addClass("active"); //Add "active" class to selected tab
-				$(".tab_contents01").hide(); //Hide all tab content
-				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
-				$(activeTab).fadeIn(); //Fade in the active content
-				loadList(activeTab);
-				return false;
-			});
-		}
-
-		function fnMoveMore() {
-			var o = $($("#dvNew").attr("cur-tab"));
-			if (o.attr("brandId") == "") {
-				document.location.href = "http://eshop.parkland.co.kr/nhome/shop/goodsmain.asp?gcId=2&gtype=2";
-			} else {
-				document.location.href = "/nhome/shop/brandmain.asp?brandId="
-						+ o.attr("brandId");
-			}
-		}
-	</script>
-	<!--//include virtual="/new_admin/auto.asp"//-->
+	<!-- // script -->
 </body>
 </html>
