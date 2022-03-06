@@ -1,90 +1,134 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%
+	request.setCharacterEncoding("UTF-8");
+	String cp = request.getContextPath();
+%>
 <!DOCTYPE html>
-<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-	<title>ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô</title>
-	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=1300">
-	<meta name="facebook-domain-verification" content="ljsthv428khej1ow7p3b9ffy8q67i5">
-    <meta name="facebook-domain-verification" content="nmgreo7cfvx7q1b1fb03sslnypf0q1">
-	<link rel="stylesheet" type="text/css" href="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/reset.css" media="all">
-	<link rel="stylesheet" type="text/css" href="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/style.css" media="all">
-	<link rel="stylesheet" type="text/css" href="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/owl.carousel.min.css">
-	<!-- main slider css -->
-	<!--link rel="stylesheet" type="text/css" href="/nhome/css/owl.theme.default.min.css"-->
-	<!-- main slider css -->
-	<script type="text/javascript" async="" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/analytics.js.´Ù¿î·Îµå"></script><script async="" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/analytics.js.´Ù¿î·Îµå"></script><script src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/AceCounter_AW.js.´Ù¿î·Îµå"></script><script type="text/javascript" async="" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/js"></script><script type="text/javascript" async="" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/analytics.js.´Ù¿î·Îµå"></script><script async="" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/fbevents.js.´Ù¿î·Îµå"></script><script src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/jquery-1.11.3.min.js.´Ù¿î·Îµå"></script>
-	<script type="text/javascript" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/owl.carousel.js.´Ù¿î·Îµå"></script><!-- main slider js -->
-	<script src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/default.js.´Ù¿î·Îµå" type="text/javascript" charset="euc-kr"></script>
-	<script src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/common.js.´Ù¿î·Îµå" type="text/javascript" charset="euc-kr"></script>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>í—¬ë¡œë„¤ì´ì²˜</title>
 
-	<link rel="stylesheet" type="text/css" href="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/odesign.css">
-	<script src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/global.js.´Ù¿î·Îµå" type="text/javascript" charset="euc-kr"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=1300">
+<meta name="facebook-domain-verification"
+	content="ljsthv428khej1ow7p3b9ffy8q67i5">
+<meta name="facebook-domain-verification"
+	content="nmgreo7cfvx7q1b1fb03sslnypf0q1">
+<link rel="stylesheet" type="text/css"
+	href="<%=cp%>/shoppingmall/order/order_files/reset.css" media="all">
+<link rel="stylesheet" type="text/css"
+	href="<%=cp%>/shoppingmall/order/order_files/style.css" media="all">
+<link rel="stylesheet" type="text/css"
+	href="<%=cp%>/shoppingmall/order/order_files/owl.carousel.min.css">
+<!-- main slider css -->
+<!--link rel="stylesheet" type="text/css" href="/nhome/css/owl.theme.default.min.css"-->
+<!-- main slider css -->
+<script type="text/javascript" async=""
+	src="<%=cp%>/shoppingmall/order/order_files/analytics.js.ë‹¤ìš´ë¡œë“œ"></script>
+<script async=""
+	src="<%=cp%>/shoppingmall/order/order_files/analytics.js.ë‹¤ìš´ë¡œë“œ"></script>
+<script
+	src="<%=cp%>/shoppingmall/order/order_files/AceCounter_AW.js.ë‹¤ìš´ë¡œë“œ"></script>
+<script type="text/javascript" async=""
+	src="<%=cp%>/shoppingmall/order/order_files/js"></script>
+<script type="text/javascript" async=""
+	src="<%=cp%>/shoppingmall/order/order_files/analytics.js.ë‹¤ìš´ë¡œë“œ"></script>
+<script async=""
+	src="<%=cp%>/shoppingmall/order/order_files/fbevents.js.ë‹¤ìš´ë¡œë“œ"></script>
+<script
+	src="<%=cp%>/shoppingmall/order/order_files/jquery-1.11.3.min.js.ë‹¤ìš´ë¡œë“œ"></script>
+<script type="text/javascript"
+	src="<%=cp%>/shoppingmall/order/order_files/owl.carousel.js.ë‹¤ìš´ë¡œë“œ"></script>
+<!-- main slider js -->
+<script src="<%=cp%>/shoppingmall/order/order_files/default.js.ë‹¤ìš´ë¡œë“œ"
+	type="text/javascript" charset="euc-kr"></script>
+<script src="<%=cp%>/shoppingmall/order/order_files/common.js.ë‹¤ìš´ë¡œë“œ"
+	type="text/javascript" charset="euc-kr"></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics ipcom 190820 -->
-	<script async="" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/js(1)"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+<link rel="stylesheet" type="text/css"
+	href="<%=cp%>/shoppingmall/order/order_files/odesign.css">
+<script src="<%=cp%>/shoppingmall/order/order_files/global.js.ë‹¤ìš´ë¡œë“œ"
+	type="text/javascript" charset="euc-kr"></script>
 
-	  gtag('config', 'UA-143530513-1');
+<!-- Global site tag (gtag.js) - Google Analytics ipcom 190820 -->
+<script async="" src="<%=cp%>/shoppingmall/order/order_files/js(1)"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
 
-	  gtag('config', 'UA-126736889-1'); //190828
-	</script>
-	<!-- Facebook Pixel Code -->
-	<script>
-	!function(f,b,e,v,n,t,s)
-	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t,s)}(window,document,'script',
-	'https://connect.facebook.net/en_US/fbevents.js');
+	gtag('config', 'UA-143530513-1');
+
+	gtag('config', 'UA-126736889-1'); //190828
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+	!function(f, b, e, v, n, t, s) {
+		if (f.fbq)
+			return;
+		n = f.fbq = function() {
+			n.callMethod ? n.callMethod.apply(n, arguments) : n.queue
+					.push(arguments)
+		};
+		if (!f._fbq)
+			f._fbq = n;
+		n.push = n;
+		n.loaded = !0;
+		n.version = '2.0';
+		n.queue = [];
+		t = b.createElement(e);
+		t.async = !0;
+		t.src = v;
+		s = b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t, s)
+	}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
 	fbq('init', '462724525419327');
 	fbq('track', 'PageView');
-	</script>
-	<noscript>
-	<img height="1" width="1" src="https://www.facebook.com/tr?id=462724525419327&ev=PageView&noscript=1"/>
-	</noscript>
-	<!-- End Facebook Pixel Code -->
+</script>
+<noscript>
+	<img height="1" width="1"
+		src="https://www.facebook.com/tr?id=462724525419327&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code -->
 
-	<script language="javascript">
-
-	/*¶ì¹è³Ê °¡¸®±â*/
+<script language="javascript">
+	/*ë ë°°ë„ˆ ê°€ë¦¬ê¸°*/
 	$(window).scroll(function() {
 		var scrollHeight = $(document).height();
 		var scrollPosition = $(window).height() + $(window).scrollTop();
-		if($(window).scrollTop()) {
-			$(".arthro_banner").css("display","none");
+		if ($(window).scrollTop()) {
+			$(".arthro_banner").css("display", "none");
 		} else {
-			$(".arthro_banner").css("display","block");
+			$(".arthro_banner").css("display", "block");
 		}
 	});
 
-	/**½ºÅ©·ÑÀÌ ¼³Á¤ÇÑ ³ôÀÌ ÀÌ»ó ³»·Á°¬À»¶§ ½ºÅ¸ÀÏÃß°¡ÇÏ±â**/
+	/**ìŠ¤í¬ë¡¤ì´ ì„¤ì •í•œ ë†’ì´ ì´ìƒ ë‚´ë ¤ê°”ì„ë•Œ ìŠ¤íƒ€ì¼ì¶”ê°€í•˜ê¸°**/
 	/*if (jQuery(window).width() > 1300) {
-    jQuery(window).on("scroll",function(ev){
-        if(jQuery(window).scrollTop() > 85 ) { /**³ôÀÌ ÇÈ¼¿ Á¶Á¤**/
-        /*jQuery('.mlogo').addClass('ktop');  /**À§ÀÇ ³ôÀÌ¿¡¼­ .fixed Å¬·¡½º¸¦ Ãß°¡ÇÕ´Ï´Ù. ½ºÅ¸ÀÏ¿¡¼­ ÀÚÀ¯·Ó°Ô ¼öÄ¡ Á¶Àı °¡´ÉÇÕ´Ï´Ù.**/
-		/*jQuery('.t_util').addClass('ktop');
-		//jQuery('#header').removeClass('gnb');
+	jQuery(window).on("scroll",function(ev){
+	    if(jQuery(window).scrollTop() > 85 ) { /**ë†’ì´ í”½ì…€ ì¡°ì •**/
+	/*jQuery('.mlogo').addClass('ktop');  /**ìœ„ì˜ ë†’ì´ì—ì„œ .fixed í´ë˜ìŠ¤ë¥¼ ì¶”ê°€í•©ë‹ˆë‹¤. ìŠ¤íƒ€ì¼ì—ì„œ ììœ ë¡­ê²Œ ìˆ˜ì¹˜ ì¡°ì ˆ ê°€ëŠ¥í•©ë‹ˆë‹¤.**/
+	/*jQuery('.t_util').addClass('ktop');
+	//jQuery('#header').removeClass('gnb');
 
-        }
-
-        else{
-			jQuery('.mlogo').removeClass('ktop');
-			jQuery('.t_util').removeClass('ktop');
-			//$(".sheadWrap").hide();
-			//$(".sgnb").hide();
-        }
-        return false;
-    });
 	}
 
-	/*»ó´Ü ÀÌº¥Æ® Åä±Û*/
+	else{
+		jQuery('.mlogo').removeClass('ktop');
+		jQuery('.t_util').removeClass('ktop');
+		//$(".sheadWrap").hide();
+		//$(".sgnb").hide();
+	}
+	return false;
+	});
+	}
+
+	/*ìƒë‹¨ ì´ë²¤íŠ¸ í† ê¸€*/
 
 	$(function() {
 		$('.btn_closeimg a').click(function() {
@@ -94,682 +138,685 @@
 		});
 	});
 
+	function getCookie_tb(strName) {
+		var strArg = new String(strName + "=");
+		var nArgLen, nCookieLen, nEnd;
+		var i = 0, j;
 
-	function getCookie_tb(strName)	{
-		var	strArg = new String(strName	+ "=");
-		var	nArgLen, nCookieLen, nEnd;
-		var	i =	0, j;
-
-		nArgLen	   = strArg.length;
+		nArgLen = strArg.length;
 		nCookieLen = document.cookie.length;
 
-		if(nCookieLen >	0) {
+		if (nCookieLen > 0) {
 
-			while(i	< nCookieLen) {
-				j =	i +	nArgLen;
-				if(document.cookie.substring(i,	j) == strArg) {
-					nEnd = document.cookie.indexOf (";", j);
-					if(nEnd	== -1) nEnd	= document.cookie.length;
+			while (i < nCookieLen) {
+				j = i + nArgLen;
+				if (document.cookie.substring(i, j) == strArg) {
+					nEnd = document.cookie.indexOf(";", j);
+					if (nEnd == -1)
+						nEnd = document.cookie.length;
 					return unescape(document.cookie.substring(j, nEnd));
 				}
-				i =	document.cookie.indexOf(" ", i)	+ 1;
-				if (i == 0)	break;
+				i = document.cookie.indexOf(" ", i) + 1;
+				if (i == 0)
+					break;
 			}
 		}
 
-		return("");
+		return ("");
 	}
 
-	function setCookie_tb(name,value) {
-		var	todayDate =	new	Date();
-		todayDate.setTime(todayDate.getTime() +	(1000 *	3600) *	24 * 1);	//1ÀÏ
-		document.cookie	= name+"="+escape(value)+";path=/;expires="+todayDate.toGMTString()+";";
+	function setCookie_tb(name, value) {
+		var todayDate = new Date();
+		todayDate.setTime(todayDate.getTime() + (1000 * 3600) * 24 * 1); //1ì¼
+		document.cookie = name + "=" + escape(value) + ";path=/;expires="
+				+ todayDate.toGMTString() + ";";
 	}
 
-	$(function(){
+	$(function() {
 
-		if(getCookie_tb('popUp_tb') != "checked") {
+		if (getCookie_tb('popUp_tb') != "checked") {
 
-			$("#bannerPop3").css('visibility','visible').show();
-			$("#bannerPop3").find(".closePop").click(function(e){
+			$("#bannerPop3").css('visibility', 'visible').show();
+			$("#bannerPop3").find(".closePop").click(function(e) {
 				e.preventDefault();
 
-				if($("#_closePop").is(":checked")){
-					setCookie_tb("popUp_tb","checked");
+				if ($("#_closePop").is(":checked")) {
+					setCookie_tb("popUp_tb", "checked");
 				}
 
-				$("#bannerPop3").css('visibility','hide').slideup('fast');
+				$("#bannerPop3").css('visibility', 'hide').slideup('fast');
 			});
 		}
 
 	});
-	</script>
+</script>
 
 <script>
-$(document).ready(function(){
- $('a.es').click(function(){
- $('html, body').animate({
- scrollTop: $( $.attr(this, 'href') ).offset().top -85
-}, 500);
-return false;
- });
-});
-
+	$(document).ready(function() {
+		$('a.es').click(function() {
+			$('html, body').animate({
+				scrollTop : $($.attr(this, 'href')).offset().top - 85
+			}, 500);
+			return false;
+		});
+	});
 </script>
 
 
 </head>
 <body>
-
-<!-- WRAP -->
-<!--div id="wrap">
-	<!-- »ó´Ü ¶ì¹è³Ê -->
-	<!--div id="bannerPop3" class="arthro_bannerWrap" style="background-color:#c82128;border:0;">
-		<form name="pop_frm10" action="">
-			<div class="arthro_banner" style="padding:0;background-color:#c82128;height:80px;">
-
-				<!--div class="arthro_img"><a href="/nhome/customer/view.asp?idx=36&page=1"><img src="/images/2021/topbanner.jpg" alt="" /></a></div-->
-				<!--
-                <!--div class="btn_closeimg"><a href="#none" class="closePop"><img src="/nhome/img/btn_close_wh.png" /></a></div>
-				<!--div class="banner_close">
-					<label style="color:#000;">
-					<input type="checkbox" name="check" id="_closePop" />
-					ÇÏ·çµ¿¾È º¸Áö ¾ÊÀ½</label>
-				</div>
-				-->
-			
-		
-	
-	<!-- »ó´Ü ¶ì¹è³Ê ³¡-->
-
-
-  	<!-- container -->
-  	<div id="container">
+	<!-- container -->
+	<div id="container">
 		<!-- navi -->
-	    <div class="navi">
-			<div class="mlogo"><a href="https://eshop.parkland.co.kr:444/nhome/"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/logo.png" alt="parkland"></a></div>
-			<div class="search">
-		        <ul>
-		          <li>
-		         	<form id="frmGSearch" name="frmGSearch" method="post" onsubmit="return m_fnGSearchGood_submit();" action="https://eshop.parkland.co.kr:444/nhome/shop/search_result.asp">
-		            <input id="gKeyword" name="gKeyword" type="text" title="ÅëÇÕ°Ë»ö" class="input01" accesskey="S" onclick="m_fnEnterKey(this, fnGSearchGood);" placeholder="°Ë»ö¾î¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä">
-		            <input type="image" class="input_btn" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/btn_search.png" alt="Search">
-					<!-- ÇØ´ç½Ã½ºÅÛÀÇ ÀÎÄÚµùÅ¸ÀÔÀÌ EUC-KRÀÏ°æ¿ì¿¡¸¸ Ãß°¡ START-->
-					<input type="hidden" id="encodingType" name="encodingType" value="EUC-KR">
-					<!-- ÇØ´ç½Ã½ºÅÛÀÇ ÀÎÄÚµùÅ¸ÀÔÀÌ EUC-KRÀÏ°æ¿ì¿¡¸¸ Ãß°¡ END-->
-		            </form>
-		           </li>
-		        </ul>
-	      	</div>
-			<script language="javascript">
-				function fnToggle(menu)		{
-		      		var obj = document.getElementById(menu);
-		      		if(obj.getAttribute("class") == obj.getAttribute("class_normal")) {
-		      			obj.setAttribute("class", obj.getAttribute("class_active"));
-		      			$("#" + menu + "_img").attr("src", "/nhome/img/icon_minus.png");
-		      		}
-		      		else	{
-		      			obj.setAttribute("class", obj.getAttribute("class_normal"));
-		      			$("#" + menu + "_img").attr("src", "/nhome/img/icon_plus.png");
-		      		}
-		      }
-	      	</script>
-
-	      	<div id="leftside-navigation">
-		      
-		        <ul>
-		          <li id="menu1" class="sub-menu" class_normal="sub-menu" class_active="sub-menu active"> <a href="javascript:fnToggle(&#39;menu1&#39;);"><span>Men <img id="menu1_img" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/icon_plus.png" alt=""></span></a>
-		            <ul>
-		            
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=2&amp;gtype=2">ALL</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=12&amp;gtype=2">Á¤Àå/¼öÆ®</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=13&amp;gtype=2">ÀÚÄÏ</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=14&amp;gtype=2">Á¡ÆÛ</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=15&amp;gtype=2">ÄÚÆ®</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=16&amp;gtype=2">µå·¹½º¼ÅÃ÷</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=17&amp;gtype=2">Ä³ÁÖ¾ó¼ÅÃ÷/³²¹æ¼ÅÃ÷</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=18&amp;gtype=2">Æ¼¼ÅÃ÷</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=19&amp;gtype=2">´ÏÆ®</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=28&amp;gtype=2">º£½ºÆ®</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=20&amp;gtype=2">Á¤Àå¹ÙÁö</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=21&amp;gtype=2">ÀÏ¹İ¹ÙÁö</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=22&amp;gtype=2">¾×¼¼¼­¸®</a> </li>
-		            	
-		            </ul>
-		          </li>
-		          <li id="menu2" class="sub-menu" class_normal="sub-menu" class_active="sub-menu active"> <a href="javascript:fnToggle(&#39;menu2&#39;);"><span>WoMen <img id="menu2_img" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/icon_plus.png" alt=""></span></a>
-		            <ul>
-		              
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=1&amp;gtype=1">ALL</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=3&amp;gtype=1">¼ÅÃ÷/ºí¶ó¿ì½º</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=4&amp;gtype=1">Æ¼¼ÅÃ÷</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=5&amp;gtype=1">´ÏÆ®</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=29&amp;gtype=1">º£½ºÆ®</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=6&amp;gtype=1">¿øÇÇ½º/½ºÄ¿Æ®</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=7&amp;gtype=1">ÀÚÄÏ</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=8&amp;gtype=1">ÄÚÆ®</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=9&amp;gtype=1">Á¡ÆÛ</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=10&amp;gtype=1">¹ÙÁö</a> </li>
-		            	
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/goodsmain.asp?gcId=23&amp;gtype=1">¾×¼¼¼­¸®</a> </li>
-		            	
-		            </ul>
-		          </li>
-		          <li class="l_normal"> <a href="https://eshop.parkland.co.kr:444/nhome/cart/order.asp?coupon_use=#"><span>Brands</span></a>
-		            <ul class="none">
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1219">Parkland</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1204">J.Hass</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1229">Cabrini</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1203">Prelin</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1220">PL Sports</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1230">mp.code</a></li>
-			          <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1231">FITZ</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1234">PARKON</a></li>
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1235">COMODO</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1210">Peri Jenson</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1228">Chester Barrie</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1232">VICOMTE A</a></li>
-  		              <!--<li><a href="/nhome/shop/brandmain.asp?src=image&kw=000124&brandId=1233">NU PARCC</a></li>-->
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1222">N.DIFF</a></li>
-
-
-		              <!--li><a href="http://eshop.austinreed.co.kr/main/main.asp" target="_blank">Austin Reed<img src="/nhome/img/icon_newwin.png" alt="" /></a></li>
-		              <li><a href="http://www.vostro.kr" target="_blank">Vostro<img src="/nhome/img/icon_newwin.png" alt="" /></a></li-->
-
-		            </ul>
-		          </li>
-		          <li class="l_normal"> <a href="https://eshop.parkland.co.kr:444/nhome/cart/order.asp?coupon_use=#"><span>Special</span></a>
-		            <ul class="none">
-		            	<li><a href="https://eshop.parkland.co.kr:444/nhome/shop/eventlist.asp">±âÈ¹Àü &amp; ÀÌº¥Æ®</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/typemain.asp?nSort=1">NEW ITEMS</a></li>
-
-					  <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=82">BIG SIZE</a></li>
-		              <li><a href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId2=401">OUTLET</a></li>
-		            </ul>
-		          </li>
-				<!--li><a href="/nhome/shop/eventmain.asp?eventId=58">MD's PICK</a></li-->
-			  <!--li><a href="/nhome/shop/eventmain2.asp?eventId2=175">Best of Best</a></li-->
-                 <!--li><a href="/nhome/shop/brandmain.asp?brandId=1222">N.Diff</a></li-->
-			     <!--li class="l_normal"> <a href="#"><span>WEB ZINE</span></a>
-		            <ul class="none">
-		              <li><a href="/nhome/webzine/webzine_list.asp">STYLE TELLER</a></li>
-		            </ul>
-		          </li-->
-
-
-
-		        </ul>
-
+		<div class="navi">
+			<div class="mlogo">
+				<a href="<%=cp%>/shop/main/main.do"><img
+					src="<%=cp%>/shoppingmall/main/main_files/logo2.JPG" alt="parkland"></a>
 			</div>
-			<!-- //left side navigation -->
-		      <!-- leftmenu
-				<script>
-				$("#leftside-navigation .sub-menu > a").click(function(e) {
-				  $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
-				  e.stopPropagation()
-				})
-				</script> -->
-		    <!-- 20171011 add -->
-              <div class="service_b">
-                <ul>
-                  <li><p><a href="https://members.parkland.co.kr/my_parkland/join.asp" target="_blank"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/sr_icon_1.png" alt=""></a></p></li>
-                  <li><p><a href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/sr_icon_2.png" alt=""></a></p></li>
-                </ul>
-                <ul>
-                  <!--<li><p><a href="/nhome/styling/event_1011.asp"><img src="/nhome/img/sr_icon03.png" alt="" /></a></p></li>-->
-                  <li><p><a href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/sr_icon_3.png" alt=""></a></p></li>
-                  <li><p><a href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=50"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/sr_icon_4.png" alt=""></a></p></li>
-                </ul>
-                <!--<ul>
-                  <li><p><a href="/nhome/styling/event_1011.asp"><img src="/nhome/img/sr_icon05.png" alt="" /></a></p></li>
-                </ul>-->
-                <ul>
-                  <li><p><a href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp#p01"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/sr_icon_5.png" alt=""></a></p></li>
-                  <li><p><a href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp#p01"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/sr_icon_6.png" alt=""></a></p></li>
-                </ul>
-              </div>
-<!-- // 20171011 add -->
-		      <!-- cscenter -->
-		      <div class="cscenter">
-		        <div class="cstitle">Cs center</div>
-		        <h2>1644-0582</h2>
-		        <p>ÆòÀÏ AM 10:00 ~ PM 18:00<br> Åä,ÀÏ¿äÀÏ/°øÈŞÀÏ ÈŞ¹«</p>
-		      </div>
-		      <div class="cs_icon">
-		        <li><a href="https://eshop.parkland.co.kr:444/nhome/customer/notice.asp" class="roll"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/cs_icon01.png" alt=""><img class="over" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/cs_icon01-1.png" alt=""></a></li>
-		        <li><a href="https://eshop.parkland.co.kr:444/nhome/customer/formnew.asp" class="roll"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/cs_icon02.png" alt=""><img class="over" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/cs_icon02-1.png" alt=""></a></li>
-		        <li><a href="https://eshop.parkland.co.kr:444/nhome/mypage/mypage.asp" class="roll"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/cs_icon03.png" alt=""><img class="over" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/cs_icon03-1.png" alt=""></a></li>
-		        <li><a href="https://eshop.parkland.co.kr:444/nhome/mypage/myorder.asp" class="roll"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/cs_icon04.png" alt=""><img class="over" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/cs_icon04-1.png" alt=""></a></li>
-		      </div>
-		      <!-- // cscenter -->
-		    </div>
-		    <!-- // navi -->
+			<div class="search">
+				<ul>
+					<li>
+						<form id="frmGSearch" name="frmGSearch" method="post"
+							onsubmit="return m_fnGSearchGood_submit();"
+							action="https://eshop.parkland.co.kr:444/nhome/shop/search_result.asp">
+							<input id="gKeyword" name="gKeyword" type="text" title="í†µí•©ê²€ìƒ‰"
+								class="input01" accesskey="S"
+								onclick="m_fnEnterKey(this, fnGSearchGood);"
+								placeholder="ê²€ìƒ‰ì–´ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”"> <input type="image"
+								class="input_btn"
+								src="<%=cp%>/shoppingmall/category/category_files/btn_search.png"
+								alt="Search">
+							<!-- í•´ë‹¹ì‹œìŠ¤í…œì˜ ì¸ì½”ë”©íƒ€ì…ì´ EUC-KRì¼ê²½ìš°ì—ë§Œ ì¶”ê°€ START-->
+							<input type="hidden" id="encodingType" name="encodingType"
+								value="EUC-KR">
+							<!-- í•´ë‹¹ì‹œìŠ¤í…œì˜ ì¸ì½”ë”©íƒ€ì…ì´ EUC-KRì¼ê²½ìš°ì—ë§Œ ì¶”ê°€ END-->
+						</form>
+					</li>
+				</ul>
+			</div>
+			<div id="leftside-navigation">
+				<ul>
+					<li class="l_normal"><a href="#"><span>Brands</span></a>
+						<ul class="none">
+							<li><a href="${listUrl}">ALL</a></li>
+							<c:forEach var="dto" items="${brandLists}">
+								<li><a href="${listUrl}?brandNum=${dto.brandNum}">${dto.brandName }</a></li>
+							</c:forEach>
+						</ul></li>
+					<li class="l_normal"><a
+						href="https://eshop.parkland.co.kr:444/nhome/shop/brandmain.asp?brandId=1219#"><span>Special</span></a>
+						<ul class="none">
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventlist.asp">ê¸°íšì „
+									&amp; ì´ë²¤íŠ¸</a></li>
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/typemain.asp?nSort=1">NEW
+									ITEMS</a></li>
 
-			<!-- contents -->
-	    	<div class="contents">
-	      		<!-- top menu -->
-	      		<div id="dvTopmeu" class="t_util">
-			      <ul>
-			        
-			        	<li class="mem"><i class="fa fa-user mr5" style="font-size:14px; color:#21286d;"></i><span class="maincolor fbold">´Ô</span> È¯¿µÇÕ´Ï´Ù.</li>
-			        	<li><a href="https://eshop.parkland.co.kr:444/nhome/member/member_logout.asp">·Î±×¾Æ¿ô</a></li>
-			        	<li><a href="https://eshop.parkland.co.kr:444/nhome/user/modifyuserinfo.asp">³»Á¤º¸¼öÁ¤</a></li>
-			        
-			        <li><a href="https://eshop.parkland.co.kr:444/nhome/mypage/mypage.asp">MY ÆÄÅ©·£µå</a></li>
-			        <li><a href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp">Àå¹Ù±¸´Ï(<span class="fbold maincolor" id="gTopCartCount">1</span>)</a></li>
-			        <li><a href="https://eshop.parkland.co.kr:444/nhome/customer/faq.asp">°í°´¼¾ÅÍ</a></li>
-			        <li><a href="https://eshop.parkland.co.kr:444/nhome/sitemap/sitemap.asp">Sitemap</a></li>
-					<!--li><a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2006335008030200590&pageUnit=10&searchCnd=wrkr_no&searchKrwd=6218105081&pageIndex=1">»ç¾÷ÀÚÁ¤º¸È®ÀÎ</a-->
-					<li>service@parkland.co.kr</li>
-			        <li class="sns">
-			        	<a href="https://www.facebook.com/SuitHolic" target="_blank"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/t_fbook.png" alt="ÆäÀÌ½ººÏ"></a>
-			        	<a href="http://blog.naver.com/parklanding" target="_blank"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/t_blog.png" alt="ºí·Î±×"></a>
-			        	<a href="https://www.instagram.com/parklandholic" target="_blank"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/t_insta.png" alt="ºí·Î±×"></a>
-			        	<!--<a href="http://parklanding.tistory.com/" target="_blank"><img src="/nhome/img/t_tistory.png" alt="Æ¼½ºÅä¸®" /></a>
-			        	<a href="javascript:addFavorite();"><img src="/nhome/img/t_bookmark.png" alt="facebook" /></a>-->
-			        </li>
-			      </ul>
-	      		</div>
-	      		<!-- // top menu -->
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=82">BIG
+									SIZE</a></li>
+							<li><a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId2=401">OUTLET</a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<div class="service_b">
+				<ul>
+					<li><p>
+							<a href="https://members.parkland.co.kr/my_parkland/join.asp"
+								target="_blank"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_1.png"
+								alt=""></a>
+						</p></li>
+					<li><p>
+							<a
+								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_2.png"
+								alt=""></a>
+						</p></li>
+				</ul>
+				<ul>
+					<!--<li><p><a href="/nhome/styling/event_1011.asp"><img src="/nhome/img/sr_icon03.png" alt="" /></a></p></li>-->
+					<li><p>
+							<a
+								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_3.png"
+								alt=""></a>
+						</p></li>
+					<li><p>
+							<a
+								href="https://eshop.parkland.co.kr:444/nhome/shop/eventmain.asp?eventId=50"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_4.png"
+								alt=""></a>
+						</p></li>
+				</ul>
+				<ul>
+					<li><p>
+							<a
+								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp#p01"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_5.png"
+								alt=""></a>
+						</p></li>
+					<li><p>
+							<a
+								href="https://eshop.parkland.co.kr:444/nhome/styling/event_1011.asp#p01"><img
+								src="<%=cp%>/shoppingmall/category/category_files/sr_icon_6.png"
+								alt=""></a>
+						</p></li>
+				</ul>
+			</div>
+			<div class="cscenter">
+				<div class="cstitle">Cs center</div>
+				<h2>1644-4339</h2>
+				<p>
+					í‰ì¼ AM 10:00 ~ PM 18:00<br> í† ,ì¼ìš”ì¼/ê³µíœ´ì¼ íœ´ë¬´
+				</p>
+			</div>
+			<div class="cs_icon">
+				<li><a
+					href="https://eshop.parkland.co.kr:444/nhome/customer/notice.asp"
+					class="roll"><img
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon01.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon01-1.png"
+						alt=""></a></li>
+				<li><a
+					href="https://eshop.parkland.co.kr:444/nhome/customer/formnew.asp"
+					class="roll"><img
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon02.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon02-1.png"
+						alt=""></a></li>
+				<li><a
+					href="https://eshop.parkland.co.kr:444/nhome/mypage/mypage.asp"
+					class="roll"><img
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon03.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon03-1.png"
+						alt=""></a></li>
+				<li><a
+					href="https://eshop.parkland.co.kr:444/nhome/mypage/myorder.asp"
+					class="roll"><img
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon04.png"
+						alt=""><img class="over"
+						src="<%=cp%>/shoppingmall/category/category_files/cs_icon04-1.png"
+						alt=""></a></li>
+			</div>
+			<!-- // cscenter -->
+		</div>
+		<!-- // navi -->
+		<!-- contents -->
+		<div class="contents">
+			<!-- dvTopmeu -->
+			<div id="dvTopmeu" class="t_util">
+				<ul>
+					<c:choose>
+						<c:when test="${empty sessionScope.customInfo.userId }">
+							<li><a href="<%=cp%>/shop/join/login.do">ë¡œê·¸ì¸</a></li>
+						</c:when>
+						<c:otherwise>
+							<li>${sessionScope.customInfo.userName }ë‹˜í™˜ì˜í•©ë‹ˆë‹¤</li>
+						</c:otherwise>
+					</c:choose>
+					<c:choose>
+						<c:when test="${empty sessionScope.customInfo.userId }">
+							<li><a href="<%=cp%>/shop/join/join.do">íšŒì›ê°€ì…</a></li>
+						</c:when>
+						<c:otherwise>
+							<li><a href="<%=cp%>/shop/join/logout.do">ë¡œê·¸ì•„ì›ƒ <img
+									src="<%=cp%>/shoppingmall/main/main_files/icon_newwin.png"
+									alt=""></a></li>
+							<li><a href="<%=cp%>/shop/join/update.do">ë‚´ì •ë³´ìˆ˜ì •</a></li>
+							<li><a href="<%=cp%>/shop/product/productSave.do">HELLO
+									Nature</a></li>
+						</c:otherwise>
+					</c:choose>
+					<li><a
+						href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp">ì¥ë°”êµ¬ë‹ˆ(<span
+							class="fbold maincolor" id="gTopCartCount">0</span>)
+					</a></li>
+					<li><a href="<%=cp%>/shop/notice/notice.do">ê³ ê°ì„¼í„°</a></li>
+					<li><a
+						href="https://eshop.parkland.co.kr:444/nhome/sitemap/sitemap.asp">Sitemap</a></li>
+					<!--li><a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2006335008030200590&pageUnit=10&searchCnd=wrkr_no&searchKrwd=6218105081&pageIndex=1">ì‚¬ì—…ìì •ë³´í™•ì¸</a-->
+					<li>help@hellonature.co.kr</li>
+					<li class="sns"><a href="https://www.facebook.com/SuitHolic"
+						target="_blank"><img
+							src="<%=cp%>/shoppingmall/category/category_files/t_fbook.png"
+							alt="í˜ì´ìŠ¤ë¶"></a> <a href="http://blog.naver.com/parklanding"
+						target="_blank"><img
+							src="<%=cp%>/shoppingmall/category/category_files/t_blog.png"
+							alt="ë¸”ë¡œê·¸"></a> <a
+						href="https://www.instagram.com/parklandholic" target="_blank"><img
+							src="<%=cp%>/shoppingmall/category/category_files/t_insta.png"
+							alt="ë¸”ë¡œê·¸"></a></li>
+				</ul>
+			</div>
+			<!-- // dvTopmeu -->
+			<!--  content_area -->
+			<div class="content_area">
+				<style type="text/css">
+.c-tit01 {
+	padding-left: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 13px;
+	font-weight: bold;
+}
 
-	      		<!--  content_area -->
-	      		<div class="content_area">
+.c-tit02 {
+	padding-left: 0px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 16px;
+	font-weight: bold;
+}
 
-	
+.info-box {
+	background: #f9f9f9;
+	border: 1px solid #c9cacb;
+	text-align: center;
+	padding: 15px;
+	line-height: 1.2;
+}
 
-<style type="text/css">
+.mg10t {
+	margin-top: 10px
+}
 
-.c-tit01 {padding-left:0px; margin-top:15px; margin-bottom:15px; font-size:13px; font-weight:bold;}
-.c-tit02 {padding-left:0px; margin-top:25px; margin-bottom:15px; font-size:16px; font-weight:bold;}
-
-.info-box {background:#f9f9f9; border: 1px solid #c9cacb; text-align:center; padding:15px; line-height:1.2;}
-
-
-.mg10t {margin-top:10px}
-
-.mg10r {margin-right:10px}
-
+.mg10r {
+	margin-right: 10px
+}
 </style>
 
-<form name="buyForm" method="post" action="https://eshop.parkland.co.kr:444/nhome/cart/orderconfirm.asp">
-                  		<input type="hidden" name="coupon_use" value="">
+				<script type="text/javascript"
+					src="<%=cp%>/shoppingmall/order/data/order.js"></script>
+				<form name="myForm" method="post" action="" accept-charset="utf-8">
+					<input type="hidden" name="coupon_use" value="">
 
-			<div class="s_location"><a href="https://eshop.parkland.co.kr:444/"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/icon_home.png" border="0"></a><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/icon_larr.png" border="0">Order</div>
-	      	<div class="cline"></div>
-	      	<div class="c_title"><p>°áÁ¦Á¤º¸ÀÔ·Â</p></div>
-	      	<div class="stepimg">
-	        	<li><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/step01_off.gif"></li>
-	        	<li><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/step02_on.gif"></li>
-	        	<li><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/step03_off.gif"></li>
-	        	<li><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/step04_off.gif"></li>
-	      	</div>
+					<div class="s_location">
+						<a href="<%=cp%>/shop/main/main.do"><img
+							src="<%=cp%>/shoppingmall/order/order_files/icon_home.png"
+							border="0"></a><img
+							src="<%=cp%>/shoppingmall/order/order_files/icon_larr.png"
+							border="0">í—¬ë¡œë„¤ì´ì²˜
+					</div>
+					<div class="cline"></div>
+					<div class="c_title">
+						<p>ê²°ì œì •ë³´ì…ë ¥</p>
+					</div>
+					<div class="stepimg">
+						<li><img
+							src="<%=cp%>/shoppingmall/order/order_files/step01_off.gif"></li>
+						<li><img
+							src="<%=cp%>/shoppingmall/order/order_files/step02_on.gif"></li>
+						<li><img
+							src="<%=cp%>/shoppingmall/order/order_files/step03_off.gif"></li>
+						<li><img
+							src="<%=cp%>/shoppingmall/order/order_files/step04_off.gif"></li>
+					</div>
+					<table class="tb_type2">
+						<colgroup>
+							<col width="*">
+							<col width="80">
+							<col width="180">
+							<col width="95">
+							<col width="116">
+							<col width="82">
+							<col width="130">
+						</colgroup>
+						<thead>
+							<tr class="cus_notice_list">
+								<th>ìƒí’ˆëª…</th>
+								<th>ë¸Œëœë“œ</th>
+								<th>ì¢…ë¥˜</th>
+								<th>ìƒí’ˆê°€ê²©</th>
+								<th>ìˆ˜ëŸ‰</th>
+								<th>ë°°ì†¡ë¹„</th>
+								<th>í•©ê³„</th>
+							</tr>
+						</thead>
+						<tbody id="og_glist">
+							<tr>
+								<td style="text-align: left"><a
+									href="${imagePath}/${dto.saveFileName}"> <img name="bigimg"
+										src="${imagePath}/${dto.saveFileName}" width="70" height="70"
+										border="0">${dto.subject }
+								</a></td>
+								<td>${dto.brandName }</td>
+								<td>${dto.typeName }</td>
+								<td>${dto.price }ì›</td>
+								<td class="num_add">${cnt }</td>
+								<td>2500ì›</td>
+								<td><b>${(dto.price * cnt) + 2500 }ì›</b> <input
+									type="hidden" size="5" style="height: 22px;" name="sumtt0"
+									id="sumtt0" value="bb"></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="9" class="step2_price"><b>ì´ ê²°ì œê¸ˆì•¡ (ìƒí’ˆì´ì•¡ <strong><span
+											id="og_totalsale">${dto.price * cnt }</span>ì›</strong> + ë°°ì†¡ë¹„ <strong><span
+											id="og_deliverysum">2500</span>ì›</strong>)
+								</b> <span>í•©ê³„:<span id="og_totalamount">${(dto.price * cnt) + 2500 }</span></span>ì›
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+					<br> <br>
+					<h3 class="h3_title">
+						<img src="<%=cp%>/shoppingmall/order/order_files/h3_1.jpg"
+							alt="ì£¼ë¬¸ì ì •ë³´">
+					</h3>
+					<table class="tb_type3">
+						<colgroup>
+							<col width="128">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th style="vertical-align: middle;">ê³ ê°ì„±ëª… <font
+									style="color: #ff0000;">*</font></th>
+								<td><input type="text" name="sm_name" maxlength="10"
+									value="${memberDto.name }" class="w111"></td>
+							</tr>
+							<tr>
+								<th style="vertical-align: middle;">íœ´ëŒ€í° <font
+									style="color: #ff0000;">*</font></th>
+								<td><input type="text" name="sm_hphone1" maxlength="4"
+									value="${memberDto.hp1 }" class="w62"><span>-</span><input
+									type="text" maxlength="4" name="sm_hphone2"
+									value="${memberDto.hp2 }" class="w62"><span>-</span><input
+									type="text" name="sm_hphone3" maxlength="4"
+									value="${memberDto.hp3 }" class="w62"></td>
+							</tr>
+							<tr>
+								<th style="vertical-align: middle;">e-mail <font
+									style="color: #ff0000;">*</font></th>
+								<td><input type="text" name="sm_email"
+									value="${memberDto.email1 }@${memberDto.email2 }"
+									maxlength="50" class="w238"></td>
+							</tr>
+							<tr>
+								<th style="vertical-align: middle;">ì£¼ì†Œ <font
+									style="color: #ff0000;">*</font></th>
+								<td>
+									<p>
+										<input type="text" name="sm_addr"
+											value="${memberDto.roadFullAddr }" class="w483">
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3 class="h3_title">
+						<img src="<%=cp%>/shoppingmall/order/order_files/h3_2.jpg"
+							alt="ë°›ìœ¼ì‹œëŠ”ë¶„ ì •ë³´">&nbsp;&nbsp; <input type="checkbox"
+							name="same" onclick="issame();" id="chk1"><label
+							for="chk1">ë°›ìœ¼ì‹œëŠ”ë¶„ì˜ ì •ë³´ê°€ ì£¼ë¬¸ìì •ë³´ì™€ ê°™ìœ¼ë©´ ì²´í¬í•˜ì„¸ìš”.</label>
+					</h3>
+					<table class="tb_type3">
+						<colgroup>
+							<col width="128">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th style="vertical-align: middle;">ê³ ê°ì„±ëª… <font
+									style="color: #ff0000;">*</font></th>
+								<td><input type="text" maxlength="10" name="sd_name"
+									class="w111"></td>
+							</tr>
+							<tr>
+								<th style="vertical-align: middle;">íœ´ëŒ€í° <font
+									style="color: #ff0000;">*</font></th>
+								<td><input type="text" class="w62" maxlength="4"
+									name="sd_hphone1"><span>-</span><input type="text"
+									class="w62" maxlength="4" name="sd_hphone2"><span>-</span><input
+									type="text" maxlength="4" class="w62" name="sd_hphone3"></td>
+							</tr>
+							<tr>
+								<th style="vertical-align: middle;">e-mail <font
+									style="color: #ff0000;">*</font></th>
+								<td><input type="text" name="sd_email" maxlength="50"
+									class="w238"></td>
+							</tr>
+							<tr>
+								<th style="vertical-align: middle;">ì£¼ì†Œ <font
+									style="color: #ff0000;">*</font></th>
+								<td>
+									<p>
+										<input type="text" name="sd_addr" class="w483">
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<th style="vertical-align: middle;">ë°°ì†¡ì‹œìœ ì˜ì‚¬í•­ <font
+									style="color: #ff0000;">*</font></th>
+								<td><input type="text" name="sm_memo" class="w483">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3 class="h3_title">
+						<img src="<%=cp%>/shoppingmall/order/order_files/h3_3.jpg"
+							alt="ê²°ì œë°©ë²• ì„ íƒ">
+					</h3>
+					<table class="tb_type3">
+						<colgroup>
+							<col width="128">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th style="vertical-align: middle;">ì´ ì£¼ë¬¸ê¸ˆì•¡</th>
+								<td><b><span id="og_totalsale2">${dto.price * cnt }</span>ì›<input
+										type="hidden" name="sm_tmoney" value="104300"></b></td>
+							</tr>
+							<tr>
+								<th style="vertical-align: middle;">ë°°ì†¡ë£Œ</th>
+								<td><b><span id="og_deliverysum2">2500</span>ì›</b></td>
+							</tr>
+							<tr>
+								<th style="vertical-align: middle;">ìµœì¢… ê²°ì œê¸ˆì•¡</th>
+								<td><span style="font-weight: bold; font-color: #ff0000;"
+									id="totalAmount">${(dto.price * cnt) + 2500 }ì›</span></td>
+							</tr>
+							<tr>
+								<th style="vertical-align: middle;">ê²°ì œêµ¬ë¶„</th>
+								<td><input name="sm_payway" id="radio1" type="radio"
+									value="C" checked=""><label for="radio1"><b>ì¹´ë“œê²°ì œ</b>(<img
+										src="<%=cp%>/shoppingmall/order/order_files/n_pay.png"
+										border="0" height="30" style="vertical-align: middle;">,
+										&nbsp;<img
+										src="<%=cp%>/shoppingmall/order/order_files/k_pay.png"
+										border="0" height="30" style="vertical-align: middle;">)</label>
 
-
-                                <table class="tb_type2">
-                                    <colgroup>
-
-                                        <col width="*">
-                                        <col width="80">
-                                        <col width="80">
-										<col width="95">
-                                        <col width="116">
-                                        <col width="82">
-                                        <col width="130">
-                                    </colgroup>
-                                    <thead>
-                                        <tr class="cus_notice_list">
-                                            <th>»óÇ°¸í</th>
-                                            <th>»ö»ó</th>
-                                            <th>»çÀÌÁî</th>
-											<th>»óÇ°°¡°İ</th>
-                                            <th>¼ö·®</th>
-                                            <th>ÇÕ°è</th>
-                                            <th>Àû¸³¿¹Á¤Æ÷ÀÎÆ®</th>
-                                            <!--<th>»èÁ¦</th>-->
-                                        </tr>
-                                    </thead>
-                                    <tbody id="og_glist">
-                                    
-										<tr>
-                                            <!--<td><input type="checkbox" /></td>-->
-
-                                            <td style="text-align: left"><!--<a href="#" target="_blank"><img src="/img/thumb_img4.jpg" alt="" />³×ÀÌºñ ¸éÈ¥¹æ ¹è»ö Àı°³Æ÷ÄÏ ¶ó¿îµå Æ¼¼ÅÃ÷</a>-->
-
-												<a href="https://eshop.parkland.co.kr:444/nhome/shop/goodinfo.asp?cat_sn=1219&amp;gdNum=30597&amp;gdCode=PPC22185"><img name="bigimg" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/PPC22185_1_C.jpg" onerror="javascript:fnLoadImgError(this, 3);" width="70" height="70" border="0">³×ÀÌºñ Æú¸® ¼Â¾÷ ÆÒÃ÷
-												</a>
-
-
-											</td>
-                                            <td>NAVY</td>
-                                            <td>82</td>
-											 <td>
-
-												104,300¿ø
-												
-
-											 </td>
-
-                                            <td class="num_add">1°³</td>
-                                            <td>
-											<b>104,300¿ø</b>
-
-
-											
-													<input type="hidden" size="5" style="height:22px;" name="sumtt0" id="sumtt0" value="bb">
-											
-											</td>
-											<td>3,129¿ø</td>
-	                                        <!--<td>
-												
-		                  						 	<a href="javascript:cart_delete('1016465','30597')" class="btn_del">»èÁ¦</a>
-												
-											</td>-->
-                                    	</tr>
-									
-
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="9" class="step2_price">
-
-                                                <b>ÃÑ °áÁ¦±İ¾× (»óÇ°ÃÑ¾× <strong><span id="og_totalsale">104,300</span>¿ø</strong>
-                                                	+ ¹è¼Ûºñ <strong><span id="og_deliverysum">0</span>¿ø</strong>)</b>
-                                                <span>ÇÕ°è:<span id="og_totalamount">104,300</span></span>¿ø
-                                            	Àû¸³¿¹Á¤Æ÷ÀÎÆ® <span id="og_totalpoint"> 3,129</span>¿ø
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-
-
-
-
-
-
-                                <br><br>
-                                <h3 class="h3_title"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/h3_1.jpg" alt="ÁÖ¹®ÀÚ Á¤º¸"></h3>
-                                <table class="tb_type3">
-                                    <colgroup>
-                                        <col width="128">
-                                        <col width="*">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th style="vertical-align:middle;">°í°´¼º¸í <font style="color:#ff0000;">*</font></th>
-                                            <td><input type="text" name="sm_name" maxlength="10" value="" class="w111"></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">ÀüÈ­</th>
-                                            <td><input type="text" name="sm_phone1" maxlength="3" value="" class="w62"><span>-</span><input type="text" maxlength="4" name="sm_phone2" value="" class="w62"><span>-</span><input type="text" name="sm_phone3" maxlength="4" value="" class="w62"></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">ÈŞ´ëÆù <font style="color:#ff0000;">*</font></th>
-                                            <td><input type="text" name="sm_hphone1" maxlength="4" value="" class="w62"><span>-</span><input type="text" maxlength="4" name="sm_hphone2" value="" class="w62"><span>-</span><input type="text" name="sm_hphone3" maxlength="4" value="" class="w62"></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">e-mail <font style="color:#ff0000;">*</font></th>
-                                            <td><input type="text" name="sm_email" value="@" maxlength="50" class="w238"></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">ÁÖ¼Ò</th>
-                                            <td>
-                                                <p><input type="text" name="sm_zip" value="" maxlength="7" class="w62">
-                                                <a href="javascript:findzipcode(&#39;/nhome&#39;, &#39;setSmAddr&#39;);" class="btn_zipcode">¿ìÆí¹øÈ£ Á¶È¸</a></p>
-                                                <p><input type="text" name="sm_addr" value="" class="w483"><br><br><input type="text" name="sm_subaddr" value="" class="w483"></p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <h3 class="h3_title">
-                                    <img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/h3_2.jpg" alt="¹ŞÀ¸½Ã´ÂºĞ Á¤º¸">&nbsp;&nbsp;
-                                   <input type="checkbox" name="same" onclick="issame();" id="chk1"><label for="chk1">¹ŞÀ¸½Ã´ÂºĞÀÇ Á¤º¸°¡ ÁÖ¹®ÀÚÁ¤º¸¿Í °°À¸¸é Ã¼Å©ÇÏ¼¼¿ä.</label>
-                                </h3>
-                                <table class="tb_type3">
-                                    <colgroup>
-                                        <col width="128">
-                                        <col width="*">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th style="vertical-align:middle;">°í°´¼º¸í <font style="color:#ff0000;">*</font></th>
-                                            <td><input type="text" maxlength="10" name="sd_name" class="w111"></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">ÀüÈ­</th>
-                                            <td><input type="text" maxlength="3" class="w62" name="sd_phone1"><span>-</span><input type="text" maxlength="4" class="w62" name="sd_phone2"><span>-</span><input type="text" maxlength="4" class="w62" name="sd_phone3"></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">ÈŞ´ëÆù <font style="color:#ff0000;">*</font></th>
-                                            <td><input type="text" class="w62" maxlength="4" name="sd_hphone1"><span>-</span><input type="text" class="w62" maxlength="4" name="sd_hphone2"><span>-</span><input type="text" maxlength="4" class="w62" name="sd_hphone3"></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">e-mail</th>
-                                            <td><input type="text" name="sd_email" maxlength="50" class="w238"></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">ÁÖ¼Ò <font style="color:#ff0000;">*</font></th>
-                                            <td>
-                                                <p><input type="text" name="sd_zip" maxlength="7" class="w62">
-                                                <a href="javascript:findzipcode(&#39;/nhome&#39;, &#39;setSdAddr&#39;);" class="btn_zipcode">¿ìÆí¹øÈ£ Á¶È¸</a></p>
-                                                <p><input type="text" name="sd_addr" class="w483"><br><br><input type="text" name="sd_subaddr" class="w483"></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">¹è¼Û½ÃÀ¯ÀÇ»çÇ×</th>
-                                            <td>
-                                                <input type="text" name="sm_memo" class="w483">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <h3 class="h3_title"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/h3_3.jpg" alt="°áÁ¦¹æ¹ı ¼±ÅÃ"></h3>
-                                <table class="tb_type3">
-                                    <colgroup>
-                                        <col width="128">
-                                        <col width="*">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th style="vertical-align:middle;">ÃÑ ÁÖ¹®±İ¾×</th>
-                                            <td><b><span id="og_totalsale2">104,300</span>¿ø<input type="hidden" name="sm_tmoney" value="104300"></b></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">ÇÒÀÎÇıÅÃ</th>
-                                            <td><b><span id="og_totaldiscount">0</span>¿ø</b></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">¹è¼Û·á</th>
-                                            <td><b><span id="og_deliverysum2">0</span>¿ø</b></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">Æ÷ÀÎÆ®»ç¿ë</th>
-                                            <td>
-                                            	<div style="display:inline-block;float:left;"><input type="text" size="10" id="nUsePLPoint" name="nUsePLPoint" onchange="fnChangeUsePoint();" value="0" style="text-align:right;padding-right:3px;">¿ø</div>
-												<div style="display:inline-block;float:left;margin-top:3px;padding-left:10px;">
-													
-																									<b>°¡¿ëÆ÷ÀÎÆ® : </b>10,000<b>¿ø(Æ÷ÀÎÆ®´Â 5,000¿øÀÌ»óºÎÅÍ  100¿ø ´ÜÀ§·Î »ç¿ë°¡´ÉÇÕ´Ï´Ù.)</b> <br>
-													
-													</div>
-
-												<div style="clear:both;float:none;display:flex;">
-												<span id="usePointErr" style="color:#ff0000;">
-												</span></div>
-                                            </td>
-                                        </tr>
-                                        <!--tr>
-                                            <th style="vertical-align:middle;">ÇÒÀÎÄíÆù ¹øÈ£</th>
-                                            <td>
-                                            	<input type="text" size="10" id="sPcNum" name="sPcNum"/>
-												<input type="button" id="btnCheckCP" value="Àû¿ë (»ç¿ë¿©ºÎ È®ÀÎ)" class="btn_zipcode" style="width:150px;" onclick="javascript:fnCheckCoupon();" />
-												<input type="hidden" id="bCheckCP" value="0" />
-                                            </td>
-                                        </tr-->
-                                        <tr>
-                                            <th style="vertical-align:middle;">ÃÖÁ¾ °áÁ¦±İ¾×</th>
-                                            <td><span style="font-weight:bold;font-color:#ff0000;" id="totalAmount">104,300¿ø</span></td>
-                                        </tr>
-                                        <tr>
-                                            <th style="vertical-align:middle;">°áÁ¦±¸ºĞ</th>
-                                            <td>
-
-                                               <input name="sm_payway" id="radio1" type="radio" value="C" checked=""><label for="radio1"><b>Ä«µå°áÁ¦</b>(<img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/n_pay.png" border="0" height="30" style="vertical-align:middle;">, &nbsp;<img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/k_pay.png" border="0" height="30" style="vertical-align:middle;">)</label>
-                                               <input name="sm_payway" id="radio2" type="radio" value="D"><label for="radio2"><b>°èÁÂÀÌÃ¼</b></label>
-                                               <input name="sm_payway" id="radio3" type="radio" value="B"><label for="radio3"><b>¹«ÅëÀåÀÔ±İ</b></label>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+									<input name="sm_payway" id="radio2" type="radio" value="D"><label
+									for="radio2"><b>ê³„ì¢Œì´ì²´</b></label> <input name="sm_payway"
+									id="radio3" type="radio" value="B"><label for="radio3"><b>ë¬´í†µì¥ì…ê¸ˆ</b></label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 
 
-								<div class="info-box">
-									<p class="b"><b>ÁÖ¹®ÇÒ »óÇ°ÀÇ »óÇ°¸í, »óÇ°°¡°İ, ¹è¼ÛÁ¤º¸¸¦ È®ÀÎÇÏ¿´À¸¸ç, ±¸¸Å¿¡ µ¿ÀÇÇÏ½Ã°Ú½À´Ï±î? (ÀüÀÚ»ó°Å·¡¹ı Á¦8Á¶ Á¦2Ç×)</b></p>
-									<p class="mg10t"><input name="agreed" type="checkbox" id="agreed" value="1"> <label for="agree" class="mg10r">µ¿ÀÇÇÕ´Ï´Ù</label></p>
-								</div>
-                                <div class="btn_group3">
-                                    <a href="javascript:check_input();"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/btn_4.png" alt="°áÁ¦ÇÏ±â"></a><a href="javascript:history.back();"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/btn_5.png" alt="Ãë¼ÒÇÏ±â"></a>
-                                </div>
-								<input type="hidden" name="allrumtt" value="1">
-						</form>
+					<div class="info-box">
+						<p class="b">
+							<b>ì£¼ë¬¸í•  ìƒí’ˆì˜ ìƒí’ˆëª…, ìƒí’ˆê°€ê²©, ë°°ì†¡ì •ë³´ë¥¼ í™•ì¸í•˜ì˜€ìœ¼ë©°, êµ¬ë§¤ì— ë™ì˜í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (ì „ììƒê±°ë˜ë²• ì œ8ì¡°
+								ì œ2í•­)</b>
+						</p>
+						<p class="mg10t">
+							<input name="agreed" type="checkbox" id="agreed" value="1">
+							<label for="agree" class="mg10r">ë™ì˜í•©ë‹ˆë‹¤</label>
+						</p>
+					</div>
+					<div class="btn_group3">
+						<input type="hidden" name="productNum" value="${dto.num}">
+						<input type="hidden" name="userId" value="${memberDto.id}">
+						<input type="hidden" name="saveFileName"
+							value="${dto.saveFileName}"> <input type="hidden"
+							name="subject" value="${dto.subject}"> <input
+							type="hidden" name="brandName" value="${dto.brandName}">
+						<input type="hidden" name="typeName" value="${dto.typeName}">
+						<input type="hidden" name="price" value="${dto.price }"> <input
+							type="hidden" name="cnt" value="${cnt }"> <input
+							type="button" value="ê²°ì œí•˜ê¸°" onclick="sendIt();"
+							class="btn-type btn5 blue mr5" /> <input type="button"
+							value="ì·¨ì†Œí•˜ê¸°"
+							onclick="javascript:location.href='<%=cp%>/shop/product/productSave.do';"
+							class="btn-type btn5 blue mr5" />
+					</div>
+					<input type="hidden" name="allrumtt" value="1">
+				</form>
 
-				</div>
-				<!-- // content_area -->
-
-			  	<!-- Footer -->
-			  	<div class="footer_wrap">
-			    	<div class="footer_menu">
-				      	<div class="fmenu">
-					        <li><a href="http://company.parkland.kr/" target="_blank">È¸»ç¼Ò°³</a></li>
-					        <li><a href="https://members.parkland.co.kr/info/agreement.asp" target="_blank">ÀÌ¿ë¾à°ü</a></li>
-					        <li><a href="https://members.parkland.co.kr/info/personal.asp" target="_blank">°³ÀÎÁ¤º¸Ãë±Ş¹æÄ§</a></li>
-					        <li><a href="https://members.parkland.co.kr/info/email.asp" target="_blank">ÀÌ¸ŞÀÏ¹«´Ü¼öÁı°ÅºÎ</a></li>
-					        <!--<li><a href="/nhome/customer/faq.asp">°í°´¼¾ÅÍ</a></li>-->
-					        <li><a href="https://eshop.parkland.co.kr:444/nhome/customer/faq.asp">FAQ</a></li>
-					        <li><a href="https://eshop.parkland.co.kr:444/nhome/sitemap/sitemap.asp">Sitemap</a></li>
-							<li>service@parkland.co.kr</li>
-							<li><a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2006335008030200590&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=6218105081&amp;pageIndex=1">»ç¾÷ÀÚÁ¤º¸È®ÀÎ</a></li>
-
-				      	</div>
-			      		<!--div class="fselect">
-			        		<div class="select_type001">
-			          			<select name="select2" onChange="new_window(value,'','location=yes, directories=yes,resizable=yes,status=yes,toolbar=yes,menubar=yes, left=0, top=0, scrollbars=yes')">
-						            <option value="http://eshop.parkland.co.kr">= FAMILY SITE =</option>
-						            <option value="http://www.parkland.co.kr">ÆÄÅ©·£µå</option>
-						            <option value="http://company.parkland.kr/">ÆÄÅ©·£µå±â¾÷</option>
-						            <option value="http://members.parkland.co.kr/">ÆÄÅ©·£µå ¸â¹ö½º</option>
-						            <option value="http://www.jhass.co.kr/">Á¦ÀÌÇÏ½º</option>
-						            <option value="http://www.vostro.kr">º¸½ºÆ®·Î</option>
-						            <option value="http://www.prelin.co.kr/">ÇÁ·¼¸°</option>
-						            <option value="http://www.austinreed.co.kr/">¿À½ºÆ¾¸®µå</option>
-						            <option value="http://www.parklandsports.co.kr/">PL½ºÆ÷Ã÷</option>
-			          			</select>
-			        		</div>
-						</div-->
-			    	</div>
-			    	<div class="footer">
-			      		<div class="f_left">
-			        		<address>
-							        ÆÄÅ©·£µå°ø½ÄÀÎÅÍ³İ¼îÇÎ¸ô(ÁÖ)ÆÄÅ©·£µå/´ëÇ¥ÀÌ»ç:°û±¹¹Î,¹Ú¸í±Ô/ºÎ»ê±¤¿ª½Ã ±İÁ¤±¸ ¼­2µ¿ 219-2¹øÁö(¿ì609-722)<br>
-							        »ç¾÷ÀÚµî·Ï¹øÈ£:621-81-05081/Åë½ÅÆÇ¸Å¾÷½Å°í¹øÈ£:2006-00590 <br>
-							        CS CENTER 1644-0582 /FAX:051-527-5521
-					        </address>
-			       			<p>Copyright(c) 2006-2022 ÆÄÅ©·£µå ¿Â¶óÀÎ°ø½Ä¼îÇÎ¸ô (ÁÖ)ÆÄÅ©·£µå All Rights Reserved.</p>
-			      		</div>
-			      		<div class="f_right">
-			        		<ul>
-								<li class="fimg"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/inipay.png" alt=""></li>
-					          	<li>
-						            <p>ÆÄÅ©·£µå¸ôÀº(ÁÖ)ÀÌ´Ï½Ã½ºÀÇ<br>
-						              ±¸¸Å¾ÈÀü ¿¡½ºÅ©·Î¼­ºñ½º¸¦ Á¦°øÇÕ´Ï´Ù.</p>
-			            			<p><a href="https://mark.inicis.com/mark/escrow_popup.php?no=31366&amp;st=1355291431"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/inipay_btn.png" alt=""></a></p>
-			          			</li>
-			        		</ul>
-			      		</div>
+			</div>
+			<!-- // content_area -->
+			<!-- footer_wrap -->
+			<div class="footer_wrap">
+				<!-- footer_menu -->
+				<div class="footer_menu">
+					<div class="fmenu">
+						<li><a href="http://company.parkland.kr/" target="_blank">íšŒì‚¬ì†Œê°œ</a></li>
+						<li><a
+							href="https://members.parkland.co.kr/info/agreement.asp"
+							target="_blank">ì´ìš©ì•½ê´€</a></li>
+						<li><a
+							href="https://members.parkland.co.kr/info/personal.asp"
+							target="_blank">ê°œì¸ì •ë³´ì·¨ê¸‰ë°©ì¹¨</a></li>
+						<li><a href="https://members.parkland.co.kr/info/email.asp"
+							target="_blank">ì´ë©”ì¼ë¬´ë‹¨ìˆ˜ì§‘ê±°ë¶€</a></li>
+						<!--<li><a href="/nhome/customer/faq.asp">ê³ ê°ì„¼í„°</a></li>-->
+						<li><a
+							href="https://eshop.parkland.co.kr:444/nhome/customer/faq.asp">FAQ</a></li>
+						<li><a
+							href="https://eshop.parkland.co.kr:444/nhome/sitemap/sitemap.asp">Sitemap</a></li>
+						<li>help@hellonature.co.kr</li>
+						<li><a
+							href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2006335008030200590&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=6218105081&amp;pageIndex=1">ì‚¬ì—…ìì •ë³´í™•ì¸</a></li>
 					</div>
 				</div>
-			  	<!-- //Footer -->
+				<!-- // footer_menu -->
+				<!-- footer -->
+				<div class="footer">
+					<div class="f_left">
+						<ul>
+							<li>ëŒ€í‘œì´ì‚¬ : ì˜¤ì •í›„</li>
+							<li>ë²•ì¸ëª…(ë‹¨ì²´ëª…): (ì£¼) í—¬ë¡œë„¤ì´ì²˜</li>
+							<li>ì‚¬ì—…ì ë“±ë¡ë²ˆí˜¸ : <a
+								href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1058766628&amp;apv_perm_no="
+								target="_self">105-87-66628</a></li>
+							<li>í†µì‹ íŒë§¤ ì‹ ê³ ë²ˆí˜¸ : ì œ2012 ì„œìš¸ê°•ë‚¨ 02931í˜¸</li>
+							<li>ê°œì¸ì •ë³´ ë³´í˜¸ì±…ì„ì : ë°•ì¢…í™”</li>
+							<li>ì…ì ë¬¸ì˜ : <a
+								href="https://partner.hellonature.co.kr/partner/ui/inquiry.html"
+								target="_blank" rel="noopener">ì…ì ë¬¸ì˜í•˜ê¸°</a></li>
+							<li>ì œíœ´ë¬¸ì˜ : mkt@hellonature.co.kr</li>
+							<li>ì±„ìš©ë¬¸ì˜ : recruit@hellonature.co.kr</li>
+							<li>ê¸°íƒ€ë¬¸ì˜ : help@hellonature.co.kr</li>
+							<li>ê³ ê°ì„¼í„° : 1644-4339</li>
+							<li>ì£¼ì†Œ : ì„œìš¸íŠ¹ë³„ì‹œ ê°•ë‚¨êµ¬ ë´‰ì€ì‚¬ë¡œ 16ê¸¸ 33(ì—­ì‚¼ë™) ìš° 06127</li>
+						</ul>
+					</div>
+					<div class="f_right">
+						<ul>
+							<li class="fimg"><img
+								src="<%=cp%>/shoppingmall/category/category_files/inipay.png"
+								alt=""></li>
+							<li>
+								<p>
+									í—¬ë¡œë„¤ì´ì²˜ëŠ” (ì£¼)ì´ë‹ˆì‹œìŠ¤ì˜<br> êµ¬ë§¤ì•ˆì „ ì—ìŠ¤í¬ë¡œì„œë¹„ìŠ¤ë¥¼ ì œê³µí•©ë‹ˆë‹¤.
+								</p>
+								<p>
+									<a
+										href="https://mark.inicis.com/mark/escrow_popup.php?no=31366&amp;st=1355291431"><img
+										src="<%=cp%>/shoppingmall/category/category_files/inipay_btn.png"
+										alt=""></a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- // footer -->
 			</div>
-	    	<!-- // contents -->
+			<!-- // footer_wrap -->
+		</div>
+		<!-- // contents -->
 
-			<!-- rnavi -->
-			<div class="rnavi">
-				<!-- quick -->
-				<div class="rightquick_area">
-					<div class="rightquick">
-						<div class="q_cart"><a href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/cart.png" alt=""></a>
-			       		 	<p>(<span id="gRightCartCount">1</span>)</p>
-			      		</div>
-			      		<div class="q_recent">Recent
-			        		<p>(<span id="gRecentViewCount">0</span>)</p>
-					        <!-- ÃÖ±Ùµî·Ï»óÇ° ¸®½ºÆ® ·Ñ¸µ -->
-					        <div class="recent">
-					          <!--<ul class="customNavigation PrevBtn">
-					            <a class="btn customPrevBtn"><img src="/nhome/img/arr_l.png"  alt="ÀÌÀü" /></a>
+		<!-- rnavi -->
+		<div class="rnavi">
+			<!-- quick -->
+			<div class="rightquick_area">
+				<div class="rightquick">
+					<div class="q_cart">
+						<a href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp"><img
+							src="<%=cp%>/shoppingmall/order/order_files/cart.png" alt=""></a>
+						<p>
+							(<span id="gRightCartCount">1</span>)
+						</p>
+					</div>
+					<div class="q_recent">
+						Recent
+						<p>
+							(<span id="gRecentViewCount">0</span>)
+						</p>
+						<!-- ìµœê·¼ë“±ë¡ìƒí’ˆ ë¦¬ìŠ¤íŠ¸ ë¡¤ë§ -->
+						<div class="recent">
+							<!--<ul class="customNavigation PrevBtn">
+					            <a class="btn customPrevBtn"><img src="/nhome/img/arr_l.png"  alt="ì´ì „" /></a>
 					          </ul>-->
-					          <ul id="gListRecentView"></ul>
-					          <!--<ul class="customNavigation NextBtn">
-					            <a class="btn customNextBtn"><img src="/nhome/img/arr_r.png"  alt="´ÙÀ½" /></a>
+							<ul id="gListRecentView"></ul>
+							<!--<ul class="customNavigation NextBtn">
+					            <a class="btn customNextBtn"><img src="/nhome/img/arr_r.png"  alt="ë‹¤ìŒ" /></a>
 					          </ul>
 					        </div>-->
-					        <!-- // ÃÖ±Ùµî·Ï»óÇ° ¸®½ºÆ® ·Ñ¸µ -->
-			      		</div>
-			    	</div>
-			    	<div class="righttop"><a href="https://eshop.parkland.co.kr:444/nhome/cart/order.asp?coupon_use=#"><img src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/top.png" alt="top"></a></div>
-			  	</div>
-			  	<!-- // quick -->
+							<!-- // ìµœê·¼ë“±ë¡ìƒí’ˆ ë¦¬ìŠ¤íŠ¸ ë¡¤ë§ -->
+						</div>
+					</div>
+					<div class="righttop">
+						<a
+							href="https://eshop.parkland.co.kr:444/nhome/cart/order.asp?coupon_use=#"><img
+							src="<%=cp%>/shoppingmall/order/order_files/top.png" alt="top"></a>
+					</div>
+				</div>
+				<!-- // quick -->
 			</div>
 			<!-- //rnavi -->
-	  	</div>
-	  	<!-- // container -->
+		</div>
+		<!-- // container -->
 
 	</div>
 	<!-- //WRAP -->
 
 
 
-			<!-- WIDERPLANET  SCRIPT START 2021.12.1 -->
-		<div id="wp_tg_cts" style="display:none;"><script id="wp_tag_script_1645707355575" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/wpc.php"></script></div>
-		<script type="text/javascript">
+	<!-- WIDERPLANET  SCRIPT START 2021.12.1 -->
+	<div id="wp_tg_cts" style="display: none;">
+		<script id="wp_tag_script_1645707355575"
+			src="<%=cp%>/shoppingmall/order/order_files/wpc.php"></script>
+	</div>
+	<script type="text/javascript">
 		var wptg_tagscript_vars = wptg_tagscript_vars || [];
-		wptg_tagscript_vars.push(
-		(function() {
+		wptg_tagscript_vars.push((function() {
 			return {
-				wp_hcuid:"kabfl3",   /*°í°´³Ñ¹ö µî Unique ID (ex. ·Î±×ÀÎ  ID, °í°´³Ñ¹ö µî )¸¦ ¾ÏÈ£È­ÇÏ¿© ´ëÀÔ.
-						*ÁÖÀÇ : ·Î±×ÀÎ ÇÏÁö ¾ÊÀº »ç¿ëÀÚ´Â ¾î¶°ÇÑ °ªµµ ´ëÀÔÇÏÁö ¾Ê½À´Ï´Ù.*/
-				ti:"53076",	/*±¤°íÁÖ ÄÚµå */
-				ty:"Home",	/*Æ®·¡Å·ÅÂ±× Å¸ÀÔ */
-				device:"web"	/*µğ¹ÙÀÌ½º Á¾·ù  (web ¶Ç´Â  mobile)*/
+				wp_hcuid : "kabfl3", /*ê³ ê°ë„˜ë²„ ë“± Unique ID (ex. ë¡œê·¸ì¸  ID, ê³ ê°ë„˜ë²„ ë“± )ë¥¼ ì•”í˜¸í™”í•˜ì—¬ ëŒ€ì….
+				 *ì£¼ì˜ : ë¡œê·¸ì¸ í•˜ì§€ ì•Šì€ ì‚¬ìš©ìëŠ” ì–´ë– í•œ ê°’ë„ ëŒ€ì…í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.*/
+				ti : "53076", /*ê´‘ê³ ì£¼ ì½”ë“œ */
+				ty : "Home", /*íŠ¸ë˜í‚¹íƒœê·¸ íƒ€ì… */
+				device : "web" /*ë””ë°”ì´ìŠ¤ ì¢…ë¥˜  (web ë˜ëŠ”  mobile)*/
 
 			};
 		}));
-		</script>
-		<script type="text/javascript" async="" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/wp_astg_4.0.js.´Ù¿î·Îµå"></script>
-		<!-- // WIDERPLANET  SCRIPT END 2021.12.1 -->
+	</script>
+	<script type="text/javascript" async=""
+		src="<%=cp%>/shoppingmall/order/order_files/wp_astg_4.0.js.ë‹¤ìš´ë¡œë“œ"></script>
+	<!-- // WIDERPLANET  SCRIPT END 2021.12.1 -->
 
-	
-	
-<!--<script>
-// À§·Î ¹öÆ°
+
+
+	<!--<script>
+// ìœ„ë¡œ ë²„íŠ¼
 //$(document).scroll(function() {
 //  btn_mv_up('.righttop');
 // }).on('click', '.righttop', function() {
@@ -778,653 +825,682 @@ return false;
 //</script>-->
 
 	<script type="text/javascript">
-	  function new_window(theURL,winName,features){ //v3.0
-	   window.open(theURL,winName,features);
-	}
+		function new_window(theURL, winName, features) { //v3.0
+			window.open(theURL, winName, features);
+		}
 	</script>
 
 	<script type="text/javascript">
-	$( document ).ready(function() {
-		getCartCount();
-		listRecentView();
+		$(document).ready(function() {
+			getCartCount();
+			listRecentView();
 
-		//resizeLeftNav();
-	});
+			//resizeLeftNav();
+		});
 
-	//$( window ).resize(function() {
-	//  resizeLeftNav();
-//	});
+		//$( window ).resize(function() {
+		//  resizeLeftNav();
+		//	});
 
-	//function resizeLeftNav()	{
-//	$("#leftside-navigation").height(($(window).height() - 450) + "px");
-//	}
+		//function resizeLeftNav()	{
+		//	$("#leftside-navigation").height(($(window).height() - 450) + "px");
+		//	}
 
-	function getCartCount()	{
-		getCartInfo("cmd=GETCARTCOUNT", getCartCount_proc, "/nhome");
-	}
-
-	function getCartCount_proc(ret)	{
-		eval("var adata = " + ret);
-		if(parseInt(adata.retCode) != 0 )		{
-			alert(adata.Message);
-			return false;
+		function getCartCount() {
+			getCartInfo("cmd=GETCARTCOUNT", getCartCount_proc, "/nhome");
 		}
 
-		$("#gTopCartCount").html(adata.data);
-		$("#gRightCartCount").html(adata.data);
-	}
+		function getCartCount_proc(ret) {
+			eval("var adata = " + ret);
+			if (parseInt(adata.retCode) != 0) {
+				alert(adata.Message);
+				return false;
+			}
 
-	function listRecentView()		{
-		getGoodsInfo("cmd=LISTRECENTVIEWED", listRecentView_proc, "/nhome");
-	}
-
-	function listRecentView_proc(ret)		{
-		eval("var adata = " + ret);
-		if(parseInt(adata.retCode) != 0 )		{
-			alert(adata.Message);
-			return false;
+			$("#gTopCartCount").html(adata.data);
+			$("#gRightCartCount").html(adata.data);
 		}
 
-		$("#gRecentViewCount").html(adata.count);
-		$("#gListRecentView").html(adata.data);
-	}
+		function listRecentView() {
+			getGoodsInfo("cmd=LISTRECENTVIEWED", listRecentView_proc, "/nhome");
+		}
 
-	function addFavorite() {
-		var bookmarkURL = window.location.href;
-        var bookmarkTitle = document.title;
-        var triggerDefault = false;
+		function listRecentView_proc(ret) {
+			eval("var adata = " + ret);
+			if (parseInt(adata.retCode) != 0) {
+				alert(adata.Message);
+				return false;
+			}
 
-        if (window.sidebar && window.sidebar.addPanel) {
-            // Firefox version < 23
-            window.sidebar.addPanel(bookmarkTitle, bookmarkURL, '');
-        } else if ((window.sidebar && (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)) || (window.opera && window.print)) {
-            // Firefox version >= 23 and Opera Hotlist
-            var $this = $(this);
-            $this.attr('href', bookmarkURL);
-            $this.attr('title', bookmarkTitle);
-            $this.attr('rel', 'sidebar');
-        } else if (window.external && ('AddFavorite' in window.external)) {
-            // IE Favorite
-            window.external.AddFavorite(bookmarkURL, bookmarkTitle);
-        } else {
-            // WebKit - Safari/Chrome
-            alert((navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd' : 'Ctrl') + '+D Å°¸¦ ´­·¯ Áñ°ÜÃ£±â¿¡ µî·ÏÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.');
-        }
-	}
+			$("#gRecentViewCount").html(adata.count);
+			$("#gListRecentView").html(adata.data);
+		}
 
-	function gLogin()	{
-		var loc = "https://eshop.parkland.co.kr:444/nhome/cart/order.asp?coupon_use=";
-		location.href = "https://eshop.parkland.co.kr:444/nhome/member/member_login.asp?retURL=" + encodeURIComponent(loc);
-	}
+		function addFavorite() {
+			var bookmarkURL = window.location.href;
+			var bookmarkTitle = document.title;
+			var triggerDefault = false;
+
+			if (window.sidebar && window.sidebar.addPanel) {
+				// Firefox version < 23
+				window.sidebar.addPanel(bookmarkTitle, bookmarkURL, '');
+			} else if ((window.sidebar && (navigator.userAgent.toLowerCase()
+					.indexOf('firefox') > -1))
+					|| (window.opera && window.print)) {
+				// Firefox version >= 23 and Opera Hotlist
+				var $this = $(this);
+				$this.attr('href', bookmarkURL);
+				$this.attr('title', bookmarkTitle);
+				$this.attr('rel', 'sidebar');
+			} else if (window.external && ('AddFavorite' in window.external)) {
+				// IE Favorite
+				window.external.AddFavorite(bookmarkURL, bookmarkTitle);
+			} else {
+				// WebKit - Safari/Chrome
+				alert((navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd'
+						: 'Ctrl')
+						+ '+D í‚¤ë¥¼ ëˆŒëŸ¬ ì¦ê²¨ì°¾ê¸°ì— ë“±ë¡í•˜ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤.');
+			}
+		}
+
+		function gLogin() {
+			var loc = "https://eshop.parkland.co.kr:444/nhome/cart/order.asp?coupon_use=";
+			location.href = "https://eshop.parkland.co.kr:444/nhome/member/member_login.asp?retURL="
+					+ encodeURIComponent(loc);
+		}
 	</script>
 
-<!-- AceCounter Log Gathering Script V.8.0.AMZ2019080601 -->
-<script language="javascript">
-	var _AceGID=(function(){var Inf=['gtc6.acecounter.com','8080','AS4A41784471665','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src ="https://"+ Inf[0] +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
-	var _AceCounter=(function(){var G=_AceGID;var _sc=document.createElement('script');var _sm=document.getElementsByTagName('script')[0];if(G.o!=0){var _A=G.val[G.o-1];var _G=(_A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];var _U=(_A[5]).replace(/\,/g,'_');_sc.src='https:'+'//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[4]+'&gd='+_G+'&gp='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime());_sm.parentNode.insertBefore(_sc,_sm);return _sc.src;}})();
-</script>
-<!-- AceCounter Log Gathering Script End -->
+	<!-- AceCounter Log Gathering Script V.8.0.AMZ2019080601 -->
+	<script language="javascript">
+		var _AceGID = (function() {
+			var Inf = [ 'gtc6.acecounter.com', '8080', 'AS4A41784471665', 'AW',
+					'0', 'NaPm,Ncisy', 'ALL', '0' ];
+			var _CI = (!_AceGID) ? [] : _AceGID.val;
+			var _N = 0;
+			var _T = new Image(0, 0);
+			if (_CI.join('.').indexOf(Inf[3]) < 0) {
+				_T.src = "https://" + Inf[0] + '/?cookie';
+				_CI.push(Inf);
+				_N = _CI.length;
+			}
+			return {
+				o : _N,
+				val : _CI
+			};
+		})();
+		var _AceCounter = (function() {
+			var G = _AceGID;
+			var _sc = document.createElement('script');
+			var _sm = document.getElementsByTagName('script')[0];
+			if (G.o != 0) {
+				var _A = G.val[G.o - 1];
+				var _G = (_A[0]).substr(0, _A[0].indexOf('.'));
+				var _C = (_A[7] != '0') ? (_A[2]) : _A[3];
+				var _U = (_A[5]).replace(/\,/g, '_');
+				_sc.src = 'https:' + '//cr.acecounter.com/Web/AceCounter_' + _C
+						+ '.js?gc=' + _A[2] + '&py=' + _A[4] + '&gd=' + _G
+						+ '&gp=' + _A[1] + '&up=' + _U + '&rd='
+						+ (new Date().getTime());
+				_sm.parentNode.insertBefore(_sc, _sm);
+				return _sc.src;
+			}
+		})();
+	</script>
+	<!-- AceCounter Log Gathering Script End -->
 
 
-	<script type="text/javascript" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/wcslog.js.´Ù¿î·Îµå"></script>
+	<script type="text/javascript"
+		src="<%=cp%>/shoppingmall/order/order_files/wcslog.js.ë‹¤ìš´ë¡œë“œ"></script>
 	<script type="text/javascript">
-	if(!wcs_add) var wcs_add = {};
-	wcs_add["wa"] = "d2a0aa740ab8d";
-	wcs_do();
+		if (!wcs_add)
+			var wcs_add = {};
+		wcs_add["wa"] = "d2a0aa740ab8d";
+		wcs_do();
 	</script>
 	<script type="text/javascript">
-    if(!wcs_add) var wcs_add = {};
-     wcs_add["wa"] = "s_5a296bbc5570";
-     wcs.inflow("parkland.co.kr");
-     wcs_do();
+		if (!wcs_add)
+			var wcs_add = {};
+		wcs_add["wa"] = "s_5a296bbc5570";
+		wcs.inflow("parkland.co.kr");
+		wcs_do();
 	</script>
 	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'https://www.google-analytics.com/analytics.js', 'ga');
 
-	  ga('create', 'UA-96357523-1', 'auto');
-	  ga('send', 'pageview');
+		ga('create', 'UA-96357523-1', 'auto');
+		ga('send', 'pageview');
 	</script>
 
-<!--// 20171214 min //-->
-<script type="text/javascript">
-var _bAce = [];
-function ACEL_TRACKING(mode, ename) {
- var ACEL_img = new Image();
- var ACED_D = 'gtm1.acecounter.com';
- var ACED_H = (location.protocol == 'https:') ? 'https://' + ACED_D + ':5443' : 'http://' + ACED_D + ':5757';
- ACEL_img.src = ACED_H + '/EMAM?euid=AS4A41784471665&ename=' + ename + '&fdv=' + mode + '&RID=' + Math.random() + '&';
- if (typeof(Array.prototype.push) != 'undefined') {
-  _bAce.push(ACEL_img);
- };
-};
-</script>
+	<!--// 20171214 min //-->
+	<script type="text/javascript">
+		var _bAce = [];
+		function ACEL_TRACKING(mode, ename) {
+			var ACEL_img = new Image();
+			var ACED_D = 'gtm1.acecounter.com';
+			var ACED_H = (location.protocol == 'https:') ? 'https://' + ACED_D
+					+ ':5443' : 'http://' + ACED_D + ':5757';
+			ACEL_img.src = ACED_H + '/EMAM?euid=AS4A41784471665&ename=' + ename
+					+ '&fdv=' + mode + '&RID=' + Math.random() + '&';
+			if (typeof (Array.prototype.push) != 'undefined') {
+				_bAce.push(ACEL_img);
+			}
+			;
+		};
+	</script>
 
-	
 
-	<script language="javascript" src="./ÆÄÅ©·£µå °ø½Ä¼îÇÎ¸ô_order_files/global.js.´Ù¿î·Îµå"></script>
 
-<script language="javascript">
-function cart_delete( ct_num,ct_code )
-{
-	if ( confirm( "\n »óÇ°À» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?" ) )
-	{
-		window.location ="cart_action.asp?action_state=delete&ct_num="+ct_num+"&gd_num="+ct_code;
-	}
-}
+	<script language="javascript"
+		src="<%=cp%>/shoppingmall/order/order_files/global.js.ë‹¤ìš´ë¡œë“œ"></script>
 
-function check_input()
-{
-	var f = document.buyForm;
-
-	for( var i=0; i<f.allrumtt.value; i++)
-	{
-		//alert($('#sumtt'+i).val())
-		if($('#sumtt'+i).val() =="aa"){
-			alert("Àß¸øµÈ ±İ¾×ÀÔ´Ï´Ù. ÀÌ »óÇ°Àº ±¸¸ÅÇÏ½Ç ¼ö ¾ø½À´Ï´Ù.");
-			return false;
+	<script language="javascript">
+		function cart_delete(ct_num, ct_code) {
+			if (confirm("\n ìƒí’ˆì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?")) {
+				window.location = "cart_action.asp?action_state=delete&ct_num="
+						+ ct_num + "&gd_num=" + ct_code;
+			}
 		}
 
-	}
+		function check_input() {
+			var f = document.buyForm;
 
+			for (var i = 0; i < f.allrumtt.value; i++) {
+				//alert($('#sumtt'+i).val())
+				if ($('#sumtt' + i).val() == "aa") {
+					alert("ì˜ëª»ëœ ê¸ˆì•¡ì…ë‹ˆë‹¤. ì´ ìƒí’ˆì€ êµ¬ë§¤í•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+					return false;
+				}
 
+			}
 
+			if (isTitle(f.sm_name.value)) {
+				alert("\nì£¼ë¬¸ìëª…ì„ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_name.focus();
+				return;
+			}
+			/*
+			if ( isTitle( f.sm_phone1.value ) )
+			{
+				alert( "\n ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_phone1.focus();
+				return;
+			}
 
+			if ( isTitle( f.sm_phone2.value ) )
+			{
+				alert( "\n ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_phone2.focus();
+				return;
+			}
 
-	if ( isTitle( f.sm_name.value ) )
-	{
-		alert( "\nÁÖ¹®ÀÚ¸íÀ» ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_name.focus();
-		return;
-	}
-	/*
-	if ( isTitle( f.sm_phone1.value ) )
-	{
-		alert( "\n ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_phone1.focus();
-		return;
-	}
+			if ( isTitle( f.sm_phone3.value ) )
+			{
+				alert( "\n ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_phone3.focus();
+				return;
+			}
 
-	if ( isTitle( f.sm_phone2.value ) )
-	{
-		alert( "\n ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_phone2.focus();
-		return;
-	}
+			if( f.sm_phone1.value.length < 2 )	{
+				alert("\nì§€ì—­ë²ˆí˜¸ëŠ” 2ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sm_phone1.focus();
+				return;
+			}
 
-	if ( isTitle( f.sm_phone3.value ) )
-	{
-		alert( "\n ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_phone3.focus();
-		return;
-	}
+			if( f.sm_phone2.value.length < 3 )	{
+				alert("\nì „í™”ë²ˆí˜¸ë¥¼ 3ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sm_phone2.focus();
+				return;
+			}
 
-	if( f.sm_phone1.value.length < 2 )	{
-		alert("\nÁö¿ª¹øÈ£´Â 2ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sm_phone1.focus();
-		return;
-	}
+			if( f.sm_phone3.value.length < 4 )	{
+				alert("\nì „í™”ë²ˆí˜¸ë¥¼ 4ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sm_phone3.focus();
+				return;
+			}
+			 */
+			if (isTitle(f.sm_hphone1.value)) {
+				alert("\n íœ´ëŒ€í°ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_hphone1.focus();
+				return;
+			}
+			if (isTitle(f.sm_hphone2.value)) {
+				alert("\n íœ´ëŒ€í°ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_hphone2.focus();
+				return;
+			}
+			if (isTitle(f.sm_hphone3.value)) {
+				alert("\n íœ´ëŒ€í°ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_hphone3.focus();
+				return;
+			}
 
-	if( f.sm_phone2.value.length < 3 )	{
-		alert("\nÀüÈ­¹øÈ£¸¦ 3ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sm_phone2.focus();
-		return;
-	}
+			if (f.sm_hphone1.value.length < 3) {
+				alert("\níœ´ëŒ€í°ë²ˆí˜¸ë¥¼ 3ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sm_hphone1.focus();
+				return;
+			}
 
-	if( f.sm_phone3.value.length < 4 )	{
-		alert("\nÀüÈ­¹øÈ£¸¦ 4ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sm_phone3.focus();
-		return;
-	}
-	*/
-	if ( isTitle( f.sm_hphone1.value ) )
-	{
-		alert( "\n ÈŞ´ëÆù¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_hphone1.focus();
-		return;
-	}
-	if ( isTitle( f.sm_hphone2.value ) )
-	{
-		alert( "\n ÈŞ´ëÆù¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_hphone2.focus();
-		return;
-	}
-	if ( isTitle( f.sm_hphone3.value ) )
-	{
-		alert( "\n ÈŞ´ëÆù¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_hphone3.focus();
-		return;
-	}
+			if (f.sm_hphone2.value.length < 3) {
+				alert("\níœ´ëŒ€í°ë²ˆí˜¸ë¥¼ 3ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sm_hphone2.focus();
+				return;
+			}
 
-	if( f.sm_hphone1.value.length < 3 )	{
-		alert("\nÈŞ´ëÆù¹øÈ£¸¦ 3ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sm_hphone1.focus();
-		return;
-	}
+			if (f.sm_hphone3.value.length < 4) {
+				alert("\níœ´ëŒ€í°ë²ˆí˜¸ë¥¼ 4ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sm_hphone3.focus();
+				return;
+			}
 
-	if( f.sm_hphone2.value.length < 3 )	{
-		alert("\nÈŞ´ëÆù¹øÈ£¸¦ 3ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sm_hphone2.focus();
-		return;
-	}
+			if (isTitle(f.sm_email.value)) {
+				alert("\n ì´ë©”ì¼ ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_email.focus();
+				return;
+			}
+			if (!CheckEmail(f.sm_email.value)) {
+				alert("\n ì´ë©”ì¼ í˜•ì‹ì´ ì˜¬ë°”ë¥´ì§€ ì•ŠìŠµë‹ˆë‹¤.");
+				f.sm_email.focus();
+				return;
+			}
+			/*if ( isTitle( f.sm_zip.value ) )
+			{
+				alert( "\n ìš°í¸ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_zip.focus();
+				return;
+			}	*/
+			/*if ( isTitle( f.sm_zip2.value ) )
+			{
+				alert( "\n ìš°í¸ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_zip2.focus();
+				return;
+			}	*/
+			/*
+			if ( isTitle( f.sm_addr.value ) )
+			{
+				alert( "\n ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_addr.focus();
+				return;
+			}
+			if ( isTitle( f.sm_subaddr.value ) )
+			{
+				alert( "\n ë‚˜ë¨¸ì§€ ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sm_subaddr.focus();
+				return;
+			}	*/
+			if (isTitle(f.sd_name.value)) {
+				alert("\në°›ìœ¼ì‹œëŠ”ë¶„ì˜ ì •ë³´ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_name.focus();
+				return;
+			}
+			/*
+			if ( isTitle( f.sd_phone1.value ) )
+			{
+				alert( "\n ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_phone1.focus();
+				return;
+			}
+			if ( isTitle( f.sd_phone2.value ) )
+			{
+				alert( "\n ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_phone2.focus();
+				return;
+			}
+			if ( isTitle( f.sd_phone3.value ) )
+			{
+				alert( "\n ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_phone3.focus();
+				return;
+			}
 
-	if( f.sm_hphone3.value.length < 4 )	{
-		alert("\nÈŞ´ëÆù¹øÈ£¸¦ 4ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sm_hphone3.focus();
-		return;
-	}
+			if( f.sd_phone1.value.length < 2 )	{
+				alert("\nì§€ì—­ë²ˆí˜¸ëŠ” 2ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sd_phone1.focus();
+				return;
+			}
 
-	if ( isTitle( f.sm_email.value ) )
-	{
-		alert( "\n ÀÌ¸ŞÀÏ ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_email.focus();
-		return;
-	}
-	if( !CheckEmail( f.sm_email.value ) )
-	{
-		alert("\n ÀÌ¸ŞÀÏ Çü½ÄÀÌ ¿Ã¹Ù¸£Áö ¾Ê½À´Ï´Ù.");
-		f.sm_email.focus();
-		return;
-	}
-	/*if ( isTitle( f.sm_zip.value ) )
-	{
-		alert( "\n ¿ìÆí¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_zip.focus();
-		return;
-	}	*/
-	/*if ( isTitle( f.sm_zip2.value ) )
-	{
-		alert( "\n ¿ìÆí¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_zip2.focus();
-		return;
-	}	*/
-	/*
-	if ( isTitle( f.sm_addr.value ) )
-	{
-		alert( "\n ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_addr.focus();
-		return;
-	}
-	if ( isTitle( f.sm_subaddr.value ) )
-	{
-		alert( "\n ³ª¸ÓÁö ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sm_subaddr.focus();
-		return;
-	}	*/
-	if ( isTitle( f.sd_name.value ) )
-	{
-		alert( "\n¹ŞÀ¸½Ã´ÂºĞÀÇ Á¤º¸¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_name.focus();
-		return;
-	}
-	/*
-	if ( isTitle( f.sd_phone1.value ) )
-	{
-		alert( "\n ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_phone1.focus();
-		return;
-	}
-	if ( isTitle( f.sd_phone2.value ) )
-	{
-		alert( "\n ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_phone2.focus();
-		return;
-	}
-	if ( isTitle( f.sd_phone3.value ) )
-	{
-		alert( "\n ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_phone3.focus();
-		return;
-	}
+			if( f.sd_phone2.value.length < 3 )	{
+				alert("\nì „í™”ë²ˆí˜¸ë¥¼ 3ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sd_phone2.focus();
+				return;
+			}
 
-	if( f.sd_phone1.value.length < 2 )	{
-		alert("\nÁö¿ª¹øÈ£´Â 2ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sd_phone1.focus();
-		return;
-	}
+			if( f.sd_phone3.value.length < 4 )	{
+				alert("\nì „í™”ë²ˆí˜¸ë¥¼ 4ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sd_phone3.focus();
+				return;
+			}	*/
 
-	if( f.sd_phone2.value.length < 3 )	{
-		alert("\nÀüÈ­¹øÈ£¸¦ 3ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sd_phone2.focus();
-		return;
-	}
+			if (isTitle(f.sd_hphone1.value)) {
+				alert("\n íœ´ëŒ€í°ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_hphone1.focus();
+				return;
+			}
+			if (isTitle(f.sd_hphone2.value)) {
+				alert("\n íœ´ëŒ€í°ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_hphone2.focus();
+				return;
+			}
+			if (isTitle(f.sd_hphone3.value)) {
+				alert("\n íœ´ëŒ€í°ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_hphone3.focus();
+				return;
+			}
 
-	if( f.sd_phone3.value.length < 4 )	{
-		alert("\nÀüÈ­¹øÈ£¸¦ 4ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sd_phone3.focus();
-		return;
-	}	*/
+			if (f.sd_hphone1.value.length < 3) {
+				alert("\níœ´ëŒ€í°ë²ˆí˜¸ë¥¼ 3ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sd_hphone1.focus();
+				return;
+			}
 
-	if ( isTitle( f.sd_hphone1.value ) )
-	{
-		alert( "\n ÈŞ´ëÆù¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_hphone1.focus();
-		return;
-	}
-	if ( isTitle( f.sd_hphone2.value ) )
-	{
-		alert( "\n ÈŞ´ëÆù¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_hphone2.focus();
-		return;
-	}
-	if ( isTitle( f.sd_hphone3.value ) )
-	{
-		alert( "\n ÈŞ´ëÆù¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_hphone3.focus();
-		return;
-	}
+			if (f.sd_hphone2.value.length < 3) {
+				alert("\níœ´ëŒ€í°ë²ˆí˜¸ë¥¼ 3ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sd_hphone2.focus();
+				return;
+			}
 
-	if( f.sd_hphone1.value.length < 3 )	{
-		alert("\nÈŞ´ëÆù¹øÈ£¸¦ 3ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sd_hphone1.focus();
-		return;
-	}
+			if (f.sd_hphone3.value.length < 4) {
+				alert("\níœ´ëŒ€í°ë²ˆí˜¸ë¥¼ 4ìë¦¬ ì´ìƒ ì…ë ¥í•˜ì„¸ìš”.")
+				f.sd_hphone3.focus();
+				return;
+			}
+			/*
+			if ( isTitle( f.sd_email.value ) )
+			{
+				alert( "\n ì´ë©”ì¼ ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_email.focus();
+				return;
+			}
+			if( !CheckEmail( f.sd_email.value ) )
+			{
+				alert("\n ì´ë©”ì¼ í˜•ì‹ì´ ì˜¬ë°”ë¥´ì§€ ì•ŠìŠµë‹ˆë‹¤.");
+				f.sd_email.focus();
+				return false;
+			}*/
+			if (isTitle(f.sd_zip.value)) {
+				alert("\n ìš°í¸ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_zip.focus();
+				return;
+			}
+			/*if ( isTitle( f.sd_zip2.value ) )
+			{
+				alert( "\n ìš°í¸ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_zip2.focus();
+				return;
+			}	*/
+			if (isTitle(f.sd_addr.value)) {
+				alert("\n ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_addr.focus();
+				return;
+			}
+			if (isTitle(f.sd_subaddr.value)) {
+				alert("\n ë‚˜ë¨¸ì§€ ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì„¸ìš”. ");
+				f.sd_subaddr.focus();
+				return;
+			}
+			/*if ( f.sm_payway[2].checked )
+			{
+				if( f.sm_bankaccount.value == 0 )
+				{
+					alert( "ì…ê¸ˆ ì€í–‰ì„ ì„ íƒí•˜ì‹­ì‹œì˜¤." );
+					f.sm_bankaccount.focus();
+					return false;
+				}
+				if ( isTitle( f.sm_bankuser.value ) )
+				{
+					alert( "ì…ê¸ˆì ì´ë¦„ì„ ì…ë ¥í•˜ì‹­ì‹œì˜¤." );
+					f.sm_bankuser.focus();
+					return false;
+				}
+			}*/
 
-	if( f.sd_hphone2.value.length < 3 )	{
-		alert("\nÈŞ´ëÆù¹øÈ£¸¦ 3ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sd_hphone2.focus();
-		return;
-	}
+			if ($("#sPcNum").val() != "" && $("#bCheckCP").val() == "0") {
+				alert("ì¿ í° ì‚¬ìš©ì„ ì²´í¬í•´ ì£¼ì„¸ìš”.");
+				return;
+			}
 
-	if( f.sd_hphone3.value.length < 4 )	{
-		alert("\nÈŞ´ëÆù¹øÈ£¸¦ 4ÀÚ¸® ÀÌ»ó ÀÔ·ÂÇÏ¼¼¿ä.")
-		f.sd_hphone3.focus();
-		return;
-	}
-	/*
-	if ( isTitle( f.sd_email.value ) )
-	{
-		alert( "\n ÀÌ¸ŞÀÏ ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_email.focus();
-		return;
-	}
-	if( !CheckEmail( f.sd_email.value ) )
-	{
-		alert("\n ÀÌ¸ŞÀÏ Çü½ÄÀÌ ¿Ã¹Ù¸£Áö ¾Ê½À´Ï´Ù.");
-		f.sd_email.focus();
-		return false;
-	}*/
-	if ( isTitle( f.sd_zip.value ) )
-	{
-		alert( "\n ¿ìÆí¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_zip.focus();
-		return;
-	}
-	/*if ( isTitle( f.sd_zip2.value ) )
-	{
-		alert( "\n ¿ìÆí¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_zip2.focus();
-		return;
-	}	*/
-	if ( isTitle( f.sd_addr.value ) )
-	{
-		alert( "\n ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_addr.focus();
-		return;
-	}
-	if ( isTitle( f.sd_subaddr.value ) )
-	{
-		alert( "\n ³ª¸ÓÁö ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
-		f.sd_subaddr.focus();
-		return;
-	}
-	/*if ( f.sm_payway[2].checked )
-	{
-		if( f.sm_bankaccount.value == 0 )
-		{
-			alert( "ÀÔ±İ ÀºÇàÀ» ¼±ÅÃÇÏ½Ê½Ã¿À." );
-			f.sm_bankaccount.focus();
-			return false;
+			if (f.agreed.checked == false) {
+				alert("êµ¬ë§¤ì— ë™ì˜í•´ì£¼ì‹œê¸° ë°”ëë‹ˆë‹¤.");
+				return;
+			}
+
+			var point = $("#nUsePLPoint").val();
+			if (point != "" && parseInt(point) > 0) {
+				checkPL();
+			} else {
+				f.submit();
+			}
+
 		}
-		if ( isTitle( f.sm_bankuser.value ) )
-		{
-			alert( "ÀÔ±İÀÚ ÀÌ¸§À» ÀÔ·ÂÇÏ½Ê½Ã¿À." );
-			f.sm_bankuser.focus();
-			return false;
+
+		function disaplyPointErr(errMsg) {
+			var totalAmount = 104300;
+			$("#usePointErr").text(errMsg);
+			$("#nUsePLPoint").val("0");
+			$("#totalAmount").html(numberWithCommas(totalAmount) + "ì›");
 		}
-	}*/
 
-	if($("#sPcNum").val() != "" && $("#bCheckCP").val() == "0")	{
-		alert("ÄíÆù »ç¿ëÀ» Ã¼Å©ÇØ ÁÖ¼¼¿ä.");
-		return;
-	}
+		function checkPL() {
+			var ret = fnCheckPoint();
 
-	if(f.agreed.checked == false){
-		alert("±¸¸Å¿¡ µ¿ÀÇÇØÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.");
-		return;
-	}
+			if (ret.retCode != 0) {
+				disaplyPointErr(ret.retMsg);
+				return false;
+			}
 
+			getUserInfo("cmd=CHECKPLPOINT&plPoint=" + $("#nUsePLPoint").val()
+					+ "&totalsale=104300&ckey=&Event_Point=0", checkPL_proc,
+					"/nhome");
 
-	var point = $("#nUsePLPoint").val();
-	if(point!="" && parseInt(point) >0 ) {
-		checkPL();
-	}
-	else	{
-		f.submit();
-	}
+		}
 
-}
+		function checkPL_proc(ret) {
+			eval("var adata = " + ret);
+			if (parseInt(adata.retCode) != 0) {
+				alert(adata.Message);
+				return false;
+			}
 
-function disaplyPointErr(errMsg)	{
-	var totalAmount = 104300;
-	$("#usePointErr").text(errMsg);
-	$("#nUsePLPoint").val("0");
-	$("#totalAmount").html(numberWithCommas(totalAmount) + "¿ø");
-}
+			var f = document.buyForm;
+			f.submit();
+		}
 
-function checkPL()	{
-	var ret = fnCheckPoint();
+		function checkPL_proc2(ret) {
+			var totalAmount = 104300;
+			console.log(ret);
+			eval("var adata = " + ret);
+			if (parseInt(adata.retCode) != 0) {
+				disaplyPointErr(adata.retMsg);
+				return;
+			}
 
-	if(ret.retCode !=0)		{
-		disaplyPointErr(ret.retMsg);
-		return false;
-	}
-	
-	getUserInfo("cmd=CHECKPLPOINT&plPoint=" + $("#nUsePLPoint").val() + "&totalsale=104300&ckey=&Event_Point=0", checkPL_proc, "/nhome");
-	
-}
+			$("#usePointErr").text("");
+			totalAmount = totalAmount - parseInt($("#nUsePLPoint").val());
+			$("#totalAmount").html(numberWithCommas(totalAmount) + "ì›");
+		}
 
-function checkPL_proc(ret)	{
-	eval("var adata = " + ret);
-	if(parseInt(adata.retCode) != 0 )		{
-		alert(adata.Message);
-		return false;
-	}
+		function fnChangeUsePoint() {
+			var ret = fnCheckPoint();
+			var totalAmount = 104300;
+			if (ret.retCode != 0) {
+				disaplyPointErr(ret.retMsg);
+				return;
+			}
 
-	var f = document.buyForm;
-	f.submit();
-}
+			testGetUserInfo("cmd=CHECKPLPOINT&plPoint="
+					+ $("#nUsePLPoint").val()
+					+ "&totalsale=104300&ckey=&Event_Point=0", checkPL_proc2,
+					"/nhome");
 
-function checkPL_proc2(ret)	{
-	var totalAmount = 104300;
-	console.log(ret);
-	eval("var adata = " + ret);
-	if(parseInt(adata.retCode) != 0 )		{
-		disaplyPointErr(adata.retMsg);
-		return;
-	}
+		}
 
-	$("#usePointErr").text("");
-	totalAmount = totalAmount - parseInt($("#nUsePLPoint").val());
-	$("#totalAmount").html(numberWithCommas(totalAmount) + "¿ø");
-}
+		function fnCheckPoint() {
+			var retCode, retMsg;
+			var nUsePLPoint;
+			if ($("#nUsePLPoint").val() == "") {
+				//nUsePLPoint = 0;
+				retMsg = "ì‚¬ìš©í¬ì¸íŠ¸ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš”.";
+				return {
+					retCode : 1,
+					retMsg : retMsg
+				};
+			}
 
-function fnChangeUsePoint()	{
-	var ret = fnCheckPoint();
-	var totalAmount = 104300;
-	if(ret.retCode !=0)		{
-		disaplyPointErr(ret.retMsg);
-		return;
-	}
+			var number = /[^0-9]/; //ìˆ«ìë§Œ í—ˆìš©
+			if ($("#nUsePLPoint").val().search(number) != -1) {
+				retMsg = "ì‚¬ìš©í¬ì¸íŠ¸ì—ëŠ” ìˆ«ìë§Œ ì…ë ¥ ê°€ëŠ¥í•©ë‹ˆë‹¤.";
+				return {
+					retCode : 1,
+					retMsg : retMsg
+				};
+			}
 
-	
-	testGetUserInfo("cmd=CHECKPLPOINT&plPoint=" + $("#nUsePLPoint").val() + "&totalsale=104300&ckey=&Event_Point=0", checkPL_proc2, "/nhome");
-	
-}
+			nUsePLPoint = parseInt($("#nUsePLPoint").val());
 
-function fnCheckPoint()	{
-	var retCode, retMsg;
-	var nUsePLPoint;
-	if($("#nUsePLPoint").val() == "")		{
-		//nUsePLPoint = 0;
-		retMsg = "»ç¿ëÆ÷ÀÎÆ®¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.";
-		return {retCode: 1, retMsg: retMsg};
-	}
+			var totalAmount = 104300;
 
-	var number = /[^0-9]/; //¼ıÀÚ¸¸ Çã¿ë
-	 if( $("#nUsePLPoint").val().search(number) != -1 )		{
-	 	retMsg = "»ç¿ëÆ÷ÀÎÆ®¿¡´Â ¼ıÀÚ¸¸ ÀÔ·Â °¡´ÉÇÕ´Ï´Ù.";
-		return {retCode: 1, retMsg: retMsg};
-   }
+			if (nUsePLPoint > totalAmount) {
+				retMsg = "ì‚¬ìš©í¬ì¸íŠ¸ê°€ ì´ ê²°ì œê¸ˆì•¡ì„ ì´ˆê³¼í•©ë‹ˆë‹¤.";
+				return {
+					retCode : 1,
+					retMsg : retMsg
+				};
+			}
 
-	nUsePLPoint = parseInt($("#nUsePLPoint").val());
+			if (nUsePLPoint > 0 && nUsePLPoint < 5000) {
+				retMsg = "í¬ì¸íŠ¸ëŠ” 5,000ì› ì´ìƒë¶€í„° ì‚¬ìš©ê°€ëŠ¥í•©ë‹ˆë‹¤.";
+				return {
+					retCode : 1,
+					retMsg : retMsg
+				};
+			}
 
-	var totalAmount = 104300;
+			if (nUsePLPoint % 100 != 0) {
+				retMsg = "5,000ì› ì´ìƒë¶€í„° 100ì› ë‹¨ìœ„ë¡œ ì‚¬ìš©ê°€ëŠ¥í•©ë‹ˆë‹¤.";
+				return {
+					retCode : 1,
+					retMsg : retMsg
+				};
+			}
+			return {
+				retCode : 0,
+				retMsg : ""
+			};
+		}
 
-	if(nUsePLPoint > totalAmount)	{
-		retMsg = "»ç¿ëÆ÷ÀÎÆ®°¡ ÃÑ °áÁ¦±İ¾×À» ÃÊ°úÇÕ´Ï´Ù.";
-		return {retCode: 1, retMsg: retMsg};
-	}
+		function numberWithCommas(x) {
+			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
 
-	if(nUsePLPoint > 0 && nUsePLPoint < 5000) 	{
-		retMsg = "Æ÷ÀÎÆ®´Â 5,000¿ø ÀÌ»óºÎÅÍ »ç¿ë°¡´ÉÇÕ´Ï´Ù.";
-		return {retCode: 1, retMsg: retMsg};
-	}
+		function display_option(display) {
+			if (display == "B") {
+				bankaccount.style.display = "none";
+			} else {
+				bankaccount.style.display = "none";
+			}
 
-	if(nUsePLPoint % 100 != 0)	{
-		retMsg = "5,000¿ø ÀÌ»óºÎÅÍ 100¿ø ´ÜÀ§·Î »ç¿ë°¡´ÉÇÕ´Ï´Ù.";
-		return {retCode: 1, retMsg: retMsg};
-	}
-	return {retCode: 0, retMsg: ""};
-}
+		}
 
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+		function issame() {
+			var f = document.myForm;
+			if (f.same.checked == true) {
+				f.sd_name.value = f.sm_name.value;
+				f.sd_hphone1.value = f.sm_hphone1.value;
+				f.sd_hphone2.value = f.sm_hphone2.value;
+				f.sd_hphone3.value = f.sm_hphone3.value;
+				f.sd_email.value = f.sm_email.value;
+				f.sd_addr.value = f.sm_addr.value;
+			} else {
+				f.sd_name.value = "";
+				f.sd_hphone1.value = "";
+				f.sd_hphone2.value = "";
+				f.sd_hphone3.value = "";
+				f.sd_email.value = "";
+				f.sd_addr.value = "";
+			}
+		}
+		function openwindow(name, url, width, height, scrollbar) {
+			scrollbar_str = scrollbar ? 'yes' : 'no';
+			window.open(url, name, 'width=' + width + ',height=' + height
+					+ ',scrolling=' + scrollbar_str);
+		}
 
-function display_option( display )
-{
-	if ( display == "B" )
-	{
-		bankaccount.style.display = "none";
-	}
-	else
-	{
-		bankaccount.style.display = "none";
-	}
+		function set_delete(ct_num, ct_code, gd_style) {
+			if (confirm("ë³¸ ìƒí’ˆì€ ì„¸íŠ¸ ìƒí’ˆì´ë¯€ë¡œ ìƒì˜ í˜¹ì€ í•˜ì˜ë„ ì‚­ì œë©ë‹ˆë‹¤.\n ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?")) {
+				window.location = "cart_action.asp?action_state=delete&ct_num="
+						+ ct_num + "&gd_num=" + ct_code + "&gd_style="
+						+ gd_style;
+			}
+		}
 
-}
+		function set_delete_set(ct_num, ct_code, gd_style, s_gd_num) {
+			if (confirm("ë³¸ ìƒí’ˆì€ ì„¸íŠ¸ ìƒí’ˆì´ë¯€ë¡œ ìƒì˜/í•˜ì˜ í˜¹ì€ í•´ë‹¹ ì „ì²´ ìƒí’ˆì´ ì‚­ì œë©ë‹ˆë‹¤.\n ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?")) {
+				window.location = "cart_action.asp?action_state=delete&ct_num="
+						+ ct_num + "&gd_num=" + ct_code + "&gd_style="
+						+ gd_style + "&s_gd_num=" + s_gd_num;
+			}
+		}
 
-function issame()
-{
-	var f = document.buyForm;
-	if( f.same.checked == true )
-	{
-		f.sd_name.value = f.sm_name.value;
-		f.sd_phone1.value = f.sm_phone1.value;
-		f.sd_phone2.value = f.sm_phone2.value;
-		f.sd_phone3.value = f.sm_phone3.value;
-		f.sd_hphone1.value = f.sm_hphone1.value;
-		f.sd_hphone2.value = f.sm_hphone2.value;
-		f.sd_hphone3.value = f.sm_hphone3.value;
-		f.sd_email.value = f.sm_email.value;
-		//f.sd_zip1.value = f.sm_zip1.value;
-		//f.sd_zip2.value = f.sm_zip2.value;
-		f.sd_zip.value = f.sm_zip.value;
-		f.sd_addr.value = f.sm_addr.value;
-		f.sd_subaddr.value = f.sm_subaddr.value;
-	}
-	else
-	{
-		f.sd_name.value = "";
-		f.sd_phone1.value = "";
-		f.sd_phone2.value = "";
-		f.sd_phone3.value = "";
-		f.sd_hphone1.value = "";
-		f.sd_hphone2.value = "";
-		f.sd_hphone3.value = "";
-		f.sd_email.value = "";
-		//f.sd_zip1.value = "";
-		//f.sd_zip2.value = "";
-		f.sd_zip.value = "";
-		f.sd_addr.value = "";
-		f.sd_subaddr.value = "";
-	}
-}
- function openwindow(name, url, width, height, scrollbar) {
- scrollbar_str = scrollbar ? 'yes' : 'no';
- window.open(url, name, 'width='+width+',height='+height+',scrolling='+scrollbar_str);
-}
+		function setSdAddr(zipcode, addr1, addr2) {
+			var f = document.buyForm;
+			f.sd_zip.value = zipcode;
+			f.sd_addr.value = addr1;
+			f.sd_subaddr.value = addr2;
+		}
 
-function set_delete( ct_num , ct_code , gd_style)
-{
-	if (confirm("º» »óÇ°Àº ¼¼Æ® »óÇ°ÀÌ¹Ç·Î »óÀÇ È¤Àº ÇÏÀÇµµ »èÁ¦µË´Ï´Ù.\n »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?"))
-	{
-		window.location ="cart_action.asp?action_state=delete&ct_num="+ct_num+"&gd_num="+ct_code+"&gd_style="+gd_style;
-	}
-}
+		function setSmAddr(zipcode, addr1, addr2) {
+			var f = document.buyForm;
+			f.sm_zip.value = zipcode;
+			f.sm_addr.value = addr1;
+			f.sm_subaddr.value = addr2;
+		}
 
-function set_delete_set( ct_num , ct_code , gd_style,  s_gd_num)
-{
-	if (confirm("º» »óÇ°Àº ¼¼Æ® »óÇ°ÀÌ¹Ç·Î »óÀÇ/ÇÏÀÇ È¤Àº ÇØ´ç ÀüÃ¼ »óÇ°ÀÌ »èÁ¦µË´Ï´Ù.\n »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?"))
-	{
-		window.location ="cart_action.asp?action_state=delete&ct_num="+ct_num+"&gd_num="+ct_code+"&gd_style="+gd_style+"&s_gd_num="+s_gd_num;
-	}
-}
+		function fnCheckCoupon() {
+			var spcnum = $("#sPcNum").val().trim();
+			if (spcnum == "") {
+				alert("ì¿ í°ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
+				return;
+			}
 
+			getCouponInfo("spcnum=" + spcnum + "&from=1", checkCP_proc,
+					"/nhome");
+		}
 
-function setSdAddr(zipcode, addr1, addr2)		{
-	var f = document.buyForm;
-	f.sd_zip.value = zipcode;
-	f.sd_addr.value = addr1;
-	f.sd_subaddr.value = addr2;
-}
+		function checkCP_proc(ret) {
+			eval("var adata = " + ret);
+			if (parseInt(adata.retCode) != 0) {
+				alert(adata.retMsg);
+				$("#sPcNum").val("");
+				return false;
+			}
 
+			alert("ì¿ í° í• ì¸ì´ ì ìš©ë˜ì—ˆìŠµë‹ˆë‹¤.");
+			$("#btnCheckCP").css("display", "none");
+			$("#sPcNum").attr("readonly", "readonly");
+			$("#bCheckCP").val("1");
 
-function setSmAddr(zipcode, addr1, addr2)	{
-	var f = document.buyForm;
-	f.sm_zip.value = zipcode;
-	f.sm_addr.value = addr1;
-	f.sm_subaddr.value = addr2;
-}
+			var oData = adata.data;
+			$("#og_glist").html(oData.og_glist);
+			$("#og_totalsale").text(oData.og_totalsale);
+			$("#og_totalsale2").text(oData.og_totalsale);
+			$("#sm_tmoney").text(oData.og_totalsale);
+			$("#og_deliverysum").text(oData.og_deliverysum);
+			$("#og_deliverysum2").text(oData.og_deliverysum);
+			$("#og_totalamount").text(oData.og_totalamount);
+			$("#og_totalpoint").text(oData.og_totalpoint);
+			$("#og_totaldiscount").text(oData.og_totaldiscount);
+			$("#totalAmount").text(oData.og_totalamount);
 
-function fnCheckCoupon()	{
-	var spcnum = $("#sPcNum").val().trim();
-	if(spcnum == "")	{
-		alert("ÄíÆù¹øÈ£¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
-		return;
-	}
-
-	getCouponInfo("spcnum=" + spcnum + "&from=1", checkCP_proc, "/nhome");
-}
-
-function checkCP_proc(ret)	{
-	eval("var adata = " + ret);
-	if(parseInt(adata.retCode) != 0 )		{
-		alert(adata.retMsg);
-		$("#sPcNum").val("");
-		return false;
-	}
-
-	alert("ÄíÆù ÇÒÀÎÀÌ Àû¿ëµÇ¾ú½À´Ï´Ù.");
-	$("#btnCheckCP").css("display", "none");
-	$("#sPcNum").attr("readonly", "readonly");
-	$("#bCheckCP").val("1");
-
-	var oData = adata.data;
-	$("#og_glist").html(oData.og_glist);
-	$("#og_totalsale").text(oData.og_totalsale);
-	$("#og_totalsale2").text(oData.og_totalsale);
-	$("#sm_tmoney").text(oData.og_totalsale);
-	$("#og_deliverysum").text(oData.og_deliverysum);
-	$("#og_deliverysum2").text(oData.og_deliverysum);
-	$("#og_totalamount").text(oData.og_totalamount);
-	$("#og_totalpoint").text(oData.og_totalpoint);
-	$("#og_totaldiscount").text(oData.og_totaldiscount);
-	$("#totalAmount").text(oData.og_totalamount);
-
-}
-</script>
-</body></html>
+		}
+	</script>
+</body>
+</html>
