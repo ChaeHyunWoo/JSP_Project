@@ -3,20 +3,11 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
-	String pageNum = request.getParameter("pageNum");
-
-	if (pageNum == null) {
-		pageNum = "1";
-	} else {
-		pageNum = request.getParameter("pageNum");
-	}
 %>
-
-<!DOCTYPE html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="ko">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>헬로네이처</title>
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -26,45 +17,42 @@
 <meta name="facebook-domain-verification"
 	content="nmgreo7cfvx7q1b1fb03sslnypf0q1">
 <link rel="stylesheet" type="text/css"
-	href="<%=cp%>/shoppingmall/notice/notice_files/reset.css" media="all">
+	href="<%=cp%>/shoppingmall/product/product_files/reset.css" media="all">
 <link rel="stylesheet" type="text/css"
-	href="<%=cp%>/shoppingmall/notice/notice_files/style.css" media="all">
+	href="<%=cp%>/shoppingmall/product/product_files/style.css" media="all">
 <link rel="stylesheet" type="text/css"
-	href="<%=cp%>/shoppingmall/notice/notice_files/owl.carousel.min.css">
+	href="<%=cp%>/shoppingmall/product/product_files/owl.carousel.min.css">
 <!-- main slider css -->
 <!--link rel="stylesheet" type="text/css" href="/nhome/css/owl.theme.default.min.css"-->
 <!-- main slider css -->
 <script async=""
-	src="<%=cp%>/shoppingmall/notice/notice_files/analytics.js.다운로드"></script>
+	src="<%=cp%>/shoppingmall/product/product_files/analytics.js.다운로드"></script>
 <script
-	src="<%=cp%>/shoppingmall/notice/notice_files/AceCounter_AW.js.다운로드"></script>
+	src="<%=cp%>/shoppingmall/product/product_files/AceCounter_AW.js.다운로드"></script>
 <script type="text/javascript" async=""
-	src="<%=cp%>/shoppingmall/notice/notice_files/analytics.js.다운로드"></script>
+	src="<%=cp%>/shoppingmall/product/product_files/analytics.js.다운로드"></script>
 <script type="text/javascript" async=""
-	src="<%=cp%>/shoppingmall/notice/notice_files/js"></script>
+	src="<%=cp%>/shoppingmall/product/product_files/js"></script>
 <script type="text/javascript" async=""
-	src="<%=cp%>/shoppingmall/notice/notice_files/analytics.js.다운로드"></script>
-<script src="<%=cp%>/shoppingmall/notice/notice_files/462724525419327"
-	async=""></script>
-<script async=""
-	src="<%=cp%>/shoppingmall/notice/notice_files/fbevents.js.다운로드"></script>
+	src="<%=cp%>/shoppingmall/product/product_files/analytics.js.다운로드"></script>
+
 <script
-	src="<%=cp%>/shoppingmall/notice/notice_files/jquery-1.11.3.min.js.다운로드"></script>
+	src="<%=cp%>/shoppingmall/product/product_files/jquery-1.11.3.min.js.다운로드"></script>
 <script type="text/javascript"
-	src="<%=cp%>/shoppingmall/notice/notice_files/owl.carousel.js.다운로드"></script>
+	src="<%=cp%>/shoppingmall/product/product_files/owl.carousel.js.다운로드"></script>
 <!-- main slider js -->
-<script src="<%=cp%>/shoppingmall/notice/notice_files/default.js.다운로드"
+<script src="<%=cp%>/shoppingmall/product/product_files/default.js.다운로드"
 	type="text/javascript" charset="euc-kr"></script>
-<script src="<%=cp%>/shoppingmall/notice/notice_files/common.js.다운로드"
+<script src="<%=cp%>/shoppingmall/product/product_files/common.js.다운로드"
 	type="text/javascript" charset="euc-kr"></script>
 
 <link rel="stylesheet" type="text/css"
-	href="<%=cp%>/shoppingmall/notice/notice_files/odesign.css">
-<script src="<%=cp%>/shoppingmall/notice/notice_files/global.js.다운로드"
+	href="<%=cp%>/shoppingmall/product/product_files/odesign.css">
+<script src="<%=cp%>/shoppingmall/product/product_files/global.js.다운로드"
 	type="text/javascript" charset="euc-kr"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics ipcom 190820 -->
-<script async="" src="<%=cp%>/shoppingmall/notice/notice_files/js(1)"></script>
+<script async="" src="<%=cp%>/shoppingmall/product/product_files/js(1)"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() {
@@ -213,9 +201,14 @@
 	});
 </script>
 
+<link rel="stylesheet" type="text/css"
+	href="<%=cp%>/shoppingmall/notice/css/style.css" />
+<link rel="stylesheet" type="text/css"
+	href="<%=cp%>/shoppingmall/notice/css/article.css" />
+
 
 </head>
-<body>
+<body class="body">
 	<!-- container -->
 	<div id="container">
 		<!-- navi -->
@@ -411,6 +404,69 @@
 			<div class="content_area">
 
 
+				<%-- 				<!-- 정보수정 -->
+				<div class="s_location">
+					<a href="https://eshop.parkland.co.kr:444/"><img
+						src="<%=cp%>/shoppingmall/product/product_files/icon_home.png"
+						border="0"></a><img
+						src="<%=cp%>/shoppingmall/product/product_files/icon_larr.png"
+						border="0">헬로네이처
+				</div>
+				
+				
+				<div class="cline"></div>
+				<script type="text/javascript"
+					src="<%=cp%>/shoppingmall/product/data/productSave.js"></script>
+				<div class="c_title">
+					<p>1:1 문의 내용</p>
+				</div>
+				<div class="table_join">
+					<form name="myForm" id="frmData" action="" method="post"
+						enctype="multipart/form-data">
+						<table>
+							<colgroup>
+								<col width="170px">
+								<col width="auto">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th style="padding-left: 20px;">제목</th>
+									<td><input type="text" name="subject" id="changepw02"
+										class="type01" style="width: 270px;" value="${dto.subject }"></td>
+								</tr>
+								<tr>
+									<th style="padding-left: 20px;">작성자</th>
+									<td><input type="text" name="name" id="changepw02"
+										class="type01" style="width: 270px;" value="${dto.name }"></td>
+								</tr>
+								<tr>
+									<th style="padding-left: 20px;">E-mail</th>
+									<td><input type="text" name="email" id="changepw02"
+										class="type01" style="width: 270px;" value="${dto.email }"></td>
+								</tr>
+								<tr style="height: 100px;">
+									<th style="padding-left: 20px;">내용</th>
+									<td>
+										<input type="text" name="content" id="changepw02"
+										class="type01" style="width: 270px; height: 80px;" value="${dto.content }">
+										<textarea name="content" id="changepw02" class="type01"
+											style="width: 270px; height: 80px; padding-left: 10px;"
+											value="${dto.content }"></textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+				<div class="btn_center mt30">
+					<input type="button" value="등록하기" onclick="sendIt();"
+						class="btn-type btn5 blue mr5" />
+					<!-- <input type="reset" value="다시입력"
+						class="btn-type btn5 dgray mr5" /> -->
+					<input type="button" value="작성취소" class="btn-type btn5 blue mr5"
+						onclick="javascript:location.href='<%=cp%>/shop/product/productSave.do';" />
+				</div> --%>
+
 				<div class="s_location">
 					<a href="https://eshop.parkland.co.kr:444/"><img
 						src="<%=cp%>/shoppingmall/notice/notice_files/icon_home.png"
@@ -421,89 +477,294 @@
 						border="0">공지사항
 				</div>
 				<div class="cline"></div>
-				<div class="c_title">
-					<p>1:1문의</p>
+				<div id="bbs">
+
+					<div id="bbs_title">게 시 판</div>
+					<div id="bbsArticle">
+
+						<div id="bbsArticle_header">${dto.subject }</div>
+						<div class="bbsArticle_bottomLine">
+							<dl>
+								<dt>작성자</dt>
+								<dd>${dto.name }</dd>
+								<dt>줄수</dt>
+								<dd>${lineSu }</dd>
+							</dl>
+						</div>
+
+						<div class="bbsArticle_bottomLine">
+							<dl>
+								<dt>등록일</dt>
+								<dd>${dto.created }</dd>
+								<dt>조회수</dt>
+								<dd>${dto.hitCount }</dd>
+							</dl>
+						</div>
+
+						<div id="bbsArticle_content">
+							<table width="600" border="0">
+								<tr>
+									<td style="padding-left: 20px 80px 20px 62px;" valign="top"
+										height="200">게시물 내용</td>
+								</tr>
+							</table>
+						</div>
+
+					</div>
+
+					<div class="bbsArticle_noLine" style="text-align: right">From
+						: ${dto.ipAddr }</div>
+
+					<div id="bbsArticle_footer">
+						<div id="leftFooter">
+							<input type="button" value=" 수정 " class="btn2"
+								onclick="javascript:location.href='<%=cp %>/shop/notice/updated.do?num=${dto.num }&${params }';" />
+							<input type="button" value=" 삭제 " class="btn2"
+								onclick="javascript:location.href='<%=cp %>/shop/notice/deleted_ok.do?num=${dto.num }&${params }';" />
+						</div>
+						<div id="rightFooter">
+							<input type="button" value=" 리스트 " class="btn2"
+								onclick="javascript:location.href='<%=cp %>/shop/notice/notice.do?${params }';" />
+						</div>
+					</div>
+
 				</div>
-				<div class="tab_type3 mb40">
-					<li class="active"><a href="<%=cp%>/shop/notice/notice.do">1:1문의</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">공지사항</a></li>
-					<li><a href="#">주문배송조회</a></li>
-					<li><a href="#">반품/교환/취소접수</a></li>
-					<li><a href="#">매장검색</a></li>
 
-					<li><a href="#">신규 멤버스 카드 발급</a></li>
 
+				<!-- // 정보수정 -->
+				<!-- 본인확인 인증 s -->
+				<style>
+.title_type01 {
+	background:
+		url('http://members.parkland.co.kr/images/sub/left_line.png') center
+		left no-repeat;
+	font-size: 19px;
+	color: #1e1e1e;
+	padding-left: 10px;
+	height: 17px;
+	margin-bottom: 14px;
+}
+
+.title_type02 {
+	font-size: 17px;
+	color: #21286d;
+	font-weight: 600;
+	height: 17px;
+	margin-bottom: 10px;
+}
+
+.sub_txt_type01 {
+	font-size: 13px;
+	color: #7e7e7e;
+}
+
+.join01_in {
+	border: 1px solid #dfdfdf;
+	margin-top: 23px;
+}
+
+.join01_in:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.join01_in>ul>li {
+	float: left;
+	width: 50%;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.join01_in>ul>li>dl {
+	border-left: 1px solid #dfdfdf;
+	padding-left: 30px;
+}
+
+.join01_in>ul>li>dl dt:first-child {
+	height: 48px;
+}
+
+.join01_in>ul>li>dl dt {
+	font-size: 18px;
+	color: #21286d;
+	height: 18px;
+	margin-bottom: 19px;
+}
+
+.join01_in>ul>li>dl dd {
+	font-size: 13px;
+	color: #7e7e7e;
+	height: 14px;
+	margin-bottom: 19px;
+	height: 35px;
+}
+
+.join01_in>ul>li:first-child>dl {
+	border-left: 0;
+}
+
+.btn_type03 {
+	margin-top: 10px;
+}
+
+.btn_type03 a {
+	display: inline-block;
+	width: 107px;
+	padding: 5px 0;
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	background-color: #21286d;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.btn_type03 a:hover {
+	color: #fff;
+}
+
+.btn_type03 a.bgcC {
+	background-color: #898989;
+}
+</style>
+				<div id="niceIpinPop"
+					style="display: none; padding: 20px; position: absolute; left: 10px; top: 600px; width: 840px; height: 310px; border: 3px solid #7b7c7f; background-color: #FFF; z-index: 100;">
+					<div class="title_type01">
+						본인확인
+						<div
+							style="position: relative; float: right; margin-top: -10px; margin-right: -10px; width: 20px; height: 21px;">
+							<img
+								src="<%=cp%>/shoppingmall/product/product_files/login_popClose.png"
+								style="cursor: pointer">
+						</div>
+					</div>
+					<div class="sub_txt_type01">핸드폰실명인증 또는 아이핀인증을 선택해주세요.</div>
+					<div class="join01_in">
+						<ul>
+							<li>
+
+
+
+								<title>NICE&#65533;??#65533;?#65533;&#65533;蹂?-
+									CheckPlus &#65533;?щ낯??#65533;몄? &#65533;??#65533;&#65533;</title> <script
+									language="javascript">
+										window.name = "Parent_window";
+
+										function fnPopup2() {
+											window
+													.open(
+															'',
+															'popupChk',
+															'width=500, height=550, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbar=no');
+											document.form_chk.action = "https://nice.checkplus.co.kr/CheckPlusSafeModel/checkplus.cb";
+											document.form_chk.target = "popupChk";
+											document.form_chk.submit();
+										}
+									</script> <!-- body class="body" onload="fnPopup();" --> <!-- <br>&#65533;泥?#65533;蹂?&#65533;??#65533;&#65533; &#65533;곗?#65533;&#65533; : [AgAFRzQwMjCN2yvlAOQJFL4ZyPOigU2sSJMlfhaA+d5jh+ILyvkWFzFLNVcRuf7HVLDKCn5dXf87Hqi6hM9W9nx42k0vbIvkZlpvkEX1pTHK48yhcMCsmBLxMWoam8JDUeLElvhmCe4VCYzhirxNjI33DCqR3CjvmymbX8p+ZHRmc2swnhHdWECmroOi9Y0RgiEQPX9utm6DbIvFBm+62b7BuDWRdF3u7X/805VQgtKHVfZeZUq1bmUEQYDLICVdz/W+Zui2xlZ8G5EE4T1HoMvtT4Io84GN7vCujSHvV6BhohZ9ssEuHveS7g9yc5b/MKuGY1kmo91idkFJGdKyjC8m9Xp6vSMctrp6VTVb+GLzixagqtD1c/AxbblVZWFS0A+kZveMYSmhZ10k9mgU/jqC6hZBjxx04r+Rz8x2P7UL1Sq7Lqp69K/Wfpr3pNQj06B1B2931Y361Jk8uiPk1h2aQXecFHUJUD0Il/sjM5BO6pWBRhbdYrl2WBPMeuwBrchxxrduunM8e7KUYoDufA3vldPRoWGEFqVjo/HKxbSiptEc08wy/w==]<br><br> -->
+
+								<!-- 蹂몄?#65533;몄? &#65533;鍮&#65533;&#65533; &#65533;?&#65533;&#65533; &#65533;몄?&#65533;湲?&#65533;??#65533;? &#65533;ㅼ怨&#65533; 媛?#65533; form&#65533;&#65533; &#65533;?&#65533;⑸&#65533;&#65533;. -->
+								<form name="form_chk" method="post">
+									<input type="hidden" name="m" value="checkplusSerivce">
+									<!-- &#65533;? &#65533;곗?#65533;&#65533;濡&#65533;, &#65533;??#65533;?硫&#65533; &#65533;??#65533;?? -->
+									<input type="hidden" name="EncodeData"
+										value="AgAFRzQwMjCN2yvlAOQJFL4ZyPOigU2sSJMlfhaA+d5jh+ILyvkWFzFLNVcRuf7HVLDKCn5dXf87Hqi6hM9W9nx42k0vbIvkZlpvkEX1pTHK48yhcMCsmBLxMWoam8JDUeLElvhmCe4VCYzhirxNjI33DCqR3CjvmymbX8p+ZHRmc2swnhHdWECmroOi9Y0RgiEQPX9utm6DbIvFBm+62b7BuDWRdF3u7X/805VQgtKHVfZeZUq1bmUEQYDLICVdz/W+Zui2xlZ8G5EE4T1HoMvtT4Io84GN7vCujSHvV6BhohZ9ssEuHveS7g9yc5b/MKuGY1kmo91idkFJGdKyjC8m9Xp6vSMctrp6VTVb+GLzixagqtD1c/AxbblVZWFS0A+kZveMYSmhZ10k9mgU/jqC6hZBjxx04r+Rz8x2P7UL1Sq7Lqp69K/Wfpr3pNQj06B1B2931Y361Jk8uiPk1h2aQXecFHUJUD0Il/sjM5BO6pWBRhbdYrl2WBPMeuwBrchxxrduunM8e7KUYoDufA3vldPRoWGEFqVjo/HKxbSiptEc08wy/w==">
+									<!-- &#65533;?&#65533;&#65533; &#65533;泥?#65533;蹂대?#65533; &#65533;??#65533;&#65533; &#65533;&#65533; &#65533;곗?#65533;&#65533;&#65533;?&#65533;&#65533;. -->
+
+									<!-- &#65533;泥?#65533;? &#65533;?듬?湲?&#65533;?&#65533;&#65533; &#65533;곗?#65533;&#65533;瑜&#65533; &#65533;ㅼ&#65533;湲?&#65533;??&#65533;ъ?#65533;&#65533; &#65533;&#65533; &#65533;?쇰?#65533;, &#65533;몄?寃곌낵 &#65533;??#65533;&#65533; &#65533;대?媛? 洹몃&#65533;濡&#65533; &#65533;≪&#65533;⑸&#65533;&#65533;.
+	    	   &#65533;대?&#65533;?쇰명?#65533;&#65533; 異?#65533;&#65533;??&#65533;&#65533; &#65533;??#65533;?? -->
+									<input type="hidden" name="param_r1" value="edit_ansim">
+									<input type="hidden" name="param_r2" value=""> <input
+										type="hidden" name="param_r3" value="">
+
+									<!-- <a href="javascript:fnPopup();"> CheckPlus &#65533;?щ낯??#65533;몄? Click</a> -->
+								</form>
+
+
+								<dl>
+									<dt>
+										<img
+											src="<%=cp%>/shoppingmall/product/product_files/join_icon01.png"
+											alt="">
+									</dt>
+									<dt>휴대폰</dt>
+									<dd>휴대폰으로 본인인증하기</dd>
+									<dd>
+										<div class="btn_type03">
+											<a href="javascript:fnAnsimSubmit();">인증하기</a>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li>
+
+
+
+								<title>NICE&#65533;??#65533;?#65533;&#65533;蹂?媛&#65533;&#65533;二쇰쇰?&#65533;&#65533;
+									&#65533;鍮&#65533;&#65533;</title> <script language="javascript">
+										window.name = "Parent_window";
+
+										function fnPopup() {
+											window
+													.open(
+															'',
+															'popupIPIN2',
+															'width=450, height=550, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbar=no');
+											document.form_ipin.target = "popupIPIN2";
+											document.form_ipin.action = "https://cert.vno.co.kr/ipin.cb";
+											document.form_ipin.submit();
+										}
+									</script> <!-- iRtn : 0 - ?? 泥由???듬??<br><br>
+&#65533;泥?#65533;蹂?&#65533;??#65533;&#65533; &#65533;곗?#65533;&#65533; : [AgEEQzY5Mm6wKwt/oiEpiWU/QJ9R38qi5dAPLW/4h2WTuTO+kyLfox81bFICEWhava2B6INKlolBxBrIgy3VirgGxJTQG3jPr6DJwFRJbL87jkk6p52m8PQSEBBJmYmyYCXAB4ZcMTAwspE+IFFaaIoVBAVpLzWbKZtfyn5kdGZzazCeEd1Yteb5IvxbW++06qKSolrbhF9rAuI2apE8EFT+5u2H6cectkuHU6K9ZIHex+GSoWkqGZn5Fk2v7X8G+sIL08bi1CMmW3PVhY2XFjogpDv0TS5jPNg63FUyCx2tJuHlozGghl7LQJYPboSIyArEgpd+AOyfS5qPThRPrUeG2W3aQ6o=]<br><br> -->
+
+								<!-- 媛&#65533;&#65533;二쇰쇰?&#65533;&#65533; &#65533;鍮&#65533;&#65533; &#65533;?&#65533;&#65533; &#65533;몄?&#65533;湲?&#65533;??#65533;? &#65533;ㅼ怨&#65533; 媛?#65533; form&#65533;&#65533; &#65533;?&#65533;⑸&#65533;&#65533;. -->
+								<form name="form_ipin" method="post">
+									<input type="hidden" name="m" value="pubmain">
+									<!-- &#65533;? &#65533;곗?#65533;&#65533;濡&#65533;, &#65533;??#65533;?硫&#65533; &#65533;??#65533;?? -->
+									<input type="hidden" name="enc_data"
+										value="AgEEQzY5Mm6wKwt/oiEpiWU/QJ9R38qi5dAPLW/4h2WTuTO+kyLfox81bFICEWhava2B6INKlolBxBrIgy3VirgGxJTQG3jPr6DJwFRJbL87jkk6p52m8PQSEBBJmYmyYCXAB4ZcMTAwspE+IFFaaIoVBAVpLzWbKZtfyn5kdGZzazCeEd1Yteb5IvxbW++06qKSolrbhF9rAuI2apE8EFT+5u2H6cectkuHU6K9ZIHex+GSoWkqGZn5Fk2v7X8G+sIL08bi1CMmW3PVhY2XFjogpDv0TS5jPNg63FUyCx2tJuHlozGghl7LQJYPboSIyArEgpd+AOyfS5qPThRPrUeG2W3aQ6o=">
+									<!-- &#65533;?&#65533;&#65533; &#65533;泥?#65533;蹂대?#65533; &#65533;??#65533;&#65533; &#65533;&#65533; &#65533;곗?#65533;&#65533;&#65533;?&#65533;&#65533;. -->
+
+									<!-- &#65533;泥?#65533;? &#65533;?듬?湲?&#65533;?&#65533;&#65533; &#65533;곗?#65533;&#65533;瑜&#65533; &#65533;ㅼ&#65533;湲?&#65533;??&#65533;ъ?#65533;&#65533; &#65533;&#65533; &#65533;?쇰?#65533;, &#65533;몄?寃곌낵 &#65533;??#65533;&#65533; &#65533;대?媛? 洹몃&#65533;濡&#65533; &#65533;≪&#65533;⑸&#65533;&#65533;.
+    	 &#65533;대?&#65533;?쇰명?#65533;&#65533; 異?#65533;&#65533;??&#65533;&#65533; &#65533;??#65533;?? -->
+									<input type="hidden" name="param_r1" value="edit_ipin">
+									<input type="hidden" name="param_r2" value=""> <input
+										type="hidden" name="param_r3" value="">
+
+									<!-- <a href="javascript:fnPopup();"><img src="http://image.creditbank.co.kr/static/img/vno/new_img/bt_17.gif" width=218 height=40 border=0></a> -->
+								</form> <!-- 媛&#65533;&#65533;二쇰쇰?&#65533;&#65533; &#65533;鍮&#65533;&#65533; &#65533;? &#65533;?댁?#65533;&#65533;? &#65533;ъ?#65533;?#65533; &#65533;몄?&#65533;&#65533; 諛?쇰?#65533; &#65533;??#65533;? &#65533;ъ?#65533;&#65533; &#65533;蹂?#65533;&#65533; &#65533;대?&#65533;?李쎌쇰?#65533; 諛寃&#65533;⑸&#65533;&#65533;.
+	 &#65533;곕?#65533;&#65533; 遺&#65533;紐&#65533; &#65533;?댁?#65533;濡&#65533; &#65533;대&#65533;湲?&#65533;??#65533;? &#65533;ㅼ怨&#65533; 媛?#65533; form&#65533;&#65533; &#65533;?&#65533;⑸&#65533;&#65533;. -->
+								<form name="vnoform" method="post">
+									<input type="hidden" name="enc_data">
+									<!-- &#65533;몄?諛?#65533; &#65533;ъ?#65533;&#65533; &#65533;蹂?&#65533;??#65533;&#65533; &#65533;곗?#65533;&#65533;&#65533;?&#65533;&#65533;. -->
+
+									<!-- &#65533;泥?#65533;? &#65533;?듬?湲?&#65533;?&#65533;&#65533; &#65533;곗?#65533;&#65533;瑜&#65533; &#65533;ㅼ&#65533;湲?&#65533;??&#65533;ъ?#65533;&#65533; &#65533;&#65533; &#65533;?쇰?#65533;, &#65533;몄?寃곌낵 &#65533;??#65533;&#65533; &#65533;대?媛? 洹몃&#65533;濡&#65533; &#65533;≪&#65533;⑸&#65533;&#65533;.
+    	 &#65533;대?&#65533;?쇰명?#65533;&#65533; 異?#65533;&#65533;??&#65533;&#65533; &#65533;??#65533;?? -->
+									<input type="hidden" name="param_r1" value="edit_ipin">
+									<input type="hidden" name="param_r2" value=""> <input
+										type="hidden" name="param_r3" value="">
+								</form>
+
+
+
+								<dl>
+									<dt>
+										<img
+											src="<%=cp%>/shoppingmall/product/product_files/join_icon02.png"
+											alt="">
+									</dt>
+									<dt>아이핀(I-PIN)</dt>
+									<dd>아이핀으로 본인인증하기</dd>
+									<dd class="btn_type03">
+										<a href="javascript:fnIpinSubmit();">인증하기</a>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
 				</div>
-
-
-				<!-- 이부분에 프로그램 넣어주세요 -->
-
-
-				<%--  <div id="lists">  
-		<c:forEach var="dto" items="${lists }"> 
-			<dl>
-				<dd class="num">${dto.num }</dd>
-				<dd class="subject">
-				<a href="${articleUrl }&num=${dto.num}">
-				${dto.subject }</a></dd>
-				<dd class="name">${dto.name }</dd>
-				<dd class="created">${dto.created }</dd>
-				<dd class="hitCount">${dto.hitCount }</dd>
-			</dl>
-		</c:forEach>
-		</div> --%>
-
-
-
-				<table class="tb_type1">
-					<colgroup>
-						<col width="80">
-						<col width="*">
-						<col width="100">
-						<col width="100">
-						<col width="90">
-					</colgroup>
-					<thead>
-						<tr class="cus_notice_list">
-							<th>번호</th>
-							<th>제목</th>
-							<th>작성자</th>
-							<th>등록일</th>
-							<th>조회수</th>
-
-						</tr>
-					</thead>
-
-
-
-
-
-					<tbody>
-						<c:forEach var="dto" items="${lists }">
-
-							<tr>
-								<td>${dto.num }</td>
-								<td><p>
-										<a
-											href="<%=cp%>/shop/notice/article.do?num=${dto.num}&pageNum=<%=pageNum%>">${dto.subject }</a>
-									</p></td>
-								<td>${dto.name }</td>
-								<td>${dto.created }</td>
-								<td>${dto.hitCount }</td>
-							</tr>
-						</c:forEach>
-
-
-					</tbody>
-				</table>
-				<br>
-				<div class="btn_write">
-					<a href="<%=cp%>/shop/notice/created.do">1:1 문의하기</a>
-				</div>
-				<br>
-				<div class="page" style="text-align: center;"></div>
-				<!--// 20150428 -->
+				<!-- 본인확인 인증 e -->
 
 			</div>
 			<!-- // content_area -->
@@ -586,7 +847,7 @@
 				<div class="rightquick">
 					<div class="q_cart">
 						<a href="https://eshop.parkland.co.kr:444/nhome/cart/cart.asp"><img
-							src="<%=cp%>/shoppingmall/notice/notice_files/cart.png" alt=""></a>
+							src="<%=cp%>/shoppingmall/product/product_files/cart.png" alt=""></a>
 						<p>
 							(<span id="gRightCartCount">0</span>)
 						</p>
@@ -611,8 +872,9 @@
 					</div>
 					<div class="righttop">
 						<a
-							href="https://eshop.parkland.co.kr:444/nhome/customer/notice.asp#"><img
-							src="<%=cp%>/shoppingmall/notice/notice_files/top.png" alt="top"></a>
+							href="https://eshop.parkland.co.kr:444/nhome/user/modifyuserinfo.asp#"><img
+							src="<%=cp%>/shoppingmall/product/product_files/top.png"
+							alt="top"></a>
 					</div>
 				</div>
 				<!-- // quick -->
@@ -628,14 +890,14 @@
 
 	<!-- WIDERPLANET  SCRIPT START 2021.12.1 -->
 	<div id="wp_tg_cts" style="display: none;">
-		<script id="wp_tag_script_1645774839235"
-			src="<%=cp%>/shoppingmall/notice/notice_files/wpc.php"></script>
+		<script id="wp_tag_script_1645705916687"
+			src="<%=cp%>/shoppingmall/product/product_files/wpc.php"></script>
 	</div>
 	<script type="text/javascript">
 		var wptg_tagscript_vars = wptg_tagscript_vars || [];
 		wptg_tagscript_vars.push((function() {
 			return {
-				wp_hcuid : "", /*고객넘버 등 Unique ID (ex. 로그인  ID, 고객넘버 등 )를 암호화하여 대입.
+				wp_hcuid : "kabfl3", /*고객넘버 등 Unique ID (ex. 로그인  ID, 고객넘버 등 )를 암호화하여 대입.
 				 *주의 : 로그인 하지 않은 사용자는 어떠한 값도 대입하지 않습니다.*/
 				ti : "53076", /*광고주 코드 */
 				ty : "Home", /*트래킹태그 타입 */
@@ -645,7 +907,7 @@
 		}));
 	</script>
 	<script type="text/javascript" async=""
-		src="<%=cp%>/shoppingmall/notice/notice_files/wp_astg_4.0.js.다운로드"></script>
+		src="<%=cp%>/shoppingmall/product/product_files/wp_astg_4.0.js.다운로드"></script>
 	<!-- // WIDERPLANET  SCRIPT END 2021.12.1 -->
 
 
@@ -739,7 +1001,7 @@
 		}
 
 		function gLogin() {
-			var loc = "https://eshop.parkland.co.kr:444/nhome/customer/notice.asp?";
+			var loc = "https://eshop.parkland.co.kr:444/nhome/user/modifyuserinfo.asp?";
 			location.href = "https://eshop.parkland.co.kr:444/nhome/member/member_login.asp?retURL="
 					+ encodeURIComponent(loc);
 		}
@@ -785,7 +1047,7 @@
 
 
 	<script type="text/javascript"
-		src="<%=cp%>/shoppingmall/notice/notice_files/wcslog.js.다운로드"></script>
+		src="<%=cp%>/shoppingmall/product/product_files/wcslog.js.다운로드"></script>
 	<script type="text/javascript">
 		if (!wcs_add)
 			var wcs_add = {};
@@ -835,63 +1097,108 @@
 
 
 
-	<script type="text/javascript">
-		function MM_swapImgRestore() { //v3.0
-			var i, x, a = document.MM_sr;
-			for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++)
-				x.src = x.oSrc;
+
+	<script language="javascript">
+		function setAddrsub(zipcode, addr1, addr2, siNm, sggNm, emdNm, liNm,
+				roadAddrPart1, jibunAddr, engAddr, admCd, rnMgtSn, bdMgtSn,
+				detBdNmList) {
+			$("#zipcode").val(zipcode);
+			$("#addr1").val(addr1);
+			$("#addr2").val(addr2);
+			$("#siNm").val(siNm);
+			$("#sggNm").val(sggNm);
+			$("#emdNm").val(emdNm);
+			$("#liNm").val(liNm);
+			$("#roadAddrPart1").val(roadAddrPart1);
+			$("#jibunAddr").val(jibunAddr);
+			$("#engAddr").val(engAddr);
+			$("#admCd").val(admCd);
+			$("#rnMgtSn").val(rnMgtSn);
+			$("#bdMgtSn").val(bdMgtSn);
+			$("#detBdNmList").val(detBdNmList);
+		}
+		function setAddr(zipcode, addr1, addr2) {
+			$("#zipcode").val(zipcode);
+			$("#addr1").val(addr1);
+			$("#addr2").val(addr2);
 		}
 
-		function MM_preloadImages() { //v3.0
-			var d = document;
-			if (d.images) {
-				if (!d.MM_p)
-					d.MM_p = new Array();
-				var i, j = d.MM_p.length, a = MM_preloadImages.arguments;
-				for (i = 0; i < a.length; i++)
-					if (a[i].indexOf("#") != 0) {
-						d.MM_p[j] = new Image;
-						d.MM_p[j++].src = a[i];
-					}
-			}
-		}
-
-		function MM_findObj(n, d) { //v4.0
-			var p, i, x;
-			if (!d)
-				d = document;
-			if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
-				d = parent.frames[n.substring(p + 1)].document;
-				n = n.substring(0, p);
-			}
-			if (!(x = d[n]) && d.all)
-				x = d.all[n];
-			for (i = 0; !x && i < d.forms.length; i++)
-				x = d.forms[i][n];
-			for (i = 0; !x && d.layers && i < d.layers.length; i++)
-				x = MM_findObj(n, d.layers[i].document);
-			if (!x && document.getElementById)
-				x = document.getElementById(n);
-			return x;
-		}
-
-		function MM_swapImage() { //v3.0
-			var i, j = 0, x, a = MM_swapImage.arguments;
-			document.MM_sr = new Array;
-			for (i = 0; i < (a.length - 2); i += 3)
-				if ((x = MM_findObj(a[i])) != null) {
-					document.MM_sr[j++] = x;
-					if (!x.oSrc)
-						x.oSrc = x.src;
-					x.src = a[i + 2];
+		function checkData() {
+			if ($("#changepw").val() != "") { // 비밀번호 변경을 입력 했을 경우.
+				if ($("#changepw02").val() == "") {
+					alert("비밀번호 변경 확인을 입력하세요");
+					$("#changepw02").focus();
+					return false;
 				}
+
+				if ($("#changepw").val() != $("#changepw02").val()) {
+					alert("새 비밀번호가 일치하지 않습니다");
+					$("#changepw02").focus();
+					return false;
+				}
+			}
+
+			var o = $("#hp1");
+			if (o.val() == "") {
+				alert("휴대폰번호를 입력하세요");
+				o.focus();
+				return false;
+			}
+
+			o = $("#hp2");
+			if (o.val() == "") {
+				alert("휴대폰번호를 입력하세요");
+				o.focus();
+				return false;
+			}
+
+			o = $("#hp2");
+			if (o.val() == "") {
+				alert("휴대폰번호를 입력하세요");
+				o.focus();
+				return false;
+			}
+
+			return true;
+		}
+
+		function fnSubmit() {
+			if (checkData()) {
+				$("#frmData").submit();
+			}
+		}
+
+		function fnAnsimSubmit() {
+			fnPopup2();
+		}
+		function fnIpinSubmit() {
+			fnPopup();
+		}
+		function fnAnsimReturn(hp) {
+			var frm = document.frmData;
+			if (hp.length == 11) {
+				frm.hp1.value = hp.substr(0, 3);
+				frm.hp2.value = hp.substr(3, 4);
+				frm.hp3.value = hp.substr(7, 4);
+			} else {
+				frm.hp1.value = hp.substr(0, 3);
+				frm.hp2.value = hp.substr(3, 3);
+				frm.hp3.value = hp.substr(6, 4);
+			}
+			$('#niceIpinPop').hide();
+		}
+		function fnIpinReturn(hp) {
+			var frm = document.frmData;
+			frm.hp1.value = "";
+			frm.hp2.value = "";
+			frm.hp3.value = "";
+			frm.hp1.readOnly = false;
+			frm.hp2.readOnly = false;
+			frm.hp3.readOnly = false;
+			frm.hp1.focus();
+			$('#niceIpinPop').hide();
 		}
 	</script>
-	<script type="text/JavaScript">
-		function explorer(url, width, height) {
-			window.open(url, "browser", "width=" + width + ",height=" + height
-					+ ",top=10,left=10,scrollbars=yes,status=no");
-		}
-	</script>
+
 </body>
 </html>

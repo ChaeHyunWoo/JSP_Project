@@ -3,13 +3,6 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
-	String pageNum = request.getParameter("pageNum");
-
-	if (pageNum == null) {
-		pageNum = "1";
-	} else {
-		pageNum = request.getParameter("pageNum");
-	}
 %>
 
 <!DOCTYPE html>
@@ -66,41 +59,27 @@
 <!-- Global site tag (gtag.js) - Google Analytics ipcom 190820 -->
 <script async="" src="<%=cp%>/shoppingmall/notice/notice_files/js(1)"></script>
 <script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-	gtag('js', new Date());
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	gtag('config', 'UA-143530513-1');
+	  gtag('config', 'UA-143530513-1');
 
-	gtag('config', 'UA-126736889-1'); //190828
-</script>
+	  gtag('config', 'UA-126736889-1'); //190828
+	</script>
 <!-- Facebook Pixel Code -->
 <script>
-	!function(f, b, e, v, n, t, s) {
-		if (f.fbq)
-			return;
-		n = f.fbq = function() {
-			n.callMethod ? n.callMethod.apply(n, arguments) : n.queue
-					.push(arguments)
-		};
-		if (!f._fbq)
-			f._fbq = n;
-		n.push = n;
-		n.loaded = !0;
-		n.version = '2.0';
-		n.queue = [];
-		t = b.createElement(e);
-		t.async = !0;
-		t.src = v;
-		s = b.getElementsByTagName(e)[0];
-		s.parentNode.insertBefore(t, s)
-	}(window, document, 'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window,document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
 	fbq('init', '462724525419327');
 	fbq('track', 'PageView');
-</script>
+	</script>
 <noscript>
 	<img height="1" width="1"
 		src="https://www.facebook.com/tr?id=462724525419327&ev=PageView&noscript=1" />
@@ -108,35 +87,36 @@
 <!-- End Facebook Pixel Code -->
 
 <script language="javascript">
+
 	/*띠배너 가리기*/
 	$(window).scroll(function() {
 		var scrollHeight = $(document).height();
 		var scrollPosition = $(window).height() + $(window).scrollTop();
-		if ($(window).scrollTop()) {
-			$(".arthro_banner").css("display", "none");
+		if($(window).scrollTop()) {
+			$(".arthro_banner").css("display","none");
 		} else {
-			$(".arthro_banner").css("display", "block");
+			$(".arthro_banner").css("display","block");
 		}
 	});
 
 	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
 	/*if (jQuery(window).width() > 1300) {
-	jQuery(window).on("scroll",function(ev){
-	    if(jQuery(window).scrollTop() > 85 ) { /**높이 픽셀 조정**/
-	/*jQuery('.mlogo').addClass('ktop');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
-	/*jQuery('.t_util').addClass('ktop');
-	//jQuery('#header').removeClass('gnb');
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 85 ) { /**높이 픽셀 조정**/
+        /*jQuery('.mlogo').addClass('ktop');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+		/*jQuery('.t_util').addClass('ktop');
+		//jQuery('#header').removeClass('gnb');
 
-	}
+        }
 
-	else{
-		jQuery('.mlogo').removeClass('ktop');
-		jQuery('.t_util').removeClass('ktop');
-		//$(".sheadWrap").hide();
-		//$(".sgnb").hide();
-	}
-	return false;
-	});
+        else{
+			jQuery('.mlogo').removeClass('ktop');
+			jQuery('.t_util').removeClass('ktop');
+			//$(".sheadWrap").hide();
+			//$(".sgnb").hide();
+        }
+        return false;
+    });
 	}
 
 	/*상단 이벤트 토글*/
@@ -149,68 +129,67 @@
 		});
 	});
 
-	function getCookie_tb(strName) {
-		var strArg = new String(strName + "=");
-		var nArgLen, nCookieLen, nEnd;
-		var i = 0, j;
 
-		nArgLen = strArg.length;
+	function getCookie_tb(strName)	{
+		var	strArg = new String(strName	+ "=");
+		var	nArgLen, nCookieLen, nEnd;
+		var	i =	0, j;
+
+		nArgLen	   = strArg.length;
 		nCookieLen = document.cookie.length;
 
-		if (nCookieLen > 0) {
+		if(nCookieLen >	0) {
 
-			while (i < nCookieLen) {
-				j = i + nArgLen;
-				if (document.cookie.substring(i, j) == strArg) {
-					nEnd = document.cookie.indexOf(";", j);
-					if (nEnd == -1)
-						nEnd = document.cookie.length;
+			while(i	< nCookieLen) {
+				j =	i +	nArgLen;
+				if(document.cookie.substring(i,	j) == strArg) {
+					nEnd = document.cookie.indexOf (";", j);
+					if(nEnd	== -1) nEnd	= document.cookie.length;
 					return unescape(document.cookie.substring(j, nEnd));
 				}
-				i = document.cookie.indexOf(" ", i) + 1;
-				if (i == 0)
-					break;
+				i =	document.cookie.indexOf(" ", i)	+ 1;
+				if (i == 0)	break;
 			}
 		}
 
-		return ("");
+		return("");
 	}
 
-	function setCookie_tb(name, value) {
-		var todayDate = new Date();
-		todayDate.setTime(todayDate.getTime() + (1000 * 3600) * 24 * 1); //1일
-		document.cookie = name + "=" + escape(value) + ";path=/;expires="
-				+ todayDate.toGMTString() + ";";
+	function setCookie_tb(name,value) {
+		var	todayDate =	new	Date();
+		todayDate.setTime(todayDate.getTime() +	(1000 *	3600) *	24 * 1);	//1일
+		document.cookie	= name+"="+escape(value)+";path=/;expires="+todayDate.toGMTString()+";";
 	}
 
-	$(function() {
+	$(function(){
 
-		if (getCookie_tb('popUp_tb') != "checked") {
+		if(getCookie_tb('popUp_tb') != "checked") {
 
-			$("#bannerPop3").css('visibility', 'visible').show();
-			$("#bannerPop3").find(".closePop").click(function(e) {
+			$("#bannerPop3").css('visibility','visible').show();
+			$("#bannerPop3").find(".closePop").click(function(e){
 				e.preventDefault();
 
-				if ($("#_closePop").is(":checked")) {
-					setCookie_tb("popUp_tb", "checked");
+				if($("#_closePop").is(":checked")){
+					setCookie_tb("popUp_tb","checked");
 				}
 
-				$("#bannerPop3").css('visibility', 'hide').slideup('fast');
+				$("#bannerPop3").css('visibility','hide').slideup('fast');
 			});
 		}
 
 	});
-</script>
+	</script>
 
 <script>
-	$(document).ready(function() {
-		$('a.es').click(function() {
-			$('html, body').animate({
-				scrollTop : $($.attr(this, 'href')).offset().top - 85
-			}, 500);
-			return false;
-		});
-	});
+$(document).ready(function(){
+ $('a.es').click(function(){
+ $('html, body').animate({
+ scrollTop: $( $.attr(this, 'href') ).offset().top -85
+}, 500);
+return false;
+ });
+});
+
 </script>
 
 
@@ -357,7 +336,6 @@
 			<!-- // cscenter -->
 		</div>
 		<!-- // navi -->
-
 		<!-- contents -->
 		<div class="contents">
 			<!-- dvTopmeu -->
@@ -425,85 +403,308 @@
 					<p>1:1문의</p>
 				</div>
 				<div class="tab_type3 mb40">
-					<li class="active"><a href="<%=cp%>/shop/notice/notice.do">1:1문의</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">공지사항</a></li>
-					<li><a href="#">주문배송조회</a></li>
-					<li><a href="#">반품/교환/취소접수</a></li>
-					<li><a href="#">매장검색</a></li>
+					<li class="active"><a
+						href="http://eshop.parkland.co.kr/nhome/customer/notice.asp">공지사항</a></li>
+					<li><a
+						href="http://eshop.parkland.co.kr/nhome/customer/faq.asp">FAQ</a></li>
+					<li><a href="<%=cp%>/shop/list.do">1:1문의</a></li>
+					<li><a
+						href="http://eshop.parkland.co.kr/nhome/mypage/mypage.asp">주문배송조회</a></li>
+					<li><a
+						href="http://eshop.parkland.co.kr/nhome/mypage/myorder.asp">반품/교환/취소접수</a></li>
+					<li><a href="http://www.parkland.co.kr/store/guidance.asp"
+						target="_blank">매장검색</a></li>
 
-					<li><a href="#">신규 멤버스 카드 발급</a></li>
+					<li><a
+						href="https://members.parkland.co.kr/my_parkland/mobile_members_join.asp"
+						target="_blank">신규 멤버스 카드 발급</a></li>
 
 				</div>
 
+				<link rel="stylesheet" type="text/css"
+					href="<%=cp%>/shoppingmall/notice/css/style.css" />
+				<link rel="stylesheet" type="text/css"
+					href="<%=cp%>/shoppingmall/notice/css/created.css" />
 
+				<script type="text/javascript" src="<%=cp%>/notice/js/util.js"></script>
+				<script type="text/javascript">
+
+
+
+
+	function sendIt(){
+		
+		var f = document.myForm;
+		
+		str = f.subject.value;
+		str = str.trim();
+		if(!str){
+			alert("\n제목을 입력하세요.");
+			f.subject.focus();
+			return;
+		}
+		f.subject.value = str;
+		
+		str = f.name.value;
+		str = str.trim();
+		if(!str){
+			alert("\n이름을 입력하세요.");
+			f.name.focus();
+			return;
+		}
+		f.name.value = str;
+		
+		/* if(!isValidKorean(str)) {
+			alert("\n이름을 정확히 입력하세요.");
+			f.name.focus();
+			return;
+		} */
+		f.name.value = str;
+		
+		/* if(f.email.value){  //이메일의 value값을 가져와라 
+			if(!isValidEmail(f.email.value)){
+				alert("\n정상적인 E-mail을 입력하세요.");
+				f.email.focus();
+				return;
+			}
+			
+		} */
+		
+		str = f.content.value;
+		str = str.trim();
+		if(!str){
+			alert("\n내용을 입력하세요.");
+			f.content.focus();
+			return;
+		}
+		f.content.value = str;
+		
+		str = f.pwd.value;
+		str = str.trim();
+		if(!str){
+			alert("\n패스워드를 입력하세요.");
+			f.pwd.focus();
+			return;
+		}
+		f.pwd.value = str;
+		
+		f.action = "<%=cp%>
+					/shop/notice/created_ok.do";
+						f.submit();
+					}
+				</script>
 				<!-- 이부분에 프로그램 넣어주세요 -->
 
 
-				<%--  <div id="lists">  
-		<c:forEach var="dto" items="${lists }"> 
-			<dl>
-				<dd class="num">${dto.num }</dd>
-				<dd class="subject">
-				<a href="${articleUrl }&num=${dto.num}">
-				${dto.subject }</a></dd>
-				<dd class="name">${dto.name }</dd>
-				<dd class="created">${dto.created }</dd>
-				<dd class="hitCount">${dto.hitCount }</dd>
-			</dl>
-		</c:forEach>
-		</div> --%>
+				<!-- 여기부터 게시판 등록 작성 -->
+				<body>
+
+					<div id="bbs">
+						<div id="bbs_title">게 시 판 (Servlet)</div>
+
+						<form action="" method="post" name="myForm">
+							<div id="bbsCreated">
+
+								<div class="bbsCreated_bottomLine">
+									<dl>
+										<dt>제&nbsp;&nbsp;&nbsp;&nbsp;목</dt>
+										<dd>
+											<input type="text" name="subject" size="60" maxlength="100"
+												class="boxTF" />
+										</dd>
+									</dl>
+								</div>
+
+								<div class="bbsCreated_bottomLine">
+									<dl>
+										<dt>작 성 자</dt>
+										<dd>
+											<input type="text" name="name" size="35" maxlength="20"
+												class="boxTF" value="${sessionScope.customInfo.userName }" />
+										</dd>
+									</dl>
+								</div>
+
+								<div class="bbsCreated_bottomLine">
+									<dl>
+										<dt>E-mail</dt>
+										<dd>
+											<input type="text" name="email" size="35" maxlength="50"
+												class="boxTF" />
+										</dd>
+									</dl>
+								</div>
+
+								<div id="bbsCreated_content">
+									<dl>
+										<dt>내&nbsp;&nbsp;&nbsp;&nbsp;용</dt>
+										<dd>
+											<textarea rows="12" cols="63" name="content" class="boxTA"></textarea>
+										</dd>
+									</dl>
+								</div>
+
+								<div class="bbsCreated_noLine">
+									<dl>
+										<dt>패스워드</dt>
+										<dd>
+											<input type="password" name="pwd" size="35" maxlength="7"
+												class="boxTF" /> &nbsp;(게시물 수정 및 삭제시 필요!!)
+										</dd>
+									</dl>
+								</div>
+
+							</div>
+
+							<div id="bbsCreated_footer">
+								<input type="button" value=" 등록하기 " class="btn2"
+									onclick="sendIt();" /> <input type="reset" value=" 다시입력 "
+									class="btn2" onclick="document.myForm.subject.focus();" /> <input
+									type="button" value="작성취소" class="btn2"
+									onclick="javascript:location.href='<%=cp%>/shop/notice/notice.do';" />
+							</div>
+
+						</form>
+
+					</div>
+
+				</body>
 
 
-
-				<table class="tb_type1">
-					<colgroup>
-						<col width="80">
-						<col width="*">
-						<col width="100">
-						<col width="100">
-						<col width="90">
-					</colgroup>
-					<thead>
-						<tr class="cus_notice_list">
-							<th>번호</th>
-							<th>제목</th>
-							<th>작성자</th>
-							<th>등록일</th>
-							<th>조회수</th>
-
-						</tr>
-					</thead>
-
-
-
-
-
-					<tbody>
-						<c:forEach var="dto" items="${lists }">
-
-							<tr>
-								<td>${dto.num }</td>
-								<td><p>
-										<a
-											href="<%=cp%>/shop/notice/article.do?num=${dto.num}&pageNum=<%=pageNum%>">${dto.subject }</a>
-									</p></td>
-								<td>${dto.name }</td>
-								<td>${dto.created }</td>
-								<td>${dto.hitCount }</td>
-							</tr>
-						</c:forEach>
-
-
-					</tbody>
-				</table>
+				<!-- <table class="tb_type1">
+	        <colgroup>
+	            <col width="80">
+	            <col width="*">
+	            <col width="100">
+	            <col width="90">
+	        </colgroup>
+	        <thead>
+	            <tr class="cus_notice_list">
+	                <th>번호</th>
+	                <th>제목</th>
+	                <th>등록일</th>
+	                <th>조회수</th>
+	            </tr>
+	        </thead>
+	        <tbody>
+			
+                <tr>
+                    <td>27</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=36&amp;page=1">[행사안내]탄생 33주년 쇼핑지원금 이벤트</a> </p></td>
+                    <td>2021-12-02</td>
+                    <td>2108</td>
+                </tr>
+ 			
+                <tr>
+                    <td>26</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=35&amp;page=1">[파크랜드 쇼핑몰 공지] 서버 안내</a> </p></td>
+                    <td>2021-10-13</td>
+                    <td>131</td>
+                </tr>
+ 			
+                <tr>
+                    <td>25</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=34&amp;page=1">[행사안내]10일간, 최대 3만원 추가할인</a> </p></td>
+                    <td>2021-04-09</td>
+                    <td>357</td>
+                </tr>
+ 			
+                <tr>
+                    <td>24</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=33&amp;page=1">[배송안내] 2020년 추석연휴간  배송일정 안내</a> </p></td>
+                    <td>2020-09-25</td>
+                    <td>281</td>
+                </tr>
+ 			
+                <tr>
+                    <td>23</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=32&amp;page=1">[행사안내] 파크랜드 코로나 극복 경품 이벤트</a> </p></td>
+                    <td>2020-04-28</td>
+                    <td>1735</td>
+                </tr>
+ 			
+                <tr>
+                    <td>22</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=30&amp;page=1">** 쇼핑몰 서버 점검 안내 **</a> </p></td>
+                    <td>2019-10-24</td>
+                    <td>559</td>
+                </tr>
+ 			
+                <tr>
+                    <td>21</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=29&amp;page=1">[행사안내] 20만원 이상 구매 고객분들께 쿨링백 증정!!</a> </p></td>
+                    <td>2019-06-28</td>
+                    <td>793</td>
+                </tr>
+ 			
+                <tr>
+                    <td>20</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=28&amp;page=1">[행사안내] 파크랜드 3관왕 석권 고객 감사 할인</a> </p></td>
+                    <td>2019-05-03</td>
+                    <td>715</td>
+                </tr>
+ 			
+                <tr>
+                    <td>19</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=26&amp;page=1">[행사안내] Spring SALE 10% 추가할인</a> </p></td>
+                    <td>2019-02-28</td>
+                    <td>932</td>
+                </tr>
+ 			
+                <tr>
+                    <td>18</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=25&amp;page=1">[행사안내] 파크랜드 설맞이 특별 이벤트</a> </p></td>
+                    <td>2019-01-25</td>
+                    <td>820</td>
+                </tr>
+ 			
+                <tr>
+                    <td>17</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=24&amp;page=1">[행사안내]18FW 신상품 추가 10% 할인행사</a> </p></td>
+                    <td>2018-12-05</td>
+                    <td>651</td>
+                </tr>
+ 			
+                <tr>
+                    <td>16</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=23&amp;page=1">  [행사안내]FW 이월상품 추가할인행사</a> </p></td>
+                    <td>2018-11-23</td>
+                    <td>1914</td>
+                </tr>
+ 			
+                <tr>
+                    <td>15</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=22&amp;page=1">[행사안내]겨울 신상품 추가할인행사</a> </p></td>
+                    <td>2018-11-23</td>
+                    <td>678</td>
+                </tr>
+ 			
+                <tr>
+                    <td>14</td>
+                    <td><p><a href="https://eshop.parkland.co.kr:444/nhome/customer/view.asp?idx=21&amp;page=1">[행사안내] 파크랜드 탄생 30주년 감사 페스티벌 </a> </p></td>
+                    <td>2018-11-07</td>
+                    <td>1374</td>
+                </tr>
+ 			
+            </tbody>
+        </table> -->
 				<br>
-				<div class="btn_write">
-					<a href="<%=cp%>/shop/notice/created.do">1:1 문의하기</a>
-				</div>
-				<br>
-				<div class="page" style="text-align: center;"></div>
+				<!--  <div class="page" style="text-align:center;">
+		◀ <strong>[1]</strong> <a href="https://eshop.parkland.co.kr:444/nhome/customer/notice.asp?board=&amp;page=2">2</a>&nbsp; <a href="https://eshop.parkland.co.kr:444/nhome/customer/notice.asp?board=&amp;page=2">▶</a>         
+		</div>	 -->
 				<!--// 20150428 -->
+
+				<%-- 	<table class="tb_type1"> 에라모르겠다
+	        <colgroup>
+	            <col width="80">
+	            <col width="80">
+	            <col width="244">
+	            <col width="83">
+	            <col width="*">
+	        </colgroup>
+	        <tr>
+	        	<td>문의구분</td>
+	        	<td colspan="3">...</td> --%>
 
 			</div>
 			<!-- // content_area -->
@@ -888,10 +1089,10 @@
 		}
 	</script>
 	<script type="text/JavaScript">
-		function explorer(url, width, height) {
-			window.open(url, "browser", "width=" + width + ",height=" + height
-					+ ",top=10,left=10,scrollbars=yes,status=no");
-		}
-	</script>
+	function explorer( url, width, height )
+	{
+		window.open( url,"browser","width="+width+",height="+height+",top=10,left=10,scrollbars=yes,status=no");
+	}
+</script>
 </body>
 </html>
